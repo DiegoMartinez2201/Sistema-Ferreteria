@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    internal class entUnidadMedida
+    public class entUnidadMedida
     {
+        public int ÍdUnidadMedida { get; set; }
+        public string Nombre { get; set; }
+        public string Abreviatura { get; set; }
+
     }
 }
