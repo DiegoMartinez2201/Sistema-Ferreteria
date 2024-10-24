@@ -129,6 +129,9 @@
     <EmbeddedResource Include="MantenedorRepresentanteProveedor.resx">
       <DependentUpon>MantenedorRepresentanteProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorTipoCliente.resx">
+      <DependentUpon>MantenedorTipoCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorUnidadMedida.resx">
       <DependentUpon>MantenedorUnidadMedida.cs</DependentUpon>
     </EmbeddedResource>
