@@ -126,8 +126,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrador.resx">
+      <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JefeCompras.resx">
       <DependentUpon>JefeCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JefeVentas.resx">
+      <DependentUpon>JefeVentas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
