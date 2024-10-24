@@ -32,7 +32,6 @@ namespace Sistema_Ferreteria_Dikranis
             btnAgregar.Visible = true;
             LimpiarVariables();
             btnModificar.Visible = true;
-
         }
         public void LimpiarVariables()
         {
@@ -54,12 +53,12 @@ namespace Sistema_Ferreteria_Dikranis
                 entCliente c = new entCliente();
                 c.TipoDocumento = cbxTipoDocumento.Text.Trim();
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Error.." + ex);
             }
             LimpiarVariables();
-            grupBoxDatosCliente.Enabled=false;
+            grupBoxDatosCliente.Enabled = false;
             listarCliente();
         }
     }

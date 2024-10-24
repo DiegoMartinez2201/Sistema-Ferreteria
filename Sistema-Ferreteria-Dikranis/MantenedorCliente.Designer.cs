@@ -3,14 +3,14 @@
     partial class MantenedorCliente
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,17 +20,17 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvCliente = new System.Windows.Forms.DataGridView();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.grupBoxDatosCliente = new System.Windows.Forms.GroupBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnDeshabilitar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtApellidos = new System.Windows.Forms.TextBox();
@@ -55,65 +55,42 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnDeshabilitar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
+            this.grupBoxDatosCliente = new System.Windows.Forms.GroupBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.grupBoxDatosCliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvCliente
+            // btnSalir
             // 
-            this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCliente.Location = new System.Drawing.Point(12, 12);
-            this.dgvCliente.Name = "dgvCliente";
-            this.dgvCliente.Size = new System.Drawing.Size(1048, 167);
-            this.dgvCliente.TabIndex = 0;
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(1103, 161);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(106, 38);
+            this.btnSalir.TabIndex = 11;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
-            // btnNuevo
+            // btnDeshabilitar
             // 
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(1089, 12);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(106, 38);
-            this.btnNuevo.TabIndex = 1;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.btnDeshabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeshabilitar.Location = new System.Drawing.Point(1103, 120);
+            this.btnDeshabilitar.Name = "btnDeshabilitar";
+            this.btnDeshabilitar.Size = new System.Drawing.Size(106, 38);
+            this.btnDeshabilitar.TabIndex = 10;
+            this.btnDeshabilitar.Text = "Deshabilitar";
+            this.btnDeshabilitar.UseVisualStyleBackColor = true;
             // 
-            // grupBoxDatosCliente
+            // btnEditar
             // 
-            this.grupBoxDatosCliente.Controls.Add(this.txtTelefono);
-            this.grupBoxDatosCliente.Controls.Add(this.txtCorreo);
-            this.grupBoxDatosCliente.Controls.Add(this.txtApellidos);
-            this.grupBoxDatosCliente.Controls.Add(this.txtNombres);
-            this.grupBoxDatosCliente.Controls.Add(this.txtDireccion);
-            this.grupBoxDatosCliente.Controls.Add(this.cbxTipoDocumento);
-            this.grupBoxDatosCliente.Controls.Add(this.cbkEstado);
-            this.grupBoxDatosCliente.Controls.Add(this.label10);
-            this.grupBoxDatosCliente.Controls.Add(this.dtPickerFechaCreacion);
-            this.grupBoxDatosCliente.Controls.Add(this.label9);
-            this.grupBoxDatosCliente.Controls.Add(this.cbxIdTipoCliente);
-            this.grupBoxDatosCliente.Controls.Add(this.label8);
-            this.grupBoxDatosCliente.Controls.Add(this.label7);
-            this.grupBoxDatosCliente.Controls.Add(this.label6);
-            this.grupBoxDatosCliente.Controls.Add(this.label5);
-            this.grupBoxDatosCliente.Controls.Add(this.label4);
-            this.grupBoxDatosCliente.Controls.Add(this.label3);
-            this.grupBoxDatosCliente.Controls.Add(this.txtNumeroDocumento);
-            this.grupBoxDatosCliente.Controls.Add(this.label2);
-            this.grupBoxDatosCliente.Controls.Add(this.txtIdCliente);
-            this.grupBoxDatosCliente.Controls.Add(this.label1);
-            this.grupBoxDatosCliente.Controls.Add(this.btnCancelar);
-            this.grupBoxDatosCliente.Controls.Add(this.btnModificar);
-            this.grupBoxDatosCliente.Controls.Add(this.btnAgregar);
-            this.grupBoxDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grupBoxDatosCliente.Location = new System.Drawing.Point(10, 201);
-            this.grupBoxDatosCliente.Name = "grupBoxDatosCliente";
-            this.grupBoxDatosCliente.Size = new System.Drawing.Size(1205, 373);
-            this.grupBoxDatosCliente.TabIndex = 2;
-            this.grupBoxDatosCliente.TabStop = false;
-            this.grupBoxDatosCliente.Text = "Datos del Cliente";
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(1103, 76);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(106, 38);
+            this.btnEditar.TabIndex = 9;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // txtTelefono
             // 
@@ -318,41 +295,64 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnEditar
+            // grupBoxDatosCliente
             // 
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(1089, 56);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(106, 38);
-            this.btnEditar.TabIndex = 3;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.grupBoxDatosCliente.Controls.Add(this.txtTelefono);
+            this.grupBoxDatosCliente.Controls.Add(this.txtCorreo);
+            this.grupBoxDatosCliente.Controls.Add(this.txtApellidos);
+            this.grupBoxDatosCliente.Controls.Add(this.txtNombres);
+            this.grupBoxDatosCliente.Controls.Add(this.txtDireccion);
+            this.grupBoxDatosCliente.Controls.Add(this.cbxTipoDocumento);
+            this.grupBoxDatosCliente.Controls.Add(this.cbkEstado);
+            this.grupBoxDatosCliente.Controls.Add(this.label10);
+            this.grupBoxDatosCliente.Controls.Add(this.dtPickerFechaCreacion);
+            this.grupBoxDatosCliente.Controls.Add(this.label9);
+            this.grupBoxDatosCliente.Controls.Add(this.cbxIdTipoCliente);
+            this.grupBoxDatosCliente.Controls.Add(this.label8);
+            this.grupBoxDatosCliente.Controls.Add(this.label7);
+            this.grupBoxDatosCliente.Controls.Add(this.label6);
+            this.grupBoxDatosCliente.Controls.Add(this.label5);
+            this.grupBoxDatosCliente.Controls.Add(this.label4);
+            this.grupBoxDatosCliente.Controls.Add(this.label3);
+            this.grupBoxDatosCliente.Controls.Add(this.txtNumeroDocumento);
+            this.grupBoxDatosCliente.Controls.Add(this.label2);
+            this.grupBoxDatosCliente.Controls.Add(this.txtIdCliente);
+            this.grupBoxDatosCliente.Controls.Add(this.label1);
+            this.grupBoxDatosCliente.Controls.Add(this.btnCancelar);
+            this.grupBoxDatosCliente.Controls.Add(this.btnModificar);
+            this.grupBoxDatosCliente.Controls.Add(this.btnAgregar);
+            this.grupBoxDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grupBoxDatosCliente.Location = new System.Drawing.Point(24, 221);
+            this.grupBoxDatosCliente.Name = "grupBoxDatosCliente";
+            this.grupBoxDatosCliente.Size = new System.Drawing.Size(1205, 373);
+            this.grupBoxDatosCliente.TabIndex = 8;
+            this.grupBoxDatosCliente.TabStop = false;
+            this.grupBoxDatosCliente.Text = "Datos del Cliente";
             // 
-            // btnDeshabilitar
+            // btnNuevo
             // 
-            this.btnDeshabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeshabilitar.Location = new System.Drawing.Point(1089, 100);
-            this.btnDeshabilitar.Name = "btnDeshabilitar";
-            this.btnDeshabilitar.Size = new System.Drawing.Size(106, 38);
-            this.btnDeshabilitar.TabIndex = 4;
-            this.btnDeshabilitar.Text = "Deshabilitar";
-            this.btnDeshabilitar.UseVisualStyleBackColor = true;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(1103, 32);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(106, 38);
+            this.btnNuevo.TabIndex = 7;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // btnSalir
+            // dgvCliente
             // 
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(1089, 141);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(106, 38);
-            this.btnSalir.TabIndex = 5;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.dgvCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCliente.Location = new System.Drawing.Point(26, 32);
+            this.dgvCliente.Name = "dgvCliente";
+            this.dgvCliente.Size = new System.Drawing.Size(1048, 167);
+            this.dgvCliente.TabIndex = 6;
             // 
             // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1227, 586);
+            this.ClientSize = new System.Drawing.Size(1253, 626);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnEditar);
@@ -360,19 +360,33 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvCliente);
             this.Name = "MantenedorCliente";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
+            this.Text = "MantenedorCliente";
             this.grupBoxDatosCliente.ResumeLayout(false);
             this.grupBoxDatosCliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvCliente;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.GroupBox grupBoxDatosCliente;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnDeshabilitar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.ComboBox cbxTipoDocumento;
+        private System.Windows.Forms.CheckBox cbkEstado;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dtPickerFechaCreacion;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbxIdTipoCliente;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -383,23 +397,8 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnDeshabilitar;
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dtPickerFechaCreacion;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cbxIdTipoCliente;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbxTipoDocumento;
-        private System.Windows.Forms.CheckBox cbkEstado;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.TextBox txtApellidos;
-        private System.Windows.Forms.TextBox txtNombres;
-        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.GroupBox grupBoxDatosCliente;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.DataGridView dgvCliente;
     }
 }
-

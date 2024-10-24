@@ -17,3 +17,5 @@ G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\Sistema-Ferreteria-Dikranis\ob
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorCliente.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorProveedor.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorRepresentanteProveedor.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.login.resources
