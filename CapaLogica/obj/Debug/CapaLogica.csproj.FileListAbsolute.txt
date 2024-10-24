@@ -9,3 +9,14 @@ G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaEntid
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.dll
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\proyecto\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\proyecto\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\proyecto\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaAccesoDatos.dll
+C:\proyecto\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\proyecto\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaAccesoDatos.pdb
+C:\proyecto\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\proyecto\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\proyecto\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\proyecto\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\proyecto\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\proyecto\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
