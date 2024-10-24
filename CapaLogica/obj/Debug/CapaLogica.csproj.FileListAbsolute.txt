@@ -1,0 +1,11 @@
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaLogica.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaLogica.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaAccesoDatos.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaEntidad.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaAccesoDatos.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\bin\Debug\CapaEntidad.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria-Dikranis\CapaLogica\obj\Debug\CapaLogica.pdb

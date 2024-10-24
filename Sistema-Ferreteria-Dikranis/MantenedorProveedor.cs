@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Ferreteria_Dikranis
 {
-    public partial class Form1 : Form
+    public partial class MantenedorProveedor : Form
     {
-        public Form1()
+        public MantenedorProveedor()
         {
             InitializeComponent();
         }

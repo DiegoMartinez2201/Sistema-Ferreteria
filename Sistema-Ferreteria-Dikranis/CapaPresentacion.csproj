@@ -46,14 +46,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MantenedorCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MantenedorCategoria.Designer.cs">
+      <DependentUpon>MantenedorCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCliente.Designer.cs">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorMetodoPago.Designer.cs">
+      <DependentUpon>MantenedorMetodoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProducto.Designer.cs">
+      <DependentUpon>MantenedorProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProveedor.Designer.cs">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorRepresentanteProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorRepresentanteProveedor.Designer.cs">
+      <DependentUpon>MantenedorRepresentanteProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorTipoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorTipoCliente.Designer.cs">
+      <DependentUpon>MantenedorTipoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorUnidadMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorUnidadMedida.Designer.cs">
+      <DependentUpon>MantenedorUnidadMedida.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MantenedorCliente.resx">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorProveedor.resx">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
