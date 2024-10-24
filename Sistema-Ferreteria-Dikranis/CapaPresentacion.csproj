@@ -173,6 +173,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -196,6 +197,18 @@
       <Project>{6750698b-6b71-4123-a885-e81be38cc71b}</Project>
       <Name>CapaLogica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proyecto Cambiar tamaño de imagen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-proveedor-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-proveedor-60.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

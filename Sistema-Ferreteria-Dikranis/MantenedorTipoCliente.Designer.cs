@@ -37,13 +37,13 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.cbkEstado = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbkEstado = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,7 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.PeachPuff;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(839, 22);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
@@ -67,10 +68,11 @@
             this.btnAgregar.Size = new System.Drawing.Size(141, 47);
             this.btnAgregar.TabIndex = 9;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // btnModificar
             // 
+            this.btnModificar.BackColor = System.Drawing.Color.PeachPuff;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(837, 90);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
@@ -78,10 +80,11 @@
             this.btnModificar.Size = new System.Drawing.Size(141, 47);
             this.btnModificar.TabIndex = 10;
             this.btnModificar.Text = "Modificar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.PeachPuff;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(852, 13);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
@@ -89,10 +92,11 @@
             this.btnNuevo.Size = new System.Drawing.Size(141, 47);
             this.btnNuevo.TabIndex = 16;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             // 
             // btnEdita
             // 
+            this.btnEdita.BackColor = System.Drawing.Color.PeachPuff;
             this.btnEdita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdita.Location = new System.Drawing.Point(852, 78);
             this.btnEdita.Margin = new System.Windows.Forms.Padding(4);
@@ -100,10 +104,11 @@
             this.btnEdita.Size = new System.Drawing.Size(141, 47);
             this.btnEdita.TabIndex = 17;
             this.btnEdita.Text = "Editar";
-            this.btnEdita.UseVisualStyleBackColor = true;
+            this.btnEdita.UseVisualStyleBackColor = false;
             // 
             // btnDeshabilita
             // 
+            this.btnDeshabilita.BackColor = System.Drawing.Color.PeachPuff;
             this.btnDeshabilita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeshabilita.Location = new System.Drawing.Point(852, 150);
             this.btnDeshabilita.Margin = new System.Windows.Forms.Padding(4);
@@ -111,10 +116,11 @@
             this.btnDeshabilita.Size = new System.Drawing.Size(141, 47);
             this.btnDeshabilita.TabIndex = 18;
             this.btnDeshabilita.Text = "Deshabilitar";
-            this.btnDeshabilita.UseVisualStyleBackColor = true;
+            this.btnDeshabilita.UseVisualStyleBackColor = false;
             // 
             // btnSalir
             // 
+            this.btnSalir.BackColor = System.Drawing.Color.PeachPuff;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(852, 221);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
@@ -122,10 +128,11 @@
             this.btnSalir.Size = new System.Drawing.Size(141, 47);
             this.btnSalir.TabIndex = 19;
             this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
+            this.btnCancelar.BackColor = System.Drawing.Color.PeachPuff;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(839, 157);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
@@ -133,7 +140,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(141, 47);
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -155,25 +162,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo Cliente";
             // 
-            // label1
+            // textBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 18);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Codigo:";
+            this.textBox2.Location = new System.Drawing.Point(110, 71);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(240, 24);
+            this.textBox2.TabIndex = 27;
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 77);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 18);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Nombre:";
+            this.textBox1.Location = new System.Drawing.Point(110, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(240, 24);
+            this.textBox1.TabIndex = 26;
+            // 
+            // cbkEstado
+            // 
+            this.cbkEstado.AutoSize = true;
+            this.cbkEstado.Location = new System.Drawing.Point(611, 30);
+            this.cbkEstado.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkEstado.Name = "cbkEstado";
+            this.cbkEstado.Size = new System.Drawing.Size(83, 22);
+            this.cbkEstado.TabIndex = 25;
+            this.cbkEstado.Text = "Estado";
+            this.cbkEstado.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(163, 119);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(265, 24);
+            this.dateTimePicker2.TabIndex = 24;
             // 
             // label11
             // 
@@ -185,44 +205,31 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Fecha de Creación:";
             // 
-            // dateTimePicker2
+            // label2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(163, 119);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(265, 24);
-            this.dateTimePicker2.TabIndex = 24;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(7, 77);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 18);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Nombre:";
             // 
-            // cbkEstado
+            // label1
             // 
-            this.cbkEstado.AutoSize = true;
-            this.cbkEstado.Location = new System.Drawing.Point(684, 36);
-            this.cbkEstado.Margin = new System.Windows.Forms.Padding(4);
-            this.cbkEstado.Name = "cbkEstado";
-            this.cbkEstado.Size = new System.Drawing.Size(83, 22);
-            this.cbkEstado.TabIndex = 25;
-            this.cbkEstado.Text = "Estado";
-            this.cbkEstado.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(110, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 24);
-            this.textBox1.TabIndex = 26;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(110, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 24);
-            this.textBox2.TabIndex = 27;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 18);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Codigo:";
             // 
             // MantenedorTipoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SandyBrown;
+            this.BackColor = System.Drawing.Color.BlanchedAlmond;
             this.ClientSize = new System.Drawing.Size(1017, 549);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSalir);
