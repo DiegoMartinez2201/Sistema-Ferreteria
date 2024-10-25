@@ -78,5 +78,21 @@ namespace Sistema_Ferreteria_Dikranis
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text=="JefeCompras" & txtContraseña.Text == "compras")
+            {
+                JefeCompras JefeCompras = new JefeCompras();
+                JefeCompras.Show();
+                Hide();
+            }
+            else if (txtUsuario.Text=="JefeAlmacen" & txtContraseña.Text=="productos")
+            {
+                formJefeAlmacen jefeAlmacen = new formJefeAlmacen();
+                jefeAlmacen.Show();
+                Hide();
+            }
+        }
     }
 }

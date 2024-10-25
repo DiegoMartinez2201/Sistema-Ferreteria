@@ -10,3 +10,9 @@ C:\proyecto\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.Assembly
 C:\proyecto\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\proyecto\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\proyecto\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

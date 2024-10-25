@@ -255,6 +255,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.grupBoxDatosCategoria);
             this.Controls.Add(this.dvgCategoria);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorCategoria";
             this.Text = "MantenedorCategoria";
             ((System.ComponentModel.ISupportInitialize)(this.dvgCategoria)).EndInit();

@@ -16,3 +16,12 @@ C:\proyecto\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.
 C:\proyecto\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAcce.1AD5E18C.Up2Date
 C:\proyecto\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
 C:\proyecto\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaEntidad.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaEntidad.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.AssemblyReference.cache
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.CoreCompileInputs.cache
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.CopyComplete
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb

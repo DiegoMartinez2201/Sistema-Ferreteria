@@ -52,6 +52,7 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioHelper.cs" />
     <Compile Include="JefeCompras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +125,18 @@
     <Compile Include="JefeAlmacen.Designer.cs">
       <DependentUpon>JefeAlmacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra.Designer.cs">
+      <DependentUpon>OrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenRequerimiento.Designer.cs">
+      <DependentUpon>OrdenRequerimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrador.resx">
@@ -164,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JefeAlmacen.resx">
       <DependentUpon>JefeAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra.resx">
+      <DependentUpon>OrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenRequerimiento.resx">
+      <DependentUpon>OrdenRequerimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

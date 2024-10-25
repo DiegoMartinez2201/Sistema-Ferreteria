@@ -275,6 +275,7 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorMetodoPago";
             this.Text = "MantenedorMetodoPago";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -360,6 +360,7 @@
             this.Controls.Add(this.grupBoxDatosCliente);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorCliente";
             this.Text = "MantenedorCliente";
             this.grupBoxDatosCliente.ResumeLayout(false);
