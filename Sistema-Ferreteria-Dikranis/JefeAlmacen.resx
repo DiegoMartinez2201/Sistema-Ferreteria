@@ -118,6 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnGuiaRemision.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAANFJREFUSEvtlkEKwkAMRXsN9UTiedS1eCx1JR5I3ehKf4qB8MmkGaugMA/eIpnm
+        h2k37Rq/wAk+PuQRpvECxpimeqBAWzyIN8A9rVmL1wvJhGjNWrxeSPVAgf9ezD2tWYvXC8mEaM1avF5I
+        9UCB/17MPa1Zi9cLyYRozVq8Xkj1QIG22OXdv47oD0OfCblAG1jjBDIzKGfnvgo4QA7MuoTMGsrZvq8C
+        FpADs97gCk5fytI7lLM5HGQLOXSMG5hGbi6v/Qq9sCHlm+5g6qaNL9J1T8tFAUQ6zBUXAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
   <data name="btnNotaSalida.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

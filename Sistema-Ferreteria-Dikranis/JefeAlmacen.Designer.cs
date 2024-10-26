@@ -43,7 +43,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panelForms = new System.Windows.Forms.Panel();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnGuiaRemision = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(234)))), ((int)(((byte)(22)))));
+            this.panel1.Controls.Add(this.btnGuiaRemision);
             this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.btnNotaSalida);
             this.panel1.Controls.Add(this.btnNotaEntrada);
@@ -206,7 +208,7 @@
             this.lblBienvenida.BackColor = System.Drawing.Color.Black;
             this.lblBienvenida.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.ForeColor = System.Drawing.Color.Transparent;
-            this.lblBienvenida.Location = new System.Drawing.Point(245, 285);
+            this.lblBienvenida.Location = new System.Drawing.Point(266, 239);
             this.lblBienvenida.Name = "lblBienvenida";
             this.lblBienvenida.Size = new System.Drawing.Size(552, 47);
             this.lblBienvenida.TabIndex = 1;
@@ -214,20 +216,20 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.lblTitle);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(186, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(964, 32);
+            this.panel3.Size = new System.Drawing.Size(964, 87);
             this.panel3.TabIndex = 2;
             // 
             // panelForms
             // 
             this.panelForms.Controls.Add(this.lblBienvenida);
             this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(186, 32);
+            this.panelForms.Location = new System.Drawing.Point(186, 87);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(964, 618);
+            this.panelForms.Size = new System.Drawing.Size(964, 563);
             this.panelForms.TabIndex = 3;
             // 
             // btnRegresar
@@ -245,16 +247,32 @@
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // label2
+            // lblTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(436, 5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 21);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "TU ERES EL MEJOR!!!";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Location = new System.Drawing.Point(386, 31);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(252, 32);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "TU ERES EL MEJOR!!!";
+            // 
+            // btnGuiaRemision
+            // 
+            this.btnGuiaRemision.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGuiaRemision.FlatAppearance.BorderSize = 0;
+            this.btnGuiaRemision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuiaRemision.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuiaRemision.ForeColor = System.Drawing.Color.Black;
+            this.btnGuiaRemision.Image = ((System.Drawing.Image)(resources.GetObject("btnGuiaRemision.Image")));
+            this.btnGuiaRemision.Location = new System.Drawing.Point(0, 468);
+            this.btnGuiaRemision.Name = "btnGuiaRemision";
+            this.btnGuiaRemision.Size = new System.Drawing.Size(186, 60);
+            this.btnGuiaRemision.TabIndex = 11;
+            this.btnGuiaRemision.Text = "Guía de Remisión";
+            this.btnGuiaRemision.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnGuiaRemision.UseVisualStyleBackColor = true;
             // 
             // formJefeAlmacen
             // 
@@ -297,6 +315,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelForms;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Button btnGuiaRemision;
     }
 }

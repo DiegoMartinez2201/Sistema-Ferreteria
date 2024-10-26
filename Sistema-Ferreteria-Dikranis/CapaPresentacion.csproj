@@ -52,6 +52,12 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProducto.Designer.cs">
+      <DependentUpon>ConsultarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioHelper.cs" />
     <Compile Include="JefeCompras.cs">
       <SubType>Form</SubType>
@@ -153,6 +159,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarProducto.resx">
+      <DependentUpon>ConsultarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JefeCompras.resx">
       <DependentUpon>JefeCompras.cs</DependentUpon>
