@@ -24,7 +24,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnRegistrarVenta_Click(object sender, EventArgs e)
         {
-
+            FormularioHelper.AbrirFormulario(panelForms, new RealizarVenta());
         }
 
         private void btnClientes_Click(object sender, EventArgs e)

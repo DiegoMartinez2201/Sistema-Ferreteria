@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JefeVentas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelForms = new System.Windows.Forms.Panel();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnReporteVentas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnRegistrarVenta = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panelForms = new System.Windows.Forms.Panel();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,8 +57,59 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 450);
+            this.panel1.Size = new System.Drawing.Size(186, 674);
             this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(186, 144);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Jefe de Ventas";
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(186, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(952, 35);
+            this.panel3.TabIndex = 2;
+            // 
+            // panelForms
+            // 
+            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForms.Location = new System.Drawing.Point(186, 35);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(952, 639);
+            this.panelForms.TabIndex = 3;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(0, 632);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(186, 42);
+            this.btnRegresar.TabIndex = 9;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnReporteVentas
             // 
@@ -124,26 +175,6 @@
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 144);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(48, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Jefe de Ventas";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -154,43 +185,12 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(186, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(614, 35);
-            this.panel3.TabIndex = 2;
-            // 
-            // panelForms
-            // 
-            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(186, 35);
-            this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(614, 415);
-            this.panelForms.TabIndex = 3;
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(0, 408);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(186, 42);
-            this.btnRegresar.TabIndex = 9;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // JefeVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1138, 674);
             this.Controls.Add(this.panelForms);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);

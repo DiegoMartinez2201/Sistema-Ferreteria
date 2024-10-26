@@ -79,3 +79,4 @@ G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\C
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultarProducto.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.RealizarVenta.resources
