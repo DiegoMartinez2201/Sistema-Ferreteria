@@ -20,35 +20,43 @@ namespace Sistema_Ferreteria_Dikranis
         private void btnProductos_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            MantenedorProducto producto = new MantenedorProducto();
-            producto.TopLevel = false;
-            panelForms.Controls.Add(producto);
-            producto.Show();
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto());
         }
 
         private void btnCategoria_Click(object sender, EventArgs e)
         {
-
+            lblBienvenida.Visible = false;
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorCategoria());
         }
 
         private void btnUnidadMedida_Click(object sender, EventArgs e)
         {
-
+            lblBienvenida.Visible = false;
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorUnidadMedida());
         }
 
         private void btnOrdenRequerimiento_Click(object sender, EventArgs e)
         {
-
+            lblBienvenida.Visible = false;
+            FormularioHelper.AbrirFormulario(panelForms, new OrdenRequerimiento());
         }
 
         private void btnNotaEntrada_Click(object sender, EventArgs e)
         {
-
+            lblBienvenida.Visible = false;
+            FormularioHelper.AbrirFormulario(panelForms, new NotaEntrada());
         }
 
         private void btnNotaSalida_Click(object sender, EventArgs e)
         {
+            lblBienvenida.Visible = false;
+            FormularioHelper.AbrirFormulario(panelForms, new NotaSalida());
+        }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();  // Cierra el formulario actual
+            Login.ObtenerInstancia().Show();  // Muestra el formulario de Login
         }
     }
 }

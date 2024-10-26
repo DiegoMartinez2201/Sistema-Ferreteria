@@ -13,12 +13,22 @@ using System.Runtime.InteropServices;
 
 namespace Sistema_Ferreteria_Dikranis
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
-        public login()
+        // Instancia estática privada
+        private static Login instancia = null;
+        private Login()
         {
             InitializeComponent();
             
+        }
+        public static Login ObtenerInstancia()
+        {
+            if (instancia == null || instancia.IsDisposed) // Verifica si la instancia es nula o ha sido cerrada
+            {
+                instancia = new Login();
+            }
+            return instancia;
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -85,13 +95,19 @@ namespace Sistema_Ferreteria_Dikranis
             {
                 JefeCompras JefeCompras = new JefeCompras();
                 JefeCompras.Show();
-                Hide();
+                this.Hide();
             }
             else if (txtUsuario.Text=="JefeAlmacen" & txtContraseña.Text=="productos")
             {
                 formJefeAlmacen jefeAlmacen = new formJefeAlmacen();
                 jefeAlmacen.Show();
-                Hide();
+                this.Hide();
+            }
+            else if (txtUsuario.Text == "JefeVentas" & txtContraseña.Text =="ventas")
+            {
+                JefeVentas jefeVentas = new JefeVentas();
+                jefeVentas.Show();
+                this.Hide();
             }
         }
     }

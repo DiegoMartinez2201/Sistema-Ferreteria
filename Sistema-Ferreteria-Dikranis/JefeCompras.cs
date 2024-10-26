@@ -13,7 +13,6 @@ namespace Sistema_Ferreteria_Dikranis
 {
     public partial class JefeCompras : Form
     {
-        private Form formularioActual = null;
         public JefeCompras()
         {
             InitializeComponent();
@@ -57,6 +56,12 @@ namespace Sistema_Ferreteria_Dikranis
         {
             lblBienvenida.Visible = false;
 
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();  // Cierra el formulario actual
+            Login.ObtenerInstancia().Show();  // Muestra el formulario de Login
         }
     }
 }

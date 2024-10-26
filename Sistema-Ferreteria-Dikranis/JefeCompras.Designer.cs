@@ -30,26 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JefeCompras));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelMinMaxClose = new System.Windows.Forms.Panel();
-            this.panelForms = new System.Windows.Forms.Panel();
             this.btnOrdenRequerimiento = new System.Windows.Forms.Button();
             this.btnRepresentanteProveedor = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnOrdenCompra = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelMinMaxClose = new System.Windows.Forms.Panel();
+            this.panelForms = new System.Windows.Forms.Panel();
             this.lblBienvenida = new System.Windows.Forms.Label();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelForms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelForms.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(234)))), ((int)(((byte)(22)))));
+            this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.btnOrdenRequerimiento);
             this.panel1.Controls.Add(this.btnRepresentanteProveedor);
             this.panel1.Controls.Add(this.btnProveedores);
@@ -61,43 +63,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 450);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 144);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 106);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Jefe de Compras";
-            // 
-            // panelMinMaxClose
-            // 
-            this.panelMinMaxClose.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMinMaxClose.Location = new System.Drawing.Point(186, 0);
-            this.panelMinMaxClose.Name = "panelMinMaxClose";
-            this.panelMinMaxClose.Size = new System.Drawing.Size(614, 25);
-            this.panelMinMaxClose.TabIndex = 1;
-            // 
-            // panelForms
-            // 
-            this.panelForms.Controls.Add(this.lblBienvenida);
-            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(186, 25);
-            this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(614, 425);
-            this.panelForms.TabIndex = 2;
             // 
             // btnOrdenRequerimiento
             // 
@@ -175,6 +140,26 @@
             this.btnProductos.UseVisualStyleBackColor = true;
             this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(186, 144);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(39, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Jefe de Compras";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -184,6 +169,23 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panelMinMaxClose
+            // 
+            this.panelMinMaxClose.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMinMaxClose.Location = new System.Drawing.Point(186, 0);
+            this.panelMinMaxClose.Name = "panelMinMaxClose";
+            this.panelMinMaxClose.Size = new System.Drawing.Size(614, 25);
+            this.panelMinMaxClose.TabIndex = 1;
+            // 
+            // panelForms
+            // 
+            this.panelForms.Controls.Add(this.lblBienvenida);
+            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForms.Location = new System.Drawing.Point(186, 25);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(614, 425);
+            this.panelForms.TabIndex = 2;
             // 
             // lblBienvenida
             // 
@@ -196,6 +198,21 @@
             this.lblBienvenida.Size = new System.Drawing.Size(554, 47);
             this.lblBienvenida.TabIndex = 2;
             this.lblBienvenida.Text = "BIENVENIDO JEFE DE COMPRAS";
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(0, 408);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(186, 42);
+            this.btnRegresar.TabIndex = 10;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // JefeCompras
             // 
@@ -213,9 +230,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelForms.ResumeLayout(false);
             this.panelForms.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -234,5 +251,6 @@
         private System.Windows.Forms.Button btnRepresentanteProveedor;
         private System.Windows.Forms.Button btnOrdenRequerimiento;
         private System.Windows.Forms.Label lblBienvenida;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

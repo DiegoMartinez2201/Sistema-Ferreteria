@@ -16,7 +16,8 @@ namespace Sistema_Ferreteria_Dikranis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Login login = Login.ObtenerInstancia();
+            Application.Run(login);
         }
     }
 }

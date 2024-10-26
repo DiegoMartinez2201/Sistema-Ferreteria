@@ -71,11 +71,11 @@
     <Compile Include="MantenedorCategoria.Designer.cs">
       <DependentUpon>MantenedorCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="login.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
-      <DependentUpon>login.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorCliente.cs">
       <SubType>Form</SubType>
@@ -125,6 +125,18 @@
     <Compile Include="JefeAlmacen.Designer.cs">
       <DependentUpon>JefeAlmacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotaEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaEntrada.Designer.cs">
+      <DependentUpon>NotaEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotaSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaSalida.Designer.cs">
+      <DependentUpon>NotaSalida.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,8 +160,8 @@
     <EmbeddedResource Include="JefeVentas.resx">
       <DependentUpon>JefeVentas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCategoria.resx">
       <DependentUpon>MantenedorCategoria.cs</DependentUpon>
@@ -177,6 +189,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JefeAlmacen.resx">
       <DependentUpon>JefeAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaEntrada.resx">
+      <DependentUpon>NotaEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaSalida.resx">
+      <DependentUpon>NotaSalida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenCompra.resx">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
