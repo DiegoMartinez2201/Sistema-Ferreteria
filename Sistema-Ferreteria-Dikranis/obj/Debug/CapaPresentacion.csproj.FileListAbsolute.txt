@@ -80,3 +80,15 @@ G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\C
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.CopyComplete
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Administrador.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultarProducto.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.JefeCompras.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.JefeVentas.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorTipoCliente.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorUnidadMedida.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.formJefeAlmacen.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaEntrada.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaSalida.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenCompra.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenRequerimiento.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.RealizarVenta.resources
