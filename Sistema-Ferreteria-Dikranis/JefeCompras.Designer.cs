@@ -41,19 +41,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.panelForms = new System.Windows.Forms.Panel();
-            this.lblBienvenida = new System.Windows.Forms.Label();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.panelForms = new System.Windows.Forms.Panel();
+            this.lblBienvenida = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitle.SuspendLayout();
-            this.panelForms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
+            this.panelForms.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,11 +75,12 @@
             // 
             // btnGuiasRemision
             // 
+            this.btnGuiasRemision.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGuiasRemision.FlatAppearance.BorderSize = 0;
             this.btnGuiasRemision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuiasRemision.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuiasRemision.Image = ((System.Drawing.Image)(resources.GetObject("btnGuiasRemision.Image")));
-            this.btnGuiasRemision.Location = new System.Drawing.Point(1, 374);
+            this.btnGuiasRemision.Location = new System.Drawing.Point(0, 354);
             this.btnGuiasRemision.Name = "btnGuiasRemision";
             this.btnGuiasRemision.Size = new System.Drawing.Size(186, 42);
             this.btnGuiasRemision.TabIndex = 11;
@@ -109,7 +110,7 @@
             this.btnOrdenRequerimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenRequerimiento.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenRequerimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenRequerimiento.Image")));
-            this.btnOrdenRequerimiento.Location = new System.Drawing.Point(0, 144);
+            this.btnOrdenRequerimiento.Location = new System.Drawing.Point(0, 312);
             this.btnOrdenRequerimiento.Name = "btnOrdenRequerimiento";
             this.btnOrdenRequerimiento.Size = new System.Drawing.Size(186, 42);
             this.btnOrdenRequerimiento.TabIndex = 1;
@@ -120,11 +121,12 @@
             // 
             // btnRepresentanteProveedor
             // 
+            this.btnRepresentanteProveedor.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRepresentanteProveedor.FlatAppearance.BorderSize = 0;
             this.btnRepresentanteProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRepresentanteProveedor.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRepresentanteProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnRepresentanteProveedor.Image")));
-            this.btnRepresentanteProveedor.Location = new System.Drawing.Point(0, 326);
+            this.btnRepresentanteProveedor.Location = new System.Drawing.Point(0, 270);
             this.btnRepresentanteProveedor.Name = "btnRepresentanteProveedor";
             this.btnRepresentanteProveedor.Size = new System.Drawing.Size(186, 42);
             this.btnRepresentanteProveedor.TabIndex = 5;
@@ -135,11 +137,12 @@
             // 
             // btnProveedores
             // 
+            this.btnProveedores.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProveedores.FlatAppearance.BorderSize = 0;
             this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedores.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedores.Image = ((System.Drawing.Image)(resources.GetObject("btnProveedores.Image")));
-            this.btnProveedores.Location = new System.Drawing.Point(0, 279);
+            this.btnProveedores.Location = new System.Drawing.Point(0, 228);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(186, 42);
             this.btnProveedores.TabIndex = 4;
@@ -150,11 +153,12 @@
             // 
             // btnOrdenCompra
             // 
+            this.btnOrdenCompra.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnOrdenCompra.FlatAppearance.BorderSize = 0;
             this.btnOrdenCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrdenCompra.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenCompra.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenCompra.Image")));
-            this.btnOrdenCompra.Location = new System.Drawing.Point(0, 234);
+            this.btnOrdenCompra.Location = new System.Drawing.Point(0, 186);
             this.btnOrdenCompra.Name = "btnOrdenCompra";
             this.btnOrdenCompra.Size = new System.Drawing.Size(186, 42);
             this.btnOrdenCompra.TabIndex = 3;
@@ -165,11 +169,12 @@
             // 
             // btnProductos
             // 
+            this.btnProductos.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProductos.FlatAppearance.BorderSize = 0;
             this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProductos.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
-            this.btnProductos.Location = new System.Drawing.Point(0, 188);
+            this.btnProductos.Location = new System.Drawing.Point(0, 144);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(186, 42);
             this.btnProductos.TabIndex = 2;
@@ -220,27 +225,6 @@
             this.panelTitle.TabIndex = 1;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
-            // panelForms
-            // 
-            this.panelForms.Controls.Add(this.lblBienvenida);
-            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(186, 67);
-            this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(964, 483);
-            this.panelForms.TabIndex = 2;
-            // 
-            // lblBienvenida
-            // 
-            this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.BackColor = System.Drawing.Color.Black;
-            this.lblBienvenida.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.ForeColor = System.Drawing.Color.Transparent;
-            this.lblBienvenida.Location = new System.Drawing.Point(234, 222);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(554, 47);
-            this.lblBienvenida.TabIndex = 2;
-            this.lblBienvenida.Text = "BIENVENIDO JEFE DE COMPRAS";
-            // 
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -274,6 +258,27 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
+            // panelForms
+            // 
+            this.panelForms.Controls.Add(this.lblBienvenida);
+            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForms.Location = new System.Drawing.Point(186, 67);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(964, 483);
+            this.panelForms.TabIndex = 2;
+            // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.BackColor = System.Drawing.Color.Black;
+            this.lblBienvenida.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.ForeColor = System.Drawing.Color.Transparent;
+            this.lblBienvenida.Location = new System.Drawing.Point(234, 222);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(554, 47);
+            this.lblBienvenida.TabIndex = 2;
+            this.lblBienvenida.Text = "BIENVENIDO JEFE DE COMPRAS";
+            // 
             // JefeCompras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,11 +296,11 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitle.ResumeLayout(false);
-            this.panelForms.ResumeLayout(false);
-            this.panelForms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
+            this.panelForms.ResumeLayout(false);
+            this.panelForms.PerformLayout();
             this.ResumeLayout(false);
 
         }
