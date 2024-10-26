@@ -30,10 +30,7 @@ namespace Sistema_Ferreteria_Dikranis
             }
             return instancia;
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparm);
+       
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
@@ -85,8 +82,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void login_MouseDown(object sender, MouseEventArgs e)
         {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
+            FormularioHelper.MoveForm(this,e);
         }
 
         private void btnAcceder_Click(object sender, EventArgs e)
@@ -107,6 +103,12 @@ namespace Sistema_Ferreteria_Dikranis
             {
                 JefeVentas jefeVentas = new JefeVentas();
                 jefeVentas.Show();
+                this.Hide();
+            }
+            else if (txtUsuario.Text == "admin" & txtContraseña.Text =="admin")
+            {
+                Administrador administrador = new Administrador();
+                administrador.Show();
                 this.Hide();
             }
         }

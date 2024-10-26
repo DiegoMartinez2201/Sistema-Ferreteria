@@ -44,9 +44,19 @@ C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresent
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPres.61CA7C38.Up2Date
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.exe.config
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.exe
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaEntidad.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaLogica.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaAccesoDatos.dll
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaEntidad.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaLogica.pdb
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaAccesoDatos.pdb
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Administrador.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultarProducto.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.JefeCompras.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.JefeVentas.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Login.resources
@@ -64,19 +74,9 @@ G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\S
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenCompra.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenRequerimiento.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Properties.Resources.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.RealizarVenta.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.exe.config
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.exe
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.pdb
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaEntidad.dll
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaLogica.dll
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaAccesoDatos.dll
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaEntidad.pdb
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaLogica.pdb
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaAccesoDatos.pdb
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.CopyComplete
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultarProducto.resources
-G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.RealizarVenta.resources

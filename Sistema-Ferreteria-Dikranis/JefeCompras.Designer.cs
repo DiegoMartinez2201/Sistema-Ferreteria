@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JefeCompras));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGuiasRemision = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnOrdenRequerimiento = new System.Windows.Forms.Button();
             this.btnRepresentanteProveedor = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
@@ -38,15 +40,20 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelMinMaxClose = new System.Windows.Forms.Panel();
+            this.panelTitle = new System.Windows.Forms.Panel();
             this.panelForms = new System.Windows.Forms.Panel();
             this.lblBienvenida = new System.Windows.Forms.Label();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.btnGuiasRemision = new System.Windows.Forms.Button();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTitle.SuspendLayout();
             this.panelForms.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,6 +72,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 550);
             this.panel1.TabIndex = 0;
+            // 
+            // btnGuiasRemision
+            // 
+            this.btnGuiasRemision.FlatAppearance.BorderSize = 0;
+            this.btnGuiasRemision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuiasRemision.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuiasRemision.Image = ((System.Drawing.Image)(resources.GetObject("btnGuiasRemision.Image")));
+            this.btnGuiasRemision.Location = new System.Drawing.Point(1, 374);
+            this.btnGuiasRemision.Name = "btnGuiasRemision";
+            this.btnGuiasRemision.Size = new System.Drawing.Size(186, 42);
+            this.btnGuiasRemision.TabIndex = 11;
+            this.btnGuiasRemision.Text = "Guia de Remisión";
+            this.btnGuiasRemision.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnGuiasRemision.UseVisualStyleBackColor = true;
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(0, 508);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(186, 42);
+            this.btnRegresar.TabIndex = 10;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnOrdenRequerimiento
             // 
@@ -172,21 +208,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panelMinMaxClose
+            // panelTitle
             // 
-            this.panelMinMaxClose.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMinMaxClose.Location = new System.Drawing.Point(186, 0);
-            this.panelMinMaxClose.Name = "panelMinMaxClose";
-            this.panelMinMaxClose.Size = new System.Drawing.Size(964, 25);
-            this.panelMinMaxClose.TabIndex = 1;
+            this.panelTitle.Controls.Add(this.btnMaximizar);
+            this.panelTitle.Controls.Add(this.btnCerrar);
+            this.panelTitle.Controls.Add(this.btnMinimizar);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(186, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(964, 67);
+            this.panelTitle.TabIndex = 1;
+            this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
             // panelForms
             // 
             this.panelForms.Controls.Add(this.lblBienvenida);
             this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(186, 25);
+            this.panelForms.Location = new System.Drawing.Point(186, 67);
             this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(964, 525);
+            this.panelForms.Size = new System.Drawing.Size(964, 483);
             this.panelForms.TabIndex = 2;
             // 
             // lblBienvenida
@@ -201,34 +241,38 @@
             this.lblBienvenida.TabIndex = 2;
             this.lblBienvenida.Text = "BIENVENIDO JEFE DE COMPRAS";
             // 
-            // btnRegresar
+            // btnMaximizar
             // 
-            this.btnRegresar.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(0, 508);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(186, 42);
-            this.btnRegresar.TabIndex = 10;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(908, 3);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(26, 29);
+            this.btnMaximizar.TabIndex = 14;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
-            // btnGuiasRemision
+            // btnCerrar
             // 
-            this.btnGuiasRemision.FlatAppearance.BorderSize = 0;
-            this.btnGuiasRemision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuiasRemision.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuiasRemision.Image = ((System.Drawing.Image)(resources.GetObject("btnGuiasRemision.Image")));
-            this.btnGuiasRemision.Location = new System.Drawing.Point(1, 374);
-            this.btnGuiasRemision.Name = "btnGuiasRemision";
-            this.btnGuiasRemision.Size = new System.Drawing.Size(186, 42);
-            this.btnGuiasRemision.TabIndex = 11;
-            this.btnGuiasRemision.Text = "Guia de Remisión";
-            this.btnGuiasRemision.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnGuiasRemision.UseVisualStyleBackColor = true;
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(937, 4);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(24, 22);
+            this.btnCerrar.TabIndex = 13;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.Location = new System.Drawing.Point(876, 4);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(26, 29);
+            this.btnMinimizar.TabIndex = 12;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
             // JefeCompras
             // 
@@ -237,18 +281,21 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(1150, 550);
             this.Controls.Add(this.panelForms);
-            this.Controls.Add(this.panelMinMaxClose);
+            this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "JefeCompras";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.JefeCompras_MouseDown);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTitle.ResumeLayout(false);
             this.panelForms.ResumeLayout(false);
             this.panelForms.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,12 +309,15 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnOrdenCompra;
         private System.Windows.Forms.Button btnProveedores;
-        private System.Windows.Forms.Panel panelMinMaxClose;
+        private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.Panel panelForms;
         private System.Windows.Forms.Button btnRepresentanteProveedor;
         private System.Windows.Forms.Button btnOrdenRequerimiento;
         private System.Windows.Forms.Label lblBienvenida;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnGuiasRemision;
+        private System.Windows.Forms.PictureBox btnMaximizar;
+        private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.PictureBox btnMinimizar;
     }
 }

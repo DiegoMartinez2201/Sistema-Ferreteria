@@ -16,18 +16,11 @@ namespace Sistema_Ferreteria_Dikranis
         public JefeCompras()
         {
             InitializeComponent();
+            //form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparm);
-
-        private void JefeCompras_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
         private void btnProductos_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
@@ -62,6 +55,33 @@ namespace Sistema_Ferreteria_Dikranis
         {
             this.Close();  // Cierra el formulario actual
             Login.ObtenerInstancia().Show();  // Muestra el formulario de Login
+        }
+
+        private void panelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormularioHelper.MoveForm(this, e);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto());
         }
     }
 }

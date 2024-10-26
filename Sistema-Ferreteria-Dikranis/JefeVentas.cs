@@ -15,6 +15,10 @@ namespace Sistema_Ferreteria_Dikranis
         public JefeVentas()
         {
             InitializeComponent();
+            //form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
@@ -41,6 +45,33 @@ namespace Sistema_Ferreteria_Dikranis
         {
             this.Close();  // Cierra el formulario actual
             Login.ObtenerInstancia().Show();  // Muestra el formulario de Login
+        }
+
+        private void panelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormularioHelper.MoveForm(this,e);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

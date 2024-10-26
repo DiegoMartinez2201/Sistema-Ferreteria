@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,8 +16,11 @@ namespace Sistema_Ferreteria_Dikranis
         public formJefeAlmacen()
         {
             InitializeComponent();
+            //form
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
         }
-
         private void btnProductos_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
@@ -63,6 +67,33 @@ namespace Sistema_Ferreteria_Dikranis
         {
             this.Close();  // Cierra el formulario actual
             Login.ObtenerInstancia().Show();  // Muestra el formulario de Login
+        }
+
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            FormularioHelper.MoveForm(this,e);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMaximizar_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }
