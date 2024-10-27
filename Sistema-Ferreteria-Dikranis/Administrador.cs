@@ -52,11 +52,34 @@ namespace Sistema_Ferreteria_Dikranis
         {
             FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto());
         }
-
+        
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();  // Cierra el formulario actual
             Login.ObtenerInstancia().Show();  // Muestra el formulario de Login
+        }
+
+        private void btnOrdenRequerimiento_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new OrdenRequerimiento());
+
+        }
+
+        private void btnEmpleado_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorEmpleado());
+        }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultaProveedores());
+
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultaClientes());
+
         }
     }
 }

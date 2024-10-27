@@ -92,3 +92,7 @@ C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Fer
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenCompra.resources
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenRequerimiento.resources
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.RealizarVenta.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaEmpleado.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorEmpleado.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaClientes.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaProveedores.resources

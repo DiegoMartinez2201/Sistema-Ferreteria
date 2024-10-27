@@ -52,6 +52,24 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaClientes.Designer.cs">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaEmpleado.Designer.cs">
+      <DependentUpon>ConsultaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaProveedores.Designer.cs">
+      <DependentUpon>ConsultaProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +106,12 @@
     </Compile>
     <Compile Include="MantenedorCliente.Designer.cs">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorEmpleado.Designer.cs">
+      <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorMetodoPago.cs">
       <SubType>Form</SubType>
@@ -166,6 +190,15 @@
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaClientes.resx">
+      <DependentUpon>ConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaEmpleado.resx">
+      <DependentUpon>ConsultaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaProveedores.resx">
+      <DependentUpon>ConsultaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarProducto.resx">
       <DependentUpon>ConsultarProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorEmpleado.resx">
+      <DependentUpon>MantenedorEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorMetodoPago.resx">
       <DependentUpon>MantenedorMetodoPago.cs</DependentUpon>

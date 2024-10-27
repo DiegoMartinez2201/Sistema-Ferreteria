@@ -52,9 +52,9 @@
             this.cbxcategoria = new System.Windows.Forms.ComboBox();
             this.txtPrecioCosto = new System.Windows.Forms.TextBox();
             this.txtStock = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.txtCodigoProducto = new System.Windows.Forms.TextBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             // 
             this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProducto.Location = new System.Drawing.Point(40, 325);
-            this.dgvProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProducto.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProducto.Name = "dgvProducto";
             this.dgvProducto.RowHeadersWidth = 51;
             this.dgvProducto.Size = new System.Drawing.Size(1131, 230);
@@ -97,14 +97,14 @@
             this.groupBoxDatosProducto.Controls.Add(this.cbxcategoria);
             this.groupBoxDatosProducto.Controls.Add(this.txtPrecioCosto);
             this.groupBoxDatosProducto.Controls.Add(this.txtStock);
-            this.groupBoxDatosProducto.Controls.Add(this.txtNombre);
+            this.groupBoxDatosProducto.Controls.Add(this.txtNombreProducto);
             this.groupBoxDatosProducto.Controls.Add(this.txtDescripcion);
-            this.groupBoxDatosProducto.Controls.Add(this.txtCodigo);
+            this.groupBoxDatosProducto.Controls.Add(this.txtCodigoProducto);
             this.groupBoxDatosProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDatosProducto.Location = new System.Drawing.Point(40, 38);
-            this.groupBoxDatosProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxDatosProducto.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDatosProducto.Name = "groupBoxDatosProducto";
-            this.groupBoxDatosProducto.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxDatosProducto.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxDatosProducto.Size = new System.Drawing.Size(1315, 262);
             this.groupBoxDatosProducto.TabIndex = 3;
             this.groupBoxDatosProducto.TabStop = false;
@@ -133,7 +133,7 @@
             // dtPickerFechaCreacion
             // 
             this.dtPickerFechaCreacion.Location = new System.Drawing.Point(764, 169);
-            this.dtPickerFechaCreacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtPickerFechaCreacion.Margin = new System.Windows.Forms.Padding(4);
             this.dtPickerFechaCreacion.Name = "dtPickerFechaCreacion";
             this.dtPickerFechaCreacion.Size = new System.Drawing.Size(265, 26);
             this.dtPickerFechaCreacion.TabIndex = 12;
@@ -141,7 +141,7 @@
             // dtPickerFechaVencimiento
             // 
             this.dtPickerFechaVencimiento.Location = new System.Drawing.Point(764, 69);
-            this.dtPickerFechaVencimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtPickerFechaVencimiento.Margin = new System.Windows.Forms.Padding(4);
             this.dtPickerFechaVencimiento.Name = "dtPickerFechaVencimiento";
             this.dtPickerFechaVencimiento.Size = new System.Drawing.Size(265, 26);
             this.dtPickerFechaVencimiento.TabIndex = 11;
@@ -151,7 +151,7 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Beige;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(1165, 143);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(141, 47);
             this.btnCancelar.TabIndex = 10;
@@ -163,7 +163,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.Beige;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(1165, 76);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(141, 47);
             this.btnModificar.TabIndex = 9;
@@ -175,7 +175,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Beige;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(1165, 11);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(141, 47);
             this.btnAgregar.TabIndex = 8;
@@ -185,7 +185,7 @@
             // txtPrecioVenta
             // 
             this.txtPrecioVenta.Location = new System.Drawing.Point(764, 137);
-            this.txtPrecioVenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecioVenta.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioVenta.Name = "txtPrecioVenta";
             this.txtPrecioVenta.Size = new System.Drawing.Size(135, 26);
             this.txtPrecioVenta.TabIndex = 7;
@@ -284,7 +284,7 @@
             // 
             this.cbxproovedor.FormattingEnabled = true;
             this.cbxproovedor.Location = new System.Drawing.Point(208, 209);
-            this.cbxproovedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxproovedor.Margin = new System.Windows.Forms.Padding(4);
             this.cbxproovedor.Name = "cbxproovedor";
             this.cbxproovedor.Size = new System.Drawing.Size(243, 28);
             this.cbxproovedor.TabIndex = 4;
@@ -293,7 +293,7 @@
             // 
             this.cbxunidadmedida.FormattingEnabled = true;
             this.cbxunidadmedida.Location = new System.Drawing.Point(208, 172);
-            this.cbxunidadmedida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxunidadmedida.Margin = new System.Windows.Forms.Padding(4);
             this.cbxunidadmedida.Name = "cbxunidadmedida";
             this.cbxunidadmedida.Size = new System.Drawing.Size(124, 28);
             this.cbxunidadmedida.TabIndex = 3;
@@ -302,7 +302,7 @@
             // 
             this.cbxcategoria.FormattingEnabled = true;
             this.cbxcategoria.Location = new System.Drawing.Point(208, 130);
-            this.cbxcategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxcategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cbxcategoria.Name = "cbxcategoria";
             this.cbxcategoria.Size = new System.Drawing.Size(195, 28);
             this.cbxcategoria.TabIndex = 3;
@@ -310,7 +310,7 @@
             // txtPrecioCosto
             // 
             this.txtPrecioCosto.Location = new System.Drawing.Point(764, 103);
-            this.txtPrecioCosto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecioCosto.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioCosto.Name = "txtPrecioCosto";
             this.txtPrecioCosto.Size = new System.Drawing.Size(124, 26);
             this.txtPrecioCosto.TabIndex = 2;
@@ -318,41 +318,41 @@
             // txtStock
             // 
             this.txtStock.Location = new System.Drawing.Point(764, 31);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtStock.Margin = new System.Windows.Forms.Padding(4);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(195, 26);
             this.txtStock.TabIndex = 2;
             // 
-            // txtNombre
+            // txtNombreProducto
             // 
-            this.txtNombre.Location = new System.Drawing.Point(208, 62);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(236, 26);
-            this.txtNombre.TabIndex = 1;
+            this.txtNombreProducto.Location = new System.Drawing.Point(208, 62);
+            this.txtNombreProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(236, 26);
+            this.txtNombreProducto.TabIndex = 1;
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Location = new System.Drawing.Point(208, 96);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(305, 26);
             this.txtDescripcion.TabIndex = 0;
             // 
-            // txtCodigo
+            // txtCodigoProducto
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(208, 26);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(132, 26);
-            this.txtCodigo.TabIndex = 0;
+            this.txtCodigoProducto.Location = new System.Drawing.Point(208, 26);
+            this.txtCodigoProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodigoProducto.Name = "txtCodigoProducto";
+            this.txtCodigoProducto.Size = new System.Drawing.Size(132, 26);
+            this.txtCodigoProducto.TabIndex = 0;
             // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Beige;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(1213, 511);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(141, 47);
             this.btnSalir.TabIndex = 18;
@@ -364,7 +364,7 @@
             this.btnDeshabilitar.BackColor = System.Drawing.Color.Beige;
             this.btnDeshabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeshabilitar.Location = new System.Drawing.Point(1213, 457);
-            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(141, 47);
             this.btnDeshabilitar.TabIndex = 17;
@@ -376,7 +376,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.Beige;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(1213, 402);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(141, 47);
             this.btnEditar.TabIndex = 16;
@@ -388,7 +388,7 @@
             this.btnNuevo.BackColor = System.Drawing.Color.Beige;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(1213, 348);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(141, 47);
             this.btnNuevo.TabIndex = 15;
@@ -408,7 +408,7 @@
             this.Controls.Add(this.groupBoxDatosProducto);
             this.Controls.Add(this.dgvProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MantenedorProducto";
             this.Text = "MantenedorProducto";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).EndInit();
@@ -437,9 +437,9 @@
         private System.Windows.Forms.ComboBox cbxcategoria;
         private System.Windows.Forms.TextBox txtPrecioCosto;
         private System.Windows.Forms.TextBox txtStock;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtNombreProducto;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txtCodigo;
+        private System.Windows.Forms.TextBox txtCodigoProducto;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnEditar;
