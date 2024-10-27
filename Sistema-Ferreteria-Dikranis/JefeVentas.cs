@@ -73,5 +73,10 @@ namespace Sistema_Ferreteria_Dikranis
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void btnTipoCliente_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorTipoCliente());
+        }
     }
 }

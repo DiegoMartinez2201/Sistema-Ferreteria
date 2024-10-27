@@ -161,6 +161,12 @@
     <Compile Include="NotaEntrada.Designer.cs">
       <DependentUpon>NotaEntrada.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotaProductosFaltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaProductosFaltantes.Designer.cs">
+      <DependentUpon>NotaProductosFaltantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="NotaSalida.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NotaEntrada.resx">
       <DependentUpon>NotaEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaProductosFaltantes.resx">
+      <DependentUpon>NotaProductosFaltantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NotaSalida.resx">
       <DependentUpon>NotaSalida.cs</DependentUpon>

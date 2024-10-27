@@ -95,5 +95,10 @@ namespace Sistema_Ferreteria_Dikranis
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void btnProductosFaltantes_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new NotaProductosFaltantes());
+        }
     }
 }

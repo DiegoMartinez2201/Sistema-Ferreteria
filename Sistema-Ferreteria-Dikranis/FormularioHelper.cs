@@ -38,6 +38,18 @@ namespace Sistema_Ferreteria_Dikranis
             ReleaseCapture();
             SendMessage(form.Handle, 0x112, 0xf012, 0);
         }
-       
+
+        public static Timer TimerInstance { get; private set; } = new Timer();
+        public static event EventHandler TimerTick;
+        static FormularioHelper()
+        {
+            TimerInstance.Interval = 500; // Intervalo de 1 segundo
+            TimerInstance.Tick += OnTimerTick;
+            TimerInstance.Start();
+        }
+        private static void OnTimerTick(object sender, EventArgs e)
+        {
+            TimerTick?.Invoke(sender, e); // Llama al evento global para los suscriptores
+        }
     }
 }

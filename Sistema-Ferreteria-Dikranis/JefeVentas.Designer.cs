@@ -39,10 +39,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.panelForms = new System.Windows.Forms.Panel();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.panelForms = new System.Windows.Forms.Panel();
+            this.btnTipoCliente = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(234)))), ((int)(((byte)(22)))));
+            this.panel1.Controls.Add(this.btnTipoCliente);
             this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.btnReporteVentas);
             this.panel1.Controls.Add(this.btnClientes);
@@ -188,14 +190,6 @@
             this.panelTitle.TabIndex = 2;
             this.panelTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitle_MouseDown);
             // 
-            // panelForms
-            // 
-            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForms.Location = new System.Drawing.Point(186, 77);
-            this.panelForms.Name = "panelForms";
-            this.panelForms.Size = new System.Drawing.Size(952, 597);
-            this.panelForms.TabIndex = 3;
-            // 
             // btnMaximizar
             // 
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -228,6 +222,30 @@
             this.btnMinimizar.TabIndex = 12;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // panelForms
+            // 
+            this.panelForms.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelForms.Location = new System.Drawing.Point(186, 77);
+            this.panelForms.Name = "panelForms";
+            this.panelForms.Size = new System.Drawing.Size(952, 597);
+            this.panelForms.TabIndex = 3;
+            // 
+            // btnTipoCliente
+            // 
+            this.btnTipoCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTipoCliente.FlatAppearance.BorderSize = 0;
+            this.btnTipoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTipoCliente.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTipoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnTipoCliente.Image")));
+            this.btnTipoCliente.Location = new System.Drawing.Point(0, 312);
+            this.btnTipoCliente.Name = "btnTipoCliente";
+            this.btnTipoCliente.Size = new System.Drawing.Size(186, 42);
+            this.btnTipoCliente.TabIndex = 10;
+            this.btnTipoCliente.Text = "Tipo de Cliente";
+            this.btnTipoCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnTipoCliente.UseVisualStyleBackColor = true;
+            this.btnTipoCliente.Click += new System.EventHandler(this.btnTipoCliente_Click);
             // 
             // JefeVentas
             // 
@@ -269,5 +287,6 @@
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
+        private System.Windows.Forms.Button btnTipoCliente;
     }
 }

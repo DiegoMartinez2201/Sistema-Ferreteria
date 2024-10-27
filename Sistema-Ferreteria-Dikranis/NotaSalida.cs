@@ -15,6 +15,13 @@ namespace Sistema_Ferreteria_Dikranis
         public NotaSalida()
         {
             InitializeComponent();
+            // Suscribirse al evento TimerTick del GlobalTimer
+            FormularioHelper.TimerTick += horaFecha_Tick;
+        }
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToShortDateString();
         }
     }
 }

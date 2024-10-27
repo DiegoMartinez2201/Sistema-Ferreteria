@@ -96,3 +96,8 @@ C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Fer
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorEmpleado.resources
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaClientes.resources
 C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaProveedores.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaClientes.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaEmpleado.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaProveedores.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorEmpleado.resources
+G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaProductosFaltantes.resources

@@ -15,6 +15,13 @@ namespace Sistema_Ferreteria_Dikranis
         public NotaEntrada()
         {
             InitializeComponent();
+            //Suscribirse al envento TimerTick de FormularioHelper
+            FormularioHelper.TimerTick += horaFecha_Tick;
+        }
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToShortDateString();
         }
     }
 }
