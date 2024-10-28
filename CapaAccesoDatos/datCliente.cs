@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,18 +41,24 @@ namespace CapaAccesoDatos
                 while (dr.Read())
                 {
                     entCliente Cli = new entCliente();
+                    
                     Cli.IdCliente = Convert.ToInt32(dr["IdCliente"]);
-                    Cli.TipoDocumento = dr["TipoDocumento"].ToString();
-                    Cli.NumeroDocumento = dr["NumeroDocumento"].ToString();
-                    Cli.Nombres = dr["Nombres"].ToString();
-                    Cli.Apellidos = dr["Apellidos"].ToString();
-                    Cli.Correo = dr["Correo"].ToString();
                     Cli.Telefono = dr["Telefono"].ToString();
                     Cli.Direccion = dr["Direccion"].ToString();
+                    Cli.Correo = dr["Correo"].ToString();
+                    Cli.TipoDocumento = dr["TipoDocumento"].ToString();
                     Cli.FechaCreacion = Convert.ToDateTime(dr["FechaCreacion"]);
-                    Cli.IdCliente = Convert.ToInt32(dr["IdTipoCliente"]);
                     Cli.Estado = Convert.ToBoolean(dr["Estado"]);
+                    Cli.IdTipoCliente = Convert.ToInt32(dr["IdTipoCliente"]);
+                    Cli.IdEmpelado = Convert.ToInt32(dr ["IdEmpleado"]);
+                    Cli.DNI = dr["DNI"].ToString();
+                    Cli.Nombres = dr["Nombres"].ToString();
+                    Cli.Apellidos = dr["Apellidos"].ToString();
+                    Cli.Ruc = dr["Ruc"].ToString();
+                    Cli.RazonSocial = dr["RazonSocial"].ToString();
                     lista.Add(Cli);
+                    
+
                 }
             }
             catch(Exception e)
@@ -63,6 +70,7 @@ namespace CapaAccesoDatos
             }
             return lista;
         }
+        /*
         ///Inserta Cliente
         public Boolean InsertarCliente(entCliente Cli)
         {
@@ -158,7 +166,7 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-
+        */
         #endregion metodos
     }
 }

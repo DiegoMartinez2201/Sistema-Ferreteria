@@ -47,7 +47,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            //insertar
+            /*//insertar
             try
             {
                 entCliente c = new entCliente();
@@ -59,7 +59,12 @@ namespace Sistema_Ferreteria_Dikranis
             }
             LimpiarVariables();
             grupBoxDatosCliente.Enabled = false;
-            listarCliente();
+            listarCliente();*/
+        }
+
+        private void cbxTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

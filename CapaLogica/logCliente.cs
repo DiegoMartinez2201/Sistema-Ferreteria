@@ -29,12 +29,13 @@ namespace CapaLogica
         {
             return datCliente.Instancia.ListarCliente();
         }
+        /*
         //inserta
         public void InsertaCliente(entCliente Cli) 
         {
             datCliente.Instancia.InsertarCliente(Cli);
         }
-
+        */
         #endregion metodos
     }
 }
