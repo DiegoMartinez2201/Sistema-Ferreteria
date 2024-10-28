@@ -26,6 +26,8 @@ namespace CapaAccesoDatos
         }
         #endregion sigleton
         #region metodos
+        
+       
         ///Lista de Cliente
         public List<entCliente> ListarCliente()
         {
@@ -70,7 +72,7 @@ namespace CapaAccesoDatos
             }
             return lista;
         }
-        /*
+        
         ///Inserta Cliente
         public Boolean InsertarCliente(entCliente Cli)
         {
@@ -81,16 +83,21 @@ namespace CapaAccesoDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TipoDocumento", Cli.TipoDocumento);
-                cmd.Parameters.AddWithValue("@NumeroDocumento", Cli.NumeroDocumento);
-                cmd.Parameters.AddWithValue("@Nombres", Cli.Nombres);
-                cmd.Parameters.AddWithValue("@Apellidos", Cli.Apellidos);
-                cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
-                cmd.Parameters.AddWithValue("@Tefono",Cli.Telefono);
+                cmd.Parameters.AddWithValue("@Tefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Direccion", Cli.Direccion);
+                cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
+                cmd.Parameters.AddWithValue("@TipoDocumento", Cli.TipoDocumento);
                 cmd.Parameters.AddWithValue("@IdTipoCliente", Cli.IdTipoCliente);
                 cmd.Parameters.AddWithValue("@FechaCreacion", Cli.FechaCreacion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
+                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpelado);
+                //Parametros si es persona natural
+                cmd.Parameters.AddWithValue("@Dni",Cli.DNI);
+                cmd.Parameters.AddWithValue("@Nombres", Cli.Nombres);
+                cmd.Parameters.AddWithValue("@Apellidos", Cli.Apellidos);
+                //Parametros si es empresa
+                cmd.Parameters.AddWithValue("@Ruc",Cli.Ruc);
+                cmd.Parameters.AddWithValue("RazonSocial", Cli.RazonSocial);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0) 
@@ -106,6 +113,7 @@ namespace CapaAccesoDatos
             finally {cmd.Connection.Close();}
             return inserta; 
         }
+        /*
         ///Edita Cliente
         public Boolean EditarCliente(entCliente Cli)
         {
@@ -140,6 +148,7 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close();}
             return edita;
         }
+        
         ///Deshabilita Cliente
         public Boolean DeshabilitarCliente(entCliente Cli)
         {

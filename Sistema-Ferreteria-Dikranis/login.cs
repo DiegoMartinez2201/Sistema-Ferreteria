@@ -87,29 +87,43 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-            if (txtUsuario.Text=="JefeCompras" & txtContraseña.Text == "compras")
+            string usuario = txtUsuario.Text.Trim();
+            string contrasena = txtContraseña.Text.Trim();
+
+            entEmpleado objEmpleado = logEmpleado.Instancia.ValidarEmpleado(usuario, contrasena);
+
+            if (objEmpleado != null)
             {
-                JefeCompras JefeCompras = new JefeCompras();
-                JefeCompras.Show();
-                this.Hide();
+                MessageBox.Show("Login exitoso. Bienvenido " + objEmpleado.Nombres);
+                
+                if (objEmpleado.IdCargo ==1)
+                {
+                    JefeVentas jefeVentas = new JefeVentas();
+                    jefeVentas.Show();
+                    this.Hide();
+                }
+                else if (objEmpleado.IdCargo ==2)
+                {
+                    Administrador administrador = new Administrador();
+                    administrador.Show();
+                    this.Hide();
+                }
+                else if (objEmpleado.IdCargo ==3)
+                {
+                    JefeCompras JefeCompras = new JefeCompras();
+                    JefeCompras.Show();
+                    this.Hide();
+                }
+                else if (objEmpleado.IdCargo ==4)
+                {
+                    formJefeAlmacen jefeAlmacen = new formJefeAlmacen();
+                    jefeAlmacen.Show();
+                    this.Hide();
+                }
             }
-            else if (txtUsuario.Text=="JefeAlmacen" & txtContraseña.Text=="productos")
+            else
             {
-                formJefeAlmacen jefeAlmacen = new formJefeAlmacen();
-                jefeAlmacen.Show();
-                this.Hide();
-            }
-            else if (txtUsuario.Text == "JefeVentas" & txtContraseña.Text =="ventas")
-            {
-                JefeVentas jefeVentas = new JefeVentas();
-                jefeVentas.Show();
-                this.Hide();
-            }
-            else if (txtUsuario.Text == "admin" & txtContraseña.Text =="admin")
-            {
-                Administrador administrador = new Administrador();
-                administrador.Show();
-                this.Hide();
+                MessageBox.Show("Usuario o contraseña incorrectos. Intente de nuevo.");
             }
         }
     }

@@ -14,12 +14,22 @@ namespace Sistema_Ferreteria_Dikranis
 {
     public partial class MantenedorCliente : Form
     {
+
         public MantenedorCliente()
         {
             InitializeComponent();
             listarCliente();
             grupBoxDatosCliente.Enabled = false;
             txtIdCliente.Enabled = false;
+            LlenarComboBoxTipoCliente();
+        }
+        //Llenar ComboBox
+        private void LlenarComboBoxTipoCliente()
+        {
+            List<entTipoCliente> listaTipoCliente = logTipoCliente.Instancia.ListarTipoCliente();
+            cbxIdTipoCliente.DataSource = listaTipoCliente;
+            cbxIdTipoCliente.DisplayMember = "Nombre";
+            cbxIdTipoCliente.ValueMember = "IdTipoCliente";
         }
         public void listarCliente()
         {
@@ -35,23 +45,31 @@ namespace Sistema_Ferreteria_Dikranis
         }
         public void LimpiarVariables()
         {
-            cbxTipoDocumento.Items.Clear();
             txtNumeroDocumento.Clear();
             txtNombres.Clear();
             txtApellidos.Clear();
             txtCorreo.Clear();
             txtTelefono.Clear();
             txtDireccion.Clear();
-            cbxIdTipoCliente.Items.Clear();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            /*//insertar
+            //insertar
             try
             {
                 entCliente c = new entCliente();
+                c.Telefono = txtTelefono.Text.Trim();
+                c.Direccion = txtDireccion.Text.Trim();
+                c.Correo = txtCorreo.Text.Trim();
                 c.TipoDocumento = cbxTipoDocumento.Text.Trim();
+                c.IdTipoCliente = int.Parse(cbxIdTipoCliente.Text.Trim());
+                c.FechaCreacion = dtPickerFechaCreacion.Value;
+                c.Estado = cbkEstado.Checked;
+                
+
+                   
+                
             }
             catch (Exception ex)
             {
@@ -59,10 +77,31 @@ namespace Sistema_Ferreteria_Dikranis
             }
             LimpiarVariables();
             grupBoxDatosCliente.Enabled = false;
-            listarCliente();*/
+            listarCliente();
         }
 
         private void cbxTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxTipoDocumento.Text == "Dni")
+            {
+                lblNombres.Text = "Nombres";
+                lblApellidos.Visible = true;
+                txtApellidos.Visible=true;
+            }
+            else if (cbxTipoDocumento.Text =="Ruc")
+            {
+                lblNombres.Text = "Razon Social";
+                lblApellidos.Visible = false;
+                txtApellidos.Visible = false;
+            }
+        }
+
+        private void dgvCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        
+        private void MantenedorCliente_Load(object sender, EventArgs e)
         {
 
         }

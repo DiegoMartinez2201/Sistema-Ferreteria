@@ -45,9 +45,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblApellidos = new System.Windows.Forms.Label();
+            this.lblNombres = new System.Windows.Forms.Label();
+            this.lblNumeroDocumento = new System.Windows.Forms.Label();
             this.txtNumeroDocumento = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdCliente = new System.Windows.Forms.TextBox();
@@ -58,6 +58,7 @@
             this.grupBoxDatosCliente = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.lblIdEmpleado = new System.Windows.Forms.Label();
             this.grupBoxDatosCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
@@ -132,9 +133,7 @@
             // 
             // cbxTipoDocumento
             // 
-            this.cbxTipoDocumento.AutoCompleteCustomSource.AddRange(new string[] {
-            "DNI",
-            "RUC"});
+            this.cbxTipoDocumento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbxTipoDocumento.FormattingEnabled = true;
             this.cbxTipoDocumento.Items.AddRange(new object[] {
             "Dni",
@@ -215,32 +214,32 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Correo:";
             // 
-            // label5
+            // lblApellidos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(104, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 16);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Apellidos:";
+            this.lblApellidos.AutoSize = true;
+            this.lblApellidos.Location = new System.Drawing.Point(104, 216);
+            this.lblApellidos.Name = "lblApellidos";
+            this.lblApellidos.Size = new System.Drawing.Size(77, 16);
+            this.lblApellidos.TabIndex = 11;
+            this.lblApellidos.Text = "Apellidos:";
             // 
-            // label4
+            // lblNombres
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 16);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Nombres:";
+            this.lblNombres.AutoSize = true;
+            this.lblNombres.Location = new System.Drawing.Point(81, 174);
+            this.lblNombres.Name = "lblNombres";
+            this.lblNombres.Size = new System.Drawing.Size(74, 16);
+            this.lblNombres.TabIndex = 10;
+            this.lblNombres.Text = "Nombres:";
             // 
-            // label3
+            // lblNumeroDocumento
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 128);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 16);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Número de Documento:";
+            this.lblNumeroDocumento.AutoSize = true;
+            this.lblNumeroDocumento.Location = new System.Drawing.Point(13, 128);
+            this.lblNumeroDocumento.Name = "lblNumeroDocumento";
+            this.lblNumeroDocumento.Size = new System.Drawing.Size(169, 16);
+            this.lblNumeroDocumento.TabIndex = 9;
+            this.lblNumeroDocumento.Text = "Número de Documento:";
             // 
             // txtNumeroDocumento
             // 
@@ -324,9 +323,9 @@
             this.grupBoxDatosCliente.Controls.Add(this.label8);
             this.grupBoxDatosCliente.Controls.Add(this.label7);
             this.grupBoxDatosCliente.Controls.Add(this.label6);
-            this.grupBoxDatosCliente.Controls.Add(this.label5);
-            this.grupBoxDatosCliente.Controls.Add(this.label4);
-            this.grupBoxDatosCliente.Controls.Add(this.label3);
+            this.grupBoxDatosCliente.Controls.Add(this.lblApellidos);
+            this.grupBoxDatosCliente.Controls.Add(this.lblNombres);
+            this.grupBoxDatosCliente.Controls.Add(this.lblNumeroDocumento);
             this.grupBoxDatosCliente.Controls.Add(this.txtNumeroDocumento);
             this.grupBoxDatosCliente.Controls.Add(this.label2);
             this.grupBoxDatosCliente.Controls.Add(this.txtIdCliente);
@@ -337,7 +336,7 @@
             this.grupBoxDatosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grupBoxDatosCliente.Location = new System.Drawing.Point(24, 221);
             this.grupBoxDatosCliente.Name = "grupBoxDatosCliente";
-            this.grupBoxDatosCliente.Size = new System.Drawing.Size(1205, 373);
+            this.grupBoxDatosCliente.Size = new System.Drawing.Size(1185, 365);
             this.grupBoxDatosCliente.TabIndex = 8;
             this.grupBoxDatosCliente.TabStop = false;
             this.grupBoxDatosCliente.Text = "Datos del Cliente";
@@ -362,6 +361,16 @@
             this.dgvCliente.RowHeadersWidth = 51;
             this.dgvCliente.Size = new System.Drawing.Size(1048, 167);
             this.dgvCliente.TabIndex = 6;
+            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
+            // 
+            // lblIdEmpleado
+            // 
+            this.lblIdEmpleado.AutoSize = true;
+            this.lblIdEmpleado.Location = new System.Drawing.Point(26, 601);
+            this.lblIdEmpleado.Name = "lblIdEmpleado";
+            this.lblIdEmpleado.Size = new System.Drawing.Size(91, 13);
+            this.lblIdEmpleado.TabIndex = 12;
+            this.lblIdEmpleado.Text = "NombreEmpleado";
             // 
             // MantenedorCliente
             // 
@@ -369,6 +378,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1253, 626);
+            this.Controls.Add(this.lblIdEmpleado);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnEditar);
@@ -378,10 +388,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorCliente";
             this.Text = "MantenedorCliente";
+            this.Load += new System.EventHandler(this.MantenedorCliente_Load);
             this.grupBoxDatosCliente.ResumeLayout(false);
             this.grupBoxDatosCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -404,9 +416,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblApellidos;
+        private System.Windows.Forms.Label lblNombres;
+        private System.Windows.Forms.Label lblNumeroDocumento;
         private System.Windows.Forms.TextBox txtNumeroDocumento;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdCliente;
@@ -417,5 +429,6 @@
         private System.Windows.Forms.GroupBox grupBoxDatosCliente;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvCliente;
+        private System.Windows.Forms.Label lblIdEmpleado;
     }
 }
