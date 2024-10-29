@@ -12,28 +12,30 @@ namespace Sistema_Ferreteria_Dikranis
 {
     public partial class JefeVentas : Form
     {
-        public JefeVentas()
+        private int IdEmpleado;
+        public JefeVentas(int IdEmpleado)
         {
             InitializeComponent();
             //form
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+            this.IdEmpleado = IdEmpleado;
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto());
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto(), IdEmpleado);
         }
 
         private void btnRegistrarVenta_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new RealizarVenta());
+            FormularioHelper.AbrirFormulario(panelForms, new RealizarVenta(), IdEmpleado);
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorCliente());
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorCliente(IdEmpleado), IdEmpleado);
         }
 
         private void btnReporteVentas_Click(object sender, EventArgs e)
@@ -76,7 +78,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnTipoCliente_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorTipoCliente());
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorTipoCliente(), IdEmpleado);
         }
     }
 }

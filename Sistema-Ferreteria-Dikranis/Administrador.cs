@@ -12,13 +12,16 @@ namespace Sistema_Ferreteria_Dikranis
 {
     public partial class Administrador : Form
     {
-        public Administrador()
+        private int IdEmpleado;
+
+        public Administrador(int IdEmpleado)
         {
             InitializeComponent();
             //form
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+            this.IdEmpleado = IdEmpleado;
         }
 
         private void panelTitle_MouseDown(object sender, MouseEventArgs e)
@@ -50,7 +53,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto());
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto(), IdEmpleado);
         }
         
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -61,24 +64,24 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnOrdenRequerimiento_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new OrdenRequerimiento());
+            FormularioHelper.AbrirFormulario(panelForms, new OrdenRequerimiento(), IdEmpleado);
 
         }
 
         private void btnEmpleado_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorEmpleado());
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorEmpleado(), IdEmpleado);
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new ConsultaProveedores());
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultaProveedores(), IdEmpleado);
 
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new ConsultaClientes());
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultaClientes(), IdEmpleado);
 
         }
     }

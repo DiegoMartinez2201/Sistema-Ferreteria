@@ -13,36 +13,38 @@ namespace Sistema_Ferreteria_Dikranis
 {
     public partial class JefeCompras : Form
     {
-        public JefeCompras()
+        private int IdEmpleado;
+        public JefeCompras(int IdEmpleado)
         {
             InitializeComponent();
             //form
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+            this.IdEmpleado = IdEmpleado;
         }
         private void btnProductos_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto());
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto(), IdEmpleado);
         }
 
         private void btnOrdenCompra_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new OrdenCompra());
+            FormularioHelper.AbrirFormulario(panelForms, new OrdenCompra(), IdEmpleado);
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProveedor());
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProveedor(), IdEmpleado);
         }
 
         private void btnRepresentanteProveedor_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorRepresentanteProveedor());
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorRepresentanteProveedor(), IdEmpleado);
         }
 
         private void btnOrdenRequerimiento_Click(object sender, EventArgs e)
@@ -81,7 +83,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto());
+            FormularioHelper.AbrirFormulario(panelForms, new ConsultarProducto(), IdEmpleado);
         }
     }
 }

@@ -14,14 +14,18 @@ namespace Sistema_Ferreteria_Dikranis
 {
     public partial class MantenedorCliente : Form
     {
-
-        public MantenedorCliente()
+        private int IdEmpleado; // Variable para almacenar el IdEmpleado
+        public MantenedorCliente(int IdEmpleado)
         {
             InitializeComponent();
             listarCliente();
+            this.IdEmpleado = IdEmpleado; // Asigna el IdEmpleado al campo privado
             grupBoxDatosCliente.Enabled = false;
             txtIdCliente.Enabled = false;
             LlenarComboBoxTipoCliente();
+            lblIdEmpleado.Text = $"ID Empleado: {IdEmpleado}";
+
+
         }
         //Llenar ComboBox
         private void LlenarComboBoxTipoCliente()
@@ -63,13 +67,16 @@ namespace Sistema_Ferreteria_Dikranis
                 c.Direccion = txtDireccion.Text.Trim();
                 c.Correo = txtCorreo.Text.Trim();
                 c.TipoDocumento = cbxTipoDocumento.Text.Trim();
-                c.IdTipoCliente = int.Parse(cbxIdTipoCliente.Text.Trim());
+                c.IdTipoCliente = (int)cbxIdTipoCliente.SelectedValue;
                 c.FechaCreacion = dtPickerFechaCreacion.Value;
                 c.Estado = cbkEstado.Checked;
-                
-
-                   
-                
+                c.IdEmpelado = IdEmpleado;
+                c.DNI = txtNumeroDocumento.Text.Trim();
+                c.Nombres = txtNombres.Text.Trim();
+                c.Apellidos= txtApellidos.Text.Trim();
+                c.Ruc = txtNumeroDocumento.Text.Trim();
+                c.RazonSocial = txtNombres.Text.Trim();
+                logCliente.Instancia.InsertaCliente(c);
             }
             catch (Exception ex)
             {

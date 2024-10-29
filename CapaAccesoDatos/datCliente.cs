@@ -83,7 +83,7 @@ namespace CapaAccesoDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Tefono", Cli.Telefono);
+                cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Direccion", Cli.Direccion);
                 cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
                 cmd.Parameters.AddWithValue("@TipoDocumento", Cli.TipoDocumento);

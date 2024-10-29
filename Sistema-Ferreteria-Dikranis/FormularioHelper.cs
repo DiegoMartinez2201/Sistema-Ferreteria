@@ -12,7 +12,7 @@ namespace Sistema_Ferreteria_Dikranis
     {
         private static Form formularioActual = null;
 
-        public static void AbrirFormulario(Panel panelContainer, Form nuevoFormulario)
+        public static void AbrirFormulario(Panel panelContainer, Form nuevoFormulario, int IdEmpleado)
         {
             if (formularioActual != null)
             {

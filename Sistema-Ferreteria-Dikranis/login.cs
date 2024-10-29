@@ -98,25 +98,25 @@ namespace Sistema_Ferreteria_Dikranis
                 
                 if (objEmpleado.IdCargo ==1)
                 {
-                    JefeVentas jefeVentas = new JefeVentas();
+                    JefeVentas jefeVentas = new JefeVentas(objEmpleado.IdEmpleado);
                     jefeVentas.Show();
                     this.Hide();
                 }
                 else if (objEmpleado.IdCargo ==2)
                 {
-                    Administrador administrador = new Administrador();
+                    Administrador administrador = new Administrador(objEmpleado.IdEmpleado);
                     administrador.Show();
                     this.Hide();
                 }
                 else if (objEmpleado.IdCargo ==3)
                 {
-                    JefeCompras JefeCompras = new JefeCompras();
+                    JefeCompras JefeCompras = new JefeCompras(objEmpleado.IdEmpleado);
                     JefeCompras.Show();
                     this.Hide();
                 }
                 else if (objEmpleado.IdCargo ==4)
                 {
-                    formJefeAlmacen jefeAlmacen = new formJefeAlmacen();
+                    formJefeAlmacen jefeAlmacen = new formJefeAlmacen(objEmpleado.IdEmpleado);
                     jefeAlmacen.Show();
                     this.Hide();
                 }
