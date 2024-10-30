@@ -35,6 +35,11 @@ namespace CapaLogica
         {
             datCliente.Instancia.InsertarCliente(Cli);
         }
+        //edita
+        public void EditaCliente(entCliente Cli)
+        {
+            datCliente.Instancia.EditarCliente(Cli);
+        }
         
         #endregion metodos
     }

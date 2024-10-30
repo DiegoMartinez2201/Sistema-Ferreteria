@@ -24,6 +24,10 @@ namespace Sistema_Ferreteria_Dikranis
             txtIdCliente.Enabled = false;
             LlenarComboBoxTipoCliente();
             lblIdEmpleado.Text = $"ID Empleado: {IdEmpleado}";
+            btnModificar.Visible = false;
+            btnAgregar.Visible = false;
+            dtPickerFechaCreacion.Enabled = false;
+            cbkEstado.Enabled = false;
 
 
         }
@@ -59,6 +63,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            cbkEstado.Enabled = true;
             //insertar
             try
             {
@@ -102,15 +107,72 @@ namespace Sistema_Ferreteria_Dikranis
                 txtApellidos.Visible = false;
             }
         }
-
-        private void dgvCliente_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-        
         private void MantenedorCliente_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            grupBoxDatosCliente.Enabled = true;
+            btnModificar.Visible = true;
+            btnAgregar.Visible = true;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                entCliente c = new entCliente();
+                c.IdCliente = int.Parse(txtIdCliente.Text.Trim());
+                c.Telefono = txtTelefono.Text.Trim();
+                c.Direccion = txtDireccion.Text.Trim();
+                c.Correo = txtCorreo.Text.Trim();
+                c.TipoDocumento = cbxTipoDocumento.Text.Trim();
+                c.IdTipoCliente = (int)cbxIdTipoCliente.SelectedValue;
+                c.IdEmpelado = IdEmpleado;
+                //Parametros para persona natural
+                c.DNI = txtNumeroDocumento.Text.Trim();
+                c.Nombres = txtNombres.Text.Trim();
+                c.Apellidos = txtApellidos.Text.Trim(); 
+                //Parametros para empresa
+                c.Ruc = txtNumeroDocumento.Text.Trim();
+                c.RazonSocial = txtNombres.Text.Trim();
+                logCliente.Instancia.EditaCliente(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.."+ex);
+            }
+            LimpiarVariables();
+            grupBoxDatosCliente.Enabled=false;
+            listarCliente();
+        }
+
+        private void dgvCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvCliente.Rows[e.RowIndex];
+            txtIdCliente.Text = filaActual.Cells[0].Value.ToString();
+            txtCorreo.Text= filaActual.Cells[1].Value.ToString();
+            cbxTipoDocumento.Text = filaActual.Cells[2].Value.ToString();
+            txtTelefono.Text = filaActual.Cells[3].Value.ToString();
+            txtDireccion.Text = filaActual.Cells[4].Value.ToString();
+            cbxIdTipoCliente.Text = filaActual.Cells[5].Value.ToString();
+            //dtPickerFechaCreacion.Text = filaActual.Cells[7].Value.ToString();
+            cbkEstado.Checked = Convert.ToBoolean(filaActual.Cells[8].Value);
+            if(cbxTipoDocumento.Text == "Dni")
+            {
+                txtNumeroDocumento.Text = filaActual.Cells[9].Value.ToString();
+                txtNombres.Text = filaActual.Cells[10].Value.ToString();
+                txtApellidos.Text = filaActual.Cells[11].Value.ToString();
+            }
+            else
+            {
+                txtNumeroDocumento.Text = filaActual.Cells[12].Value.ToString();
+                txtNombres.Text = filaActual.Cells[13].Value.ToString();
+            }
+            
         }
     }
 }

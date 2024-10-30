@@ -113,7 +113,7 @@ namespace CapaAccesoDatos
             finally {cmd.Connection.Close();}
             return inserta; 
         }
-        /*
+        
         ///Edita Cliente
         public Boolean EditarCliente(entCliente Cli)
         {
@@ -125,15 +125,19 @@ namespace CapaAccesoDatos
                 cmd = new SqlCommand("spEditaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@IdCliente", Cli.IdCliente);
-                cmd.Parameters.AddWithValue("@TipoDocumento",Cli.TipoDocumento);
-                cmd.Parameters.AddWithValue("@NumeroDocumento", Cli.NumeroDocumento);
-                cmd.Parameters.AddWithValue("@Nombres",Cli.Nombres);
-                cmd.Parameters.AddWithValue("@Apellidos",Cli.Apellidos);
-                cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
                 cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Direccion", Cli.Direccion);
+                cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
+                cmd.Parameters.AddWithValue("@TipoDocumento", Cli.TipoDocumento);
                 cmd.Parameters.AddWithValue("@IdTipoCliente", Cli.IdTipoCliente);
-                cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
+                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpelado);
+                //Parametros para Persona Natural
+                cmd.Parameters.AddWithValue("@Dni", Cli.DNI);
+                cmd.Parameters.AddWithValue("@Nombres",Cli.Nombres);
+                cmd.Parameters.AddWithValue("@Apellidos",Cli.Apellidos);
+                //Parametros para Empresa
+                cmd.Parameters.AddWithValue("@Ruc", Cli.Ruc);
+                cmd.Parameters.AddWithValue("@RazonSocial",Cli.RazonSocial);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -148,7 +152,7 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close();}
             return edita;
         }
-        
+        /*
         ///Deshabilita Cliente
         public Boolean DeshabilitarCliente(entCliente Cli)
         {
