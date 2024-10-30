@@ -8,9 +8,11 @@ namespace CapaEntidad
 {
     public class entUnidadMedida
     {
-        public int ÍdUnidadMedida { get; set; }
+        public int IdUnidadMedida { get; set; }
         public string Nombre { get; set; }
-        public string Abreviatura { get; set; }
+        public string Descripcion { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public Boolean Estado {  get; set; } 
 
     }
 }
