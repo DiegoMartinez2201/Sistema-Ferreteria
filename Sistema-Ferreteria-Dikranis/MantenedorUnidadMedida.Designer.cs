@@ -37,9 +37,9 @@
             this.cbkEstado = new System.Windows.Forms.CheckBox();
             this.dtPickerFechaCreacion = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtAbreviatura = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtIdRepresentanteProveedor = new System.Windows.Forms.TextBox();
+            this.txtIdUnidadMedida = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,13 +61,14 @@
             this.dgvUnidadMedida.RowTemplate.Height = 24;
             this.dgvUnidadMedida.Size = new System.Drawing.Size(681, 271);
             this.dgvUnidadMedida.TabIndex = 0;
+            this.dgvUnidadMedida.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUnidadMedida_CellContentClick);
             // 
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Khaki;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(13, 14);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(141, 47);
             this.btnNuevo.TabIndex = 12;
@@ -79,7 +80,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.Khaki;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(11, 86);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(141, 47);
             this.btnEditar.TabIndex = 13;
@@ -91,7 +92,7 @@
             this.btnDeshabilitar.BackColor = System.Drawing.Color.Khaki;
             this.btnDeshabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeshabilitar.Location = new System.Drawing.Point(11, 158);
-            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(4);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(141, 47);
             this.btnDeshabilitar.TabIndex = 14;
@@ -103,7 +104,7 @@
             this.btnSalir.BackColor = System.Drawing.Color.Khaki;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(11, 236);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(141, 47);
             this.btnSalir.TabIndex = 15;
@@ -115,9 +116,9 @@
             this.groupBoxUnidadMedida.Controls.Add(this.cbkEstado);
             this.groupBoxUnidadMedida.Controls.Add(this.dtPickerFechaCreacion);
             this.groupBoxUnidadMedida.Controls.Add(this.label5);
-            this.groupBoxUnidadMedida.Controls.Add(this.txtDescripcion);
+            this.groupBoxUnidadMedida.Controls.Add(this.txtAbreviatura);
             this.groupBoxUnidadMedida.Controls.Add(this.txtNombre);
-            this.groupBoxUnidadMedida.Controls.Add(this.txtIdRepresentanteProveedor);
+            this.groupBoxUnidadMedida.Controls.Add(this.txtIdUnidadMedida);
             this.groupBoxUnidadMedida.Controls.Add(this.label3);
             this.groupBoxUnidadMedida.Controls.Add(this.label2);
             this.groupBoxUnidadMedida.Controls.Add(this.label1);
@@ -138,7 +139,7 @@
             // 
             this.cbkEstado.AutoSize = true;
             this.cbkEstado.Location = new System.Drawing.Point(564, 36);
-            this.cbkEstado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbkEstado.Margin = new System.Windows.Forms.Padding(4);
             this.cbkEstado.Name = "cbkEstado";
             this.cbkEstado.Size = new System.Drawing.Size(83, 22);
             this.cbkEstado.TabIndex = 15;
@@ -148,7 +149,7 @@
             // dtPickerFechaCreacion
             // 
             this.dtPickerFechaCreacion.Location = new System.Drawing.Point(237, 178);
-            this.dtPickerFechaCreacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtPickerFechaCreacion.Margin = new System.Windows.Forms.Padding(4);
             this.dtPickerFechaCreacion.Name = "dtPickerFechaCreacion";
             this.dtPickerFechaCreacion.Size = new System.Drawing.Size(265, 24);
             this.dtPickerFechaCreacion.TabIndex = 14;
@@ -163,29 +164,29 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Fecha de Creacion:";
             // 
-            // txtDescripcion
+            // txtAbreviatura
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(237, 121);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(343, 24);
-            this.txtDescripcion.TabIndex = 11;
+            this.txtAbreviatura.Location = new System.Drawing.Point(237, 121);
+            this.txtAbreviatura.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAbreviatura.Name = "txtAbreviatura";
+            this.txtAbreviatura.Size = new System.Drawing.Size(59, 24);
+            this.txtAbreviatura.TabIndex = 11;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(237, 74);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(207, 24);
             this.txtNombre.TabIndex = 10;
             // 
-            // txtIdRepresentanteProveedor
+            // txtIdUnidadMedida
             // 
-            this.txtIdRepresentanteProveedor.Location = new System.Drawing.Point(237, 33);
-            this.txtIdRepresentanteProveedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtIdRepresentanteProveedor.Name = "txtIdRepresentanteProveedor";
-            this.txtIdRepresentanteProveedor.Size = new System.Drawing.Size(207, 24);
-            this.txtIdRepresentanteProveedor.TabIndex = 9;
+            this.txtIdUnidadMedida.Location = new System.Drawing.Point(237, 33);
+            this.txtIdUnidadMedida.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdUnidadMedida.Name = "txtIdUnidadMedida";
+            this.txtIdUnidadMedida.Size = new System.Drawing.Size(207, 24);
+            this.txtIdUnidadMedida.TabIndex = 9;
             // 
             // label3
             // 
@@ -193,9 +194,9 @@
             this.label3.Location = new System.Drawing.Point(7, 127);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 18);
+            this.label3.Size = new System.Drawing.Size(97, 18);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Descripcion:";
+            this.label3.Text = "Abreviatura:";
             // 
             // label2
             // 
@@ -222,7 +223,7 @@
             this.btnCancelar.BackColor = System.Drawing.Color.Khaki;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(765, 178);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(141, 47);
             this.btnCancelar.TabIndex = 5;
@@ -234,7 +235,7 @@
             this.btnModificar.BackColor = System.Drawing.Color.Khaki;
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.Location = new System.Drawing.Point(765, 98);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(141, 47);
             this.btnModificar.TabIndex = 4;
@@ -246,7 +247,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Khaki;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.Location = new System.Drawing.Point(765, 22);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(141, 47);
             this.btnAgregar.TabIndex = 3;
@@ -290,9 +291,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtAbreviatura;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtIdRepresentanteProveedor;
+        private System.Windows.Forms.TextBox txtIdUnidadMedida;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtPickerFechaCreacion;
         private System.Windows.Forms.CheckBox cbkEstado;

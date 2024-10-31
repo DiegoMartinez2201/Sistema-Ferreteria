@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace Sistema_Ferreteria_Dikranis
         public MantenedorUnidadMedida()
         {
             InitializeComponent();
+            listarUnidadMedida();
+        }
+
+        private void dgvUnidadMedida_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        public void listarUnidadMedida() 
+        {
+            dgvUnidadMedida.DataSource = logUnidadMedida.Instancia.ListarUnidadMedida();
         }
     }
 }

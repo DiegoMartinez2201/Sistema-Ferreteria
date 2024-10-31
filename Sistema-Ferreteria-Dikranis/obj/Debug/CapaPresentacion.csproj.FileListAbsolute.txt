@@ -101,3 +101,4 @@ G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\S
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaProveedores.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorEmpleado.resources
 G:\MOANSO\DIKRANIS BD\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaProductosFaltantes.resources
+C:\proyecto\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaProductosFaltantes.resources
