@@ -152,8 +152,8 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close();}
             return edita;
         }
-        /*
-        ///Deshabilita Cliente
+        
+        //Deshabilita Cliente
         public Boolean DeshabilitarCliente(entCliente Cli)
         {
             SqlCommand cmd = null;
@@ -164,7 +164,6 @@ namespace CapaAccesoDatos
                 cmd = new SqlCommand("spDeshabilitarCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@IdCliente",Cli.IdCliente);
-                cmd.Parameters.AddWithValue("@Estado",Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -179,7 +178,7 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-        */
+        
         #endregion metodos
     }
 }

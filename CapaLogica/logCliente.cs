@@ -40,6 +40,11 @@ namespace CapaLogica
         {
             datCliente.Instancia.EditarCliente(Cli);
         }
+        //deshabilita
+        public void DeshabilitarCliente(entCliente Cli)
+        {
+            datCliente.Instancia.DeshabilitarCliente(Cli); 
+        }
         
         #endregion metodos
     }

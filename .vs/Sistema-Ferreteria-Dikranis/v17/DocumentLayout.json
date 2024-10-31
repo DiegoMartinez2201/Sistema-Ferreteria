@@ -3,40 +3,56 @@
   "WorkspaceRootPath": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\mantenedorunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedorunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|d:\\proyecto ferreteria\\sistema-ferreteria\\sistema-ferreteria-dikranis\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|d:\\proyecto ferreteria\\sistema-ferreteria\\capaaccesodatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|d:\\proyecto ferreteria\\sistema-ferreteria\\capaaccesodatos\\datunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\datunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DCD90A9A-B290-4D39-94F3-05B8B9C160BB}|CapaEntidad\\CapaEntidad.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaentidad\\entunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DCD90A9A-B290-4D39-94F3-05B8B9C160BB}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\entunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capalogica\\logunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaaccesodatos\\datcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\datcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\mantenedorunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedorunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capalogica\\logtipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logtipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\mantenedorunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedorunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaaccesodatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaaccesodatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\dattipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaaccesodatos\\datempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\datempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaaccesodatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B94548-9924-43EE-A2A9-359FDD08D48E}|CapaAccesoDatos\\CapaAccesoDatos.csproj|solutionrelative:capaaccesodatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capalogica\\logunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logunidadmedida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capalogica\\logtipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6750698B-6B71-4123-A885-E81BE38CC71B}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logtipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCD90A9A-B290-4D39-94F3-05B8B9C160BB}|CapaEntidad\\CapaEntidad.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaentidad\\entproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DCD90A9A-B290-4D39-94F3-05B8B9C160BB}|CapaEntidad\\CapaEntidad.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\capaentidad\\enttipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCD90A9A-B290-4D39-94F3-05B8B9C160BB}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\enttipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CapaPresentacion||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
@@ -80,10 +92,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\mantenedortipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedortipocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|solutionrelative:sistema-ferreteria-dikranis\\mantenedorcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{330E5313-8547-4E47-91D3-D96EAAC75AEB}|Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj|D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\sistema-ferreteria-dikranis\\consultaproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -149,7 +157,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -157,7 +165,90 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "datCliente.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datCliente.cs",
+              "RelativeDocumentMoniker": "CapaAccesoDatos\\datCliente.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datCliente.cs",
+              "RelativeToolTip": "CapaAccesoDatos\\datCliente.cs",
+              "ViewState": "AgIAAJwAAAAAY2ZmZgY6wKYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:48:50.376Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "logCliente.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaLogica\\logCliente.cs",
+              "RelativeDocumentMoniker": "CapaLogica\\logCliente.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaLogica\\logCliente.cs",
+              "RelativeToolTip": "CapaLogica\\logCliente.cs",
+              "ViewState": "AgIAABsAAABAMzMzM9M4wC0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:47:36.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MantenedorCliente.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
+              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
+              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
+              "ViewState": "AgIAAKsAAAAAkDMzMzPvv7kAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:23:23.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MantenedorCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
+              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T20:24:11.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MantenedorUnidadMedida.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
+              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T16:58:43.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MantenedorUnidadMedida.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
+              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
+              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
+              "ViewState": "AgIAAA4AAABAzczMzEwhwBkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T20:30:52.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\Conexion.cs",
+              "RelativeDocumentMoniker": "CapaAccesoDatos\\Conexion.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\Conexion.cs",
+              "RelativeToolTip": "CapaAccesoDatos\\Conexion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:33:12.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "datTipoCliente.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datTipoCliente.cs",
               "RelativeDocumentMoniker": "CapaAccesoDatos\\datTipoCliente.cs",
@@ -165,61 +256,58 @@
               "RelativeToolTip": "CapaAccesoDatos\\datTipoCliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T20:23:38.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T20:23:38.732Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "datEmpleado.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datEmpleado.cs",
+              "RelativeDocumentMoniker": "CapaAccesoDatos\\datEmpleado.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datEmpleado.cs",
+              "RelativeToolTip": "CapaAccesoDatos\\datEmpleado.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwDcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:27:45.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "logUnidadMedida.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaLogica\\logUnidadMedida.cs",
               "RelativeDocumentMoniker": "CapaLogica\\logUnidadMedida.cs",
               "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaLogica\\logUnidadMedida.cs",
               "RelativeToolTip": "CapaLogica\\logUnidadMedida.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T00:28:01.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "entUnidadMedida.cs",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaEntidad\\entUnidadMedida.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\entUnidadMedida.cs",
-              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaEntidad\\entUnidadMedida.cs",
-              "RelativeToolTip": "CapaEntidad\\entUnidadMedida.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\login.cs",
+              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\login.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\login.cs",
+              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\login.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:28:49.945Z"
+              "WhenOpened": "2024-10-31T23:07:09.639Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "datUnidadMedida.cs",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datUnidadMedida.cs",
-              "RelativeDocumentMoniker": "CapaAccesoDatos\\datUnidadMedida.cs",
-              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datUnidadMedida.cs",
-              "RelativeToolTip": "CapaAccesoDatos\\datUnidadMedida.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwE8AAABDAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Login.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\login.cs",
+              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\login.cs",
+              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\login.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T00:10:04.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T16:58:59.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MantenedorUnidadMedida.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
-              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
-              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:58:43.107Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "logTipoCliente.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaLogica\\logTipoCliente.cs",
               "RelativeDocumentMoniker": "CapaLogica\\logTipoCliente.cs",
@@ -231,44 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MantenedorUnidadMedida.cs",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
-              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
-              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
-              "RelativeToolTip": "Sistema-Ferreteria-Dikranis\\MantenedorUnidadMedida.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAWwBkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T20:30:52.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\Conexion.cs",
-              "RelativeDocumentMoniker": "CapaAccesoDatos\\Conexion.cs",
-              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\Conexion.cs",
-              "RelativeToolTip": "CapaAccesoDatos\\Conexion.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:33:12.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "datEmpleado.cs",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datEmpleado.cs",
-              "RelativeDocumentMoniker": "CapaAccesoDatos\\datEmpleado.cs",
-              "ToolTip": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaAccesoDatos\\datEmpleado.cs",
-              "RelativeToolTip": "CapaAccesoDatos\\datEmpleado.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:27:45.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "entTipoCliente.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaEntidad\\entTipoCliente.cs",
               "RelativeDocumentMoniker": "CapaEntidad\\entTipoCliente.cs",
@@ -280,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "entRepresentanteProveedor.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaEntidad\\entRepresentanteProveedor.cs",
               "RelativeDocumentMoniker": "CapaEntidad\\entRepresentanteProveedor.cs",
@@ -292,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "entProveedor.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\CapaEntidad\\entProveedor.cs",
               "RelativeDocumentMoniker": "CapaEntidad\\entProveedor.cs",
@@ -304,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "MantenedorRepresentanteProveedor.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorRepresentanteProveedor.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorRepresentanteProveedor.cs",
@@ -314,7 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "CapaPresentacion",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\CapaPresentacion.csproj",
@@ -325,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Administrador.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\Administrador.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\Administrador.cs",
@@ -335,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "JefeAlmacen.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\JefeAlmacen.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\JefeAlmacen.cs",
@@ -345,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "JefeCompras.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\JefeCompras.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\JefeCompras.cs",
@@ -355,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "JefeVentas.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\JefeVentas.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\JefeVentas.cs",
@@ -365,17 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\login.cs",
-              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\login.cs",
-              "ToolTip": "C:\\proyecto\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\login.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T16:58:59.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "MantenedorTipoCliente.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorTipoCliente.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorTipoCliente.cs",
@@ -385,17 +426,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MantenedorCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
-              "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs",
-              "ToolTip": "C:\\proyecto\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCliente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T20:24:11.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "ConsultaProveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\ConsultaProveedores.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\ConsultaProveedores.cs",
@@ -405,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "MantenedorProveedor.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorProveedor.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorProveedor.cs",
@@ -415,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Administrador.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\Administrador.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\Administrador.cs",
@@ -427,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ConsultaClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\ConsultaClientes.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\ConsultaClientes.cs",
@@ -437,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ConsultaEmpleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\ConsultaEmpleado.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\ConsultaEmpleado.cs",
@@ -447,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "MantenedorEmpleado.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorEmpleado.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorEmpleado.cs",
@@ -457,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ConsultarProducto.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\ConsultarProducto.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\ConsultarProducto.cs",
@@ -467,7 +498,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "OrdenCompra.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\OrdenCompra.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\OrdenCompra.cs",
@@ -477,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "NotaEntrada.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\NotaEntrada.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\NotaEntrada.cs",
@@ -487,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "NotaSalida.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\NotaSalida.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\NotaSalida.cs",
@@ -497,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "RealizarVenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\RealizarVenta.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\RealizarVenta.cs",
@@ -507,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "MantenedorCategoria.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorCategoria.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorCategoria.cs",
@@ -517,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "MantenedorMetodoPago.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorMetodoPago.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorMetodoPago.cs",
@@ -527,7 +558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "MantenedorRepresentanteProveedor.cs",
               "DocumentMoniker": "D:\\Proyecto Ferreteria\\Sistema-Ferreteria\\Sistema-Ferreteria-Dikranis\\MantenedorRepresentanteProveedor.cs",
               "RelativeDocumentMoniker": "Sistema-Ferreteria-Dikranis\\MantenedorRepresentanteProveedor.cs",

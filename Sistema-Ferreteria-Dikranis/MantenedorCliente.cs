@@ -27,6 +27,7 @@ namespace Sistema_Ferreteria_Dikranis
             btnModificar.Visible = false;
             btnAgregar.Visible = false;
             dtPickerFechaCreacion.Enabled = false;
+            
             cbkEstado.Enabled = false;
 
 
@@ -50,6 +51,7 @@ namespace Sistema_Ferreteria_Dikranis
             btnAgregar.Visible = true;
             LimpiarVariables();
             btnModificar.Visible = true;
+            
         }
         public void LimpiarVariables()
         {
@@ -74,7 +76,7 @@ namespace Sistema_Ferreteria_Dikranis
                 c.TipoDocumento = cbxTipoDocumento.Text.Trim();
                 c.IdTipoCliente = (int)cbxIdTipoCliente.SelectedValue;
                 c.FechaCreacion = dtPickerFechaCreacion.Value;
-                c.Estado = cbkEstado.Checked;
+                c.Estado = true;
                 c.IdEmpelado = IdEmpleado;
                 c.DNI = txtNumeroDocumento.Text.Trim();
                 c.Nombres = txtNombres.Text.Trim();
@@ -173,6 +175,23 @@ namespace Sistema_Ferreteria_Dikranis
                 txtNombres.Text = filaActual.Cells[13].Value.ToString();
             }
             
+        }
+
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entCliente c = new entCliente();
+                c.IdCliente = int.Parse(txtIdCliente.Text.Trim());
+                logCliente.Instancia.DeshabilitarCliente(c);
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show("Error.."+ ex);
+            }
+            LimpiarVariables();
+            grupBoxDatosCliente.Enabled = false;
+            listarCliente();
         }
     }
 }
