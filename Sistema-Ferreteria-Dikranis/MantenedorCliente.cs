@@ -91,6 +91,7 @@ namespace Sistema_Ferreteria_Dikranis
             }
             LimpiarVariables();
             grupBoxDatosCliente.Enabled = false;
+            btnAgregar.Visible = false;
             listarCliente();
         }
 
@@ -118,7 +119,6 @@ namespace Sistema_Ferreteria_Dikranis
         {
             grupBoxDatosCliente.Enabled = true;
             btnModificar.Visible = true;
-            btnAgregar.Visible = true;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -149,6 +149,7 @@ namespace Sistema_Ferreteria_Dikranis
             }
             LimpiarVariables();
             grupBoxDatosCliente.Enabled=false;
+            btnModificar.Visible=false;
             listarCliente();
         }
 
@@ -192,6 +193,32 @@ namespace Sistema_Ferreteria_Dikranis
             LimpiarVariables();
             grupBoxDatosCliente.Enabled = false;
             listarCliente();
+        }
+
+        private void btn_AbrirMTipoCliente_Click(object sender, EventArgs e)
+        {
+            MantenedorTipoCliente mantenedorTipoCliente = new MantenedorTipoCliente(IdEmpleado);
+            mantenedorTipoCliente.ShowDialog();
+           
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
+            grupBoxDatosCliente.Enabled=false;
+            btnAgregar.Visible=false;
+            btnModificar.Visible=false;
+        }
+
+        private void cbxIdTipoCliente_Click(object sender, EventArgs e)
+        {
+            LlenarComboBoxTipoCliente();
         }
     }
 }
