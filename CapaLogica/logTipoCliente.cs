@@ -34,6 +34,14 @@ namespace CapaLogica
         {
              datTipoCliente.Instancia.InsertarTipoCliente(Cli);
         }
+        public void EditaTipoCliente(entTipoCliente Cli)
+        {
+            datTipoCliente.Instancia.EditarTipoCliente(Cli);
+        }
+        public void DeshabilitaTipoCliente(entTipoCliente Cli)
+        {
+            datTipoCliente.Instancia.DeshabilitaTipoCliente(Cli);
+        }
         #endregion metodos
     }
 }

@@ -58,6 +58,7 @@
             this.dgvTipoCliente.RowHeadersWidth = 51;
             this.dgvTipoCliente.Size = new System.Drawing.Size(604, 216);
             this.dgvTipoCliente.TabIndex = 1;
+            this.dgvTipoCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTipoCliente_CellClick);
             // 
             // btnAgregar
             // 
@@ -81,6 +82,7 @@
             this.btnModificar.TabIndex = 10;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnNuevo
             // 
@@ -106,6 +108,7 @@
             this.btnEditar.TabIndex = 17;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnDeshabilitar
             // 
@@ -118,6 +121,7 @@
             this.btnDeshabilitar.TabIndex = 18;
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // btnSalir
             // 
@@ -142,6 +146,7 @@
             this.btnCancelar.TabIndex = 20;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // groupBoxTipoCliente
             // 

@@ -23,6 +23,10 @@ namespace Sistema_Ferreteria_Dikranis
             ListarTipoCliente();
             groupBoxTipoCliente.Enabled = false;
             btnAgregar.Visible = false;
+            btnModificar.Visible = false;
+            dtpFechaCreacion.Enabled = false;
+            cbkEstado.Enabled = false;
+            txtCodigo.Enabled = false;
             
         }
         public void ListarTipoCliente()
@@ -57,6 +61,61 @@ namespace Sistema_Ferreteria_Dikranis
                 MessageBox.Show("Error.." + ex);
             }
             ListarTipoCliente();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            groupBoxTipoCliente.Enabled = true;
+            btnModificar.Visible=true;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entTipoCliente c = new entTipoCliente();
+                c.IdTipoCliente = int.Parse(txtCodigo.Text.Trim());
+                c.Nombre = txtNombre.Text.Trim();
+                c.IdEmpleado = IdEmpleado;
+                logTipoCliente.Instancia.EditaTipoCliente(c);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error..."+ ex);
+            }
+            groupBoxTipoCliente.Enabled=false;
+            btnModificar.Visible=false;
+            ListarTipoCliente();
+        }
+
+        private void dgvTipoCliente_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvTipoCliente.Rows[e.RowIndex];
+            txtCodigo.Text = filaActual.Cells[0].Value.ToString();
+            txtNombre.Text = filaActual.Cells[1].Value.ToString();
+            cbkEstado.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
+            
+        }
+
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entTipoCliente c = new entTipoCliente();
+                c.IdTipoCliente = int.Parse(txtCodigo.Text.Trim());
+                logTipoCliente.Instancia.DeshabilitaTipoCliente(c);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error..." + ex);
+            }
+            groupBoxTipoCliente.Enabled = false;
+            ListarTipoCliente() ;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            groupBoxTipoCliente.Enabled=false;
         }
     }
 }

@@ -90,6 +90,56 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
             return inserta;
         }
+        public Boolean EditarTipoCliente(entTipoCliente Cli)
+        {
+            SqlCommand cmd = null;
+            Boolean edita = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditaTipoCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdTipoCliente",Cli.IdTipoCliente);
+                cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
+                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpleado);
+                cn.Open() ;
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0) 
+                {
+                    edita = true;                
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return edita;
+        }
+        public Boolean DeshabilitaTipoCliente(entTipoCliente Cli)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitaTipoCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdTipoCliente", Cli.IdTipoCliente);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0) 
+                { 
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
+        }
         #endregion metodos
     }
 }
