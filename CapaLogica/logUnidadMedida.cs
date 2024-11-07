@@ -32,6 +32,14 @@ namespace CapaLogica
         {
             return datUnidadMedida.Instancia.ListarUnidadMedida();
         }
+        public void InsertaUnidadMedida(entUnidadMedida unidadMedida)
+        {
+            datUnidadMedida.Instancia.InsertarUnidadMedida(unidadMedida);
+        }
+        public void EditaUnidadMedida(entUnidadMedida unidadMedida)
+        {
+            datUnidadMedida.Instancia.EditaUnidadMedida(unidadMedida);
+        }
         #endregion metodos
     }
 }

@@ -47,7 +47,8 @@ namespace CapaAccesoDatos
                         Nombre = dr["Nombre"].ToString(),
                         Abreviatura = dr["Abreviatura"].ToString(),
                         FechaCreacion = Convert.ToDateTime(dr["FechaCreacion"]),
-                        Estado = Convert.ToBoolean(dr["Estado"])
+                        Estado = Convert.ToBoolean(dr["Estado"]),
+                        IdEmpleado = Convert.ToInt32(dr["IdEmpleado"])
                     };
                     lista.Add(unidadMedida);
                 }
@@ -77,7 +78,8 @@ namespace CapaAccesoDatos
                 cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
                 cmd.Parameters.AddWithValue("@Abreviatura", Cli.Abreviatura);
                 cmd.Parameters.AddWithValue("@FechaCreacion", Cli.FechaCreacion);
-                cmd.Parameters.AddWithValue("@Estado", Cli.Estado);                
+                cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
+                cmd.Parameters.AddWithValue("@IdEmpleado",Cli.IdEmpleado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -91,6 +93,32 @@ namespace CapaAccesoDatos
             }
             finally { cmd.Connection.Close(); }
             return inserta;
+        }
+        public Boolean EditaUnidadMedida(entUnidadMedida unidadMedida)
+        {
+            SqlCommand cmd = null;
+            Boolean edita = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditaUnidadMedida", cn);
+                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", unidadMedida.Nombre);
+                cmd.Parameters.AddWithValue("@Abreviatura", unidadMedida.Abreviatura);
+                cmd.Parameters.AddWithValue("@IdEmpleado", unidadMedida.IdEmpleado);
+                cn.Open() ;
+                int i = cmd.ExecuteNonQuery();
+                if (i>0)
+                {
+                    edita = true;
+                }
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return edita;
         }
 
     }
