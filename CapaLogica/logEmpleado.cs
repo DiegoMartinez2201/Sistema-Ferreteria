@@ -19,5 +19,21 @@ namespace CapaLogica
         {
             return datEmpleado.Instancia.ValidarEmpleado(usuario, contrasena);
         }
+        public List<entEmpleado> ListarEmpleado()
+        {
+            return datEmpleado.Instancia.ListarEmpleado();
+        }
+        public void InsertaEmpleado(entEmpleado empleado)
+        {
+            datEmpleado.Instancia.InsertarEmpleado(empleado);
+        }
+        public void EditarEmpleado(entEmpleado empleado)
+        {
+            datEmpleado.Instancia.EditarEmpleado(empleado);
+        }
+        public void DeshabilitarEmpleado(entEmpleado empleado)
+        {
+            datEmpleado.Instancia.DeshabilitaEmpleado(empleado);
+        }
     }
 }

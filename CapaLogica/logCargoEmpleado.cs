@@ -38,7 +38,7 @@ namespace CapaLogica
         }
         public void DeshabilitaCargoEmpleado(entCargoEmpleado cargoEmpleado)
         {
-            datCargoEmpleado.Instancia.DeshabilitaCargoEmpleado(cargoEmpleado);
+            datCargoEmpleado.Instancia.DeshabilitaCargoEmpleado(cargoEmpleado); 
         }
 
         #endregion metodos

@@ -52,12 +52,23 @@
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
+            this.lblIdEmpleado = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtNameLogin = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.btnAgregarCargo = new System.Windows.Forms.Button();
             this.grupBoxDatosEmpleado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
             // grupBoxDatosEmpleado
             // 
+            this.grupBoxDatosEmpleado.Controls.Add(this.btnAgregarCargo);
+            this.grupBoxDatosEmpleado.Controls.Add(this.txtPassword);
+            this.grupBoxDatosEmpleado.Controls.Add(this.label6);
+            this.grupBoxDatosEmpleado.Controls.Add(this.txtNameLogin);
+            this.grupBoxDatosEmpleado.Controls.Add(this.label2);
             this.grupBoxDatosEmpleado.Controls.Add(this.txtTelefono);
             this.grupBoxDatosEmpleado.Controls.Add(this.txtApellidos);
             this.grupBoxDatosEmpleado.Controls.Add(this.txtNombres);
@@ -86,21 +97,21 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(206, 202);
+            this.txtTelefono.Location = new System.Drawing.Point(228, 202);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(203, 22);
             this.txtTelefono.TabIndex = 25;
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(206, 162);
+            this.txtApellidos.Location = new System.Drawing.Point(228, 162);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(203, 22);
             this.txtApellidos.TabIndex = 23;
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(206, 117);
+            this.txtNombres.Location = new System.Drawing.Point(228, 116);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(203, 22);
             this.txtNombres.TabIndex = 22;
@@ -108,7 +119,7 @@
             // cbkEstado
             // 
             this.cbkEstado.AutoSize = true;
-            this.cbkEstado.Location = new System.Drawing.Point(728, 106);
+            this.cbkEstado.Location = new System.Drawing.Point(787, 204);
             this.cbkEstado.Name = "cbkEstado";
             this.cbkEstado.Size = new System.Drawing.Size(75, 20);
             this.cbkEstado.TabIndex = 19;
@@ -118,7 +129,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(550, 67);
+            this.label10.Location = new System.Drawing.Point(562, 168);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(142, 16);
             this.label10.TabIndex = 18;
@@ -126,7 +137,7 @@
             // 
             // dtPickerFechaCreacion
             // 
-            this.dtPickerFechaCreacion.Location = new System.Drawing.Point(787, 63);
+            this.dtPickerFechaCreacion.Location = new System.Drawing.Point(784, 163);
             this.dtPickerFechaCreacion.Name = "dtPickerFechaCreacion";
             this.dtPickerFechaCreacion.Size = new System.Drawing.Size(200, 22);
             this.dtPickerFechaCreacion.TabIndex = 17;
@@ -136,9 +147,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(550, 30);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(230, 16);
+            this.label9.Size = new System.Drawing.Size(154, 16);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Codigo de Cargo del Empleado:";
+            this.label9.Text = "Cargo del Empleado:";
             // 
             // cbxIdCargo
             // 
@@ -147,6 +158,7 @@
             this.cbxIdCargo.Name = "cbxIdCargo";
             this.cbxIdCargo.Size = new System.Drawing.Size(121, 24);
             this.cbxIdCargo.TabIndex = 15;
+            this.cbxIdCargo.Click += new System.EventHandler(this.cbxIdCargo_Click);
             // 
             // label7
             // 
@@ -186,14 +198,14 @@
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(206, 81);
+            this.txtDni.Location = new System.Drawing.Point(228, 80);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(203, 22);
             this.txtDni.TabIndex = 8;
             // 
             // txtIdEmpleado
             // 
-            this.txtIdEmpleado.Location = new System.Drawing.Point(206, 37);
+            this.txtIdEmpleado.Location = new System.Drawing.Point(228, 37);
             this.txtIdEmpleado.Name = "txtIdEmpleado";
             this.txtIdEmpleado.Size = new System.Drawing.Size(203, 22);
             this.txtIdEmpleado.TabIndex = 6;
@@ -217,6 +229,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
@@ -228,6 +241,7 @@
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnAgregar
             // 
@@ -239,6 +253,7 @@
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvEmpleado
             // 
@@ -259,6 +274,7 @@
             this.btnSalir.TabIndex = 15;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnDeshabilitar
             // 
@@ -270,6 +286,7 @@
             this.btnDeshabilitar.TabIndex = 14;
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // btnEditar
             // 
@@ -281,6 +298,7 @@
             this.btnEditar.TabIndex = 13;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnNuevo
             // 
@@ -292,13 +310,66 @@
             this.btnNuevo.TabIndex = 12;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // lblIdEmpleado
+            // 
+            this.lblIdEmpleado.AutoSize = true;
+            this.lblIdEmpleado.Location = new System.Drawing.Point(12, 501);
+            this.lblIdEmpleado.Name = "lblIdEmpleado";
+            this.lblIdEmpleado.Size = new System.Drawing.Size(63, 13);
+            this.lblIdEmpleado.TabIndex = 16;
+            this.lblIdEmpleado.Text = "IdEmpleado";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(590, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 16);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Correo Ingreso:";
+            // 
+            // txtNameLogin
+            // 
+            this.txtNameLogin.Location = new System.Drawing.Point(787, 66);
+            this.txtNameLogin.Name = "txtNameLogin";
+            this.txtNameLogin.Size = new System.Drawing.Size(203, 22);
+            this.txtNameLogin.TabIndex = 27;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(614, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 16);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Contraseña:";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(784, 96);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(203, 22);
+            this.txtPassword.TabIndex = 29;
+            // 
+            // btnAgregarCargo
+            // 
+            this.btnAgregarCargo.Location = new System.Drawing.Point(915, 27);
+            this.btnAgregarCargo.Name = "btnAgregarCargo";
+            this.btnAgregarCargo.Size = new System.Drawing.Size(111, 25);
+            this.btnAgregarCargo.TabIndex = 30;
+            this.btnAgregarCargo.Text = "Ag Cargo";
+            this.btnAgregarCargo.UseVisualStyleBackColor = true;
+            this.btnAgregarCargo.Click += new System.EventHandler(this.btnAgregarCargo_Click);
             // 
             // MantenedorEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1216, 510);
+            this.ClientSize = new System.Drawing.Size(1220, 541);
+            this.Controls.Add(this.lblIdEmpleado);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnEditar);
@@ -313,6 +384,7 @@
             this.grupBoxDatosEmpleado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleado)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -342,5 +414,11 @@
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label lblIdEmpleado;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtNameLogin;
+        private System.Windows.Forms.Button btnAgregarCargo;
     }
 }

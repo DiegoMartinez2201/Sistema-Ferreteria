@@ -50,7 +50,6 @@ namespace Sistema_Ferreteria_Dikranis
             grupBoxDatosCliente.Enabled = true;
             btnAgregar.Visible = true;
             LimpiarVariables();
-            btnModificar.Visible = true;
             
         }
         public void LimpiarVariables()
@@ -65,7 +64,6 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            cbkEstado.Enabled = true;
             //insertar
             try
             {

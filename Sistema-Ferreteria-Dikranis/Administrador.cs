@@ -70,7 +70,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnEmpleado_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorEmpleado(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorEmpleado(IdEmpleado), IdEmpleado);
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
