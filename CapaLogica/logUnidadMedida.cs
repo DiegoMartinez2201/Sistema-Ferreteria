@@ -40,6 +40,10 @@ namespace CapaLogica
         {
             datUnidadMedida.Instancia.EditaUnidadMedida(unidadMedida);
         }
+        public void DeshabilitaUnidadMedida(entUnidadMedida unidadMedida)
+        {
+            datUnidadMedida.Instancia.DeshabilitarUnidadMedida(unidadMedida);
+        }
         #endregion metodos
     }
 }

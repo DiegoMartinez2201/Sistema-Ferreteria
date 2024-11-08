@@ -64,7 +64,7 @@ namespace CapaAccesoDatos
             }
             return lista;
         }
-        #endregion metodos
+        
 
         public Boolean InsertarUnidadMedida(entUnidadMedida Cli)
         {
@@ -103,10 +103,11 @@ namespace CapaAccesoDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEditaUnidadMedida", cn);
                 cmd.CommandType= CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdUnidadMedida", unidadMedida.IdUnidadMedida);
                 cmd.Parameters.AddWithValue("@Nombre", unidadMedida.Nombre);
                 cmd.Parameters.AddWithValue("@Abreviatura", unidadMedida.Abreviatura);
                 cmd.Parameters.AddWithValue("@IdEmpleado", unidadMedida.IdEmpleado);
-                cn.Open() ;
+                cn.Open() ; 
                 int i = cmd.ExecuteNonQuery();
                 if (i>0)
                 {
@@ -120,6 +121,30 @@ namespace CapaAccesoDatos
             finally { cmd.Connection.Close(); }
             return edita;
         }
-
+        public Boolean DeshabilitarUnidadMedida(entUnidadMedida unidadMedida)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitaUnidadMedida",cn);
+                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdUnidadMedida", unidadMedida.IdUnidadMedida);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i>0)
+                {
+                    delete = true;
+                }
+            }
+            catch(Exception e) 
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
+        }
+        #endregion metodos
     }
 }

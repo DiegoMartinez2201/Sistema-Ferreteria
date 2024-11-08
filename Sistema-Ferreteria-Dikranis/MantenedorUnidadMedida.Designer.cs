@@ -56,7 +56,7 @@
             this.dgvUnidadMedida.BackgroundColor = System.Drawing.Color.Khaki;
             this.dgvUnidadMedida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUnidadMedida.Location = new System.Drawing.Point(131, 9);
-            this.dgvUnidadMedida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvUnidadMedida.Margin = new System.Windows.Forms.Padding(2);
             this.dgvUnidadMedida.Name = "dgvUnidadMedida";
             this.dgvUnidadMedida.RowHeadersWidth = 51;
             this.dgvUnidadMedida.RowTemplate.Height = 24;
@@ -99,6 +99,7 @@
             this.btnDeshabilitar.TabIndex = 14;
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // btnSalir
             // 
@@ -110,6 +111,7 @@
             this.btnSalir.TabIndex = 15;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // groupBoxUnidadMedida
             // 
@@ -127,9 +129,9 @@
             this.groupBoxUnidadMedida.Controls.Add(this.btnAgregar);
             this.groupBoxUnidadMedida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxUnidadMedida.Location = new System.Drawing.Point(8, 257);
-            this.groupBoxUnidadMedida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxUnidadMedida.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxUnidadMedida.Name = "groupBoxUnidadMedida";
-            this.groupBoxUnidadMedida.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxUnidadMedida.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxUnidadMedida.Size = new System.Drawing.Size(702, 202);
             this.groupBoxUnidadMedida.TabIndex = 16;
             this.groupBoxUnidadMedida.TabStop = false;
@@ -219,6 +221,7 @@
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
@@ -267,7 +270,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvUnidadMedida);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MantenedorUnidadMedida";
             this.Text = "MantenedorUnidadMedida";
             ((System.ComponentModel.ISupportInitialize)(this.dgvUnidadMedida)).EndInit();
