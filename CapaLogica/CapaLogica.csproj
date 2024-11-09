@@ -45,6 +45,7 @@
     <Compile Include="logCategoria.cs" />
     <Compile Include="logCliente.cs" />
     <Compile Include="logEmpleado.cs" />
+    <Compile Include="logMetodoPago.cs" />
     <Compile Include="logTipoCliente.cs" />
     <Compile Include="logUnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

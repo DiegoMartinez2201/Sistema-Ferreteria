@@ -46,6 +46,7 @@
     <Compile Include="datCategoria.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datEmpleado.cs" />
+    <Compile Include="datMetodoPago.cs" />
     <Compile Include="datTipoCliente.cs" />
     <Compile Include="datUnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
