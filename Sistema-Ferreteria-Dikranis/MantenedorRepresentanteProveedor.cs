@@ -155,8 +155,8 @@ namespace Sistema_Ferreteria_Dikranis
             txtIdProveedor.Text = filaActual.Cells[1].Value.ToString();
             txtNombres.Text = filaActual.Cells[2].Value.ToString();
             txtApellidos.Text = filaActual.Cells[3].Value.ToString();
-            txtCorreo.Text = filaActual.Cells[4].Value.ToString();
-            txtTelefono.Text = filaActual.Cells[5].Value.ToString();
+            txtCorreo.Text = filaActual.Cells[5].Value.ToString();
+            txtTelefono.Text = filaActual.Cells[4].Value.ToString();
         }
     }
 }
