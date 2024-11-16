@@ -78,7 +78,7 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnTipoCliente_Click(object sender, EventArgs e)
         {
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorTipoCliente(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorTipoCliente(IdEmpleado), IdEmpleado);
         }
     }
 }

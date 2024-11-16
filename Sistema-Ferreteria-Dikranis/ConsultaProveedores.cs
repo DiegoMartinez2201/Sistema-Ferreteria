@@ -62,5 +62,10 @@ namespace Sistema_Ferreteria_Dikranis
             ProveedorSeleccionado?.Invoke(IdProveedor, RazonSocial);
             this.Close();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

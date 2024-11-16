@@ -158,5 +158,11 @@ namespace Sistema_Ferreteria_Dikranis
             txtCorreo.Text = filaActual.Cells[5].Value.ToString();
             txtTelefono.Text = filaActual.Cells[4].Value.ToString();
         }
+
+        private void btnAbrirMantedorProveedor_Click(object sender, EventArgs e)
+        {
+            MantenedorProveedor mantenedorProveedor = new MantenedorProveedor(IdEmpleado);
+            mantenedorProveedor.ShowDialog();
+        }
     }
 }

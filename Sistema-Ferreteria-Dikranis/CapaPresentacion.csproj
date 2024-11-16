@@ -89,6 +89,12 @@
     <Compile Include="JefeVentas.Designer.cs">
       <DependentUpon>JefeVentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorCargoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCargoEmpleado.Designer.cs">
+      <DependentUpon>MantenedorCargoEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCargoEmpleado.resx">
+      <DependentUpon>MantenedorCargoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCategoria.resx">
       <DependentUpon>MantenedorCategoria.cs</DependentUpon>

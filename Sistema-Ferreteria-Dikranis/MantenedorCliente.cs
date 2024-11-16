@@ -188,14 +188,12 @@ namespace Sistema_Ferreteria_Dikranis
             {
                 MessageBox.Show("Error.."+ ex);
             }
-            LimpiarVariables();
-            grupBoxDatosCliente.Enabled = false;
             listarCliente();
         }
 
         private void btnAbrirMTipoCliente_Click(object sender, EventArgs e)
         {
-            MantenedorTipoCliente mantenedorTipoCliente = new MantenedorTipoCliente();
+            MantenedorTipoCliente mantenedorTipoCliente = new MantenedorTipoCliente(IdEmpleado);
             mantenedorTipoCliente.ShowDialog();
         }
 

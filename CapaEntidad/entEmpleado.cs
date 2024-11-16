@@ -18,5 +18,6 @@ namespace CapaEntidad
         public string NameLogin { get; set; }
         public string Password { get;set; }
         public int IdCargo { get; set; }
+        public int IdEmpleadoRegistro { get; set; }
     }
 }

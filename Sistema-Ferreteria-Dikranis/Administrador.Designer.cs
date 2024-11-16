@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnMetodoPago = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnProveedores = new System.Windows.Forms.Button();
@@ -47,7 +48,7 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelForms = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnMetodoPago = new System.Windows.Forms.Button();
+            this.btnCargoEmpleado = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +62,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(234)))), ((int)(((byte)(22)))));
+            this.panel1.Controls.Add(this.btnCargoEmpleado);
             this.panel1.Controls.Add(this.btnMetodoPago);
             this.panel1.Controls.Add(this.btnRegresar);
             this.panel1.Controls.Add(this.button3);
@@ -76,6 +78,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 633);
             this.panel1.TabIndex = 1;
+            // 
+            // btnMetodoPago
+            // 
+            this.btnMetodoPago.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMetodoPago.FlatAppearance.BorderSize = 0;
+            this.btnMetodoPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMetodoPago.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMetodoPago.Image = ((System.Drawing.Image)(resources.GetObject("btnMetodoPago.Image")));
+            this.btnMetodoPago.Location = new System.Drawing.Point(0, 438);
+            this.btnMetodoPago.Name = "btnMetodoPago";
+            this.btnMetodoPago.Size = new System.Drawing.Size(186, 42);
+            this.btnMetodoPago.TabIndex = 9;
+            this.btnMetodoPago.Text = "Metodo de Pago";
+            this.btnMetodoPago.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnMetodoPago.UseVisualStyleBackColor = true;
             // 
             // btnRegresar
             // 
@@ -300,20 +317,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Bienvenido Administrador";
             // 
-            // btnMetodoPago
+            // btnCargoEmpleado
             // 
-            this.btnMetodoPago.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMetodoPago.FlatAppearance.BorderSize = 0;
-            this.btnMetodoPago.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMetodoPago.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMetodoPago.Image = ((System.Drawing.Image)(resources.GetObject("btnMetodoPago.Image")));
-            this.btnMetodoPago.Location = new System.Drawing.Point(0, 438);
-            this.btnMetodoPago.Name = "btnMetodoPago";
-            this.btnMetodoPago.Size = new System.Drawing.Size(186, 42);
-            this.btnMetodoPago.TabIndex = 9;
-            this.btnMetodoPago.Text = "Metodo de Pago";
-            this.btnMetodoPago.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnMetodoPago.UseVisualStyleBackColor = true;
+            this.btnCargoEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCargoEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnCargoEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargoEmpleado.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargoEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnCargoEmpleado.Image")));
+            this.btnCargoEmpleado.Location = new System.Drawing.Point(0, 480);
+            this.btnCargoEmpleado.Name = "btnCargoEmpleado";
+            this.btnCargoEmpleado.Size = new System.Drawing.Size(186, 42);
+            this.btnCargoEmpleado.TabIndex = 10;
+            this.btnCargoEmpleado.Text = "Cargo Empleado";
+            this.btnCargoEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCargoEmpleado.UseVisualStyleBackColor = true;
+            this.btnCargoEmpleado.Click += new System.EventHandler(this.btnCargoEmpleado_Click);
             // 
             // Administrador
             // 
@@ -362,5 +380,6 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnMetodoPago;
+        private System.Windows.Forms.Button btnCargoEmpleado;
     }
 }

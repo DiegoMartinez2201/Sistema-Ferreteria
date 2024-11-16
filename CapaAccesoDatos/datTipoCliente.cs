@@ -33,8 +33,8 @@ namespace CapaAccesoDatos
 
             try
             {
-                SqlConnection cn = Conexion.Instancia.Conectar(); // Asumiendo que tienes un singleton para la conexión
-                cmd = new SqlCommand("spCargarComboboxTipoCliente", cn);
+                SqlConnection cn = Conexion.Instancia.Conectar(); 
+                cmd = new SqlCommand("spListaTipoCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -44,7 +44,10 @@ namespace CapaAccesoDatos
                     entTipoCliente tipoCliente = new entTipoCliente
                     {
                         IdTipoCliente = Convert.ToInt32(dr["IdTipoCliente"]),
-                        Nombre = dr["Nombre"].ToString()
+                        Nombre = dr["Nombre"].ToString(),
+                        FechaCreacion = Convert.ToDateTime(dr["FechaCreacion"]),
+                        Estado = Convert.ToBoolean(dr["Estado"]),
+                        IdEmpleado = Convert.ToInt32(dr["IdEmpleado"])
                     };
                     lista.Add(tipoCliente);
                 }
@@ -59,6 +62,78 @@ namespace CapaAccesoDatos
                 cmd.Connection.Close();
             }
             return lista;
+        }
+        public Boolean InsertarTipoCliente(entTipoCliente tipoCliente)
+        {
+            SqlCommand cmd = null;
+            Boolean inserta = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spInsertaTipoCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Nombre", tipoCliente.Nombre);
+                cmd.Parameters.AddWithValue("@FechaCreacion", tipoCliente.FechaCreacion);
+                cmd.Parameters.AddWithValue("@Estado", tipoCliente.Estado);
+                cmd.Parameters.AddWithValue("@IdEmpleado", tipoCliente.IdEmpleado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    inserta = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); } 
+            return inserta;
+        }
+        public Boolean EditaTipoCliente(entTipoCliente tipoCliente)
+        {
+            SqlCommand cmd = null;
+            Boolean edita = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditaTipoCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdTipoCliente", tipoCliente.IdTipoCliente);
+                cmd.Parameters.AddWithValue("@Nombre", tipoCliente.Nombre);
+                cmd.Parameters.AddWithValue("@IdEmpleado", tipoCliente.IdEmpleado);
+                cn.Open() ;
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    edita = true;
+                }
+
+            }
+            catch (Exception e) { throw e; }
+            finally { cmd.Connection.Close(); }
+            return edita;
+        }
+        public Boolean DeshabilitarTipoCliente(entTipoCliente tipoCliente)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitaTipoCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdTipoCliente", tipoCliente.IdTipoCliente);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch(Exception e) { throw e; }
+            finally { cmd.Connection.Close(); } 
+            return delete;
         }
         #endregion metodos
     }

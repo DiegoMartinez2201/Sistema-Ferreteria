@@ -42,7 +42,7 @@ namespace Sistema_Ferreteria_Dikranis
         {
             lblBienvenida.Visible = false;
             lblTitle.Text = "Mantenedor Unidad de Medida";
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorUnidadMedida(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorUnidadMedida(IdEmpleado), IdEmpleado);
         }
 
         private void btnOrdenRequerimiento_Click(object sender, EventArgs e)

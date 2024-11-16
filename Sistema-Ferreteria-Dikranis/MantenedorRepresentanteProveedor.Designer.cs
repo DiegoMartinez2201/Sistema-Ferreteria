@@ -34,6 +34,7 @@
             this.btnDeshabilita = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.groupBoxRepresentanteProveedor = new System.Windows.Forms.GroupBox();
+            this.btnAbrirMantedorProveedor = new System.Windows.Forms.Button();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.lblIdEmpleado = new System.Windows.Forms.Label();
-            this.btnAbrirMantedorProveedor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRepresentanteProveedor)).BeginInit();
             this.groupBoxRepresentanteProveedor.SuspendLayout();
             this.SuspendLayout();
@@ -150,6 +150,16 @@
             this.groupBoxRepresentanteProveedor.TabIndex = 15;
             this.groupBoxRepresentanteProveedor.TabStop = false;
             this.groupBoxRepresentanteProveedor.Text = "Datos del Representante del Proveedor";
+            // 
+            // btnAbrirMantedorProveedor
+            // 
+            this.btnAbrirMantedorProveedor.Location = new System.Drawing.Point(380, 67);
+            this.btnAbrirMantedorProveedor.Name = "btnAbrirMantedorProveedor";
+            this.btnAbrirMantedorProveedor.Size = new System.Drawing.Size(123, 23);
+            this.btnAbrirMantedorProveedor.TabIndex = 29;
+            this.btnAbrirMantedorProveedor.Text = "M. Proveedor";
+            this.btnAbrirMantedorProveedor.UseVisualStyleBackColor = true;
+            this.btnAbrirMantedorProveedor.Click += new System.EventHandler(this.btnAbrirMantedorProveedor_Click);
             // 
             // txtTelefono
             // 
@@ -334,15 +344,6 @@
             this.lblIdEmpleado.Size = new System.Drawing.Size(66, 13);
             this.lblIdEmpleado.TabIndex = 16;
             this.lblIdEmpleado.Text = "Id Empleado";
-            // 
-            // btnAbrirMantedorProveedor
-            // 
-            this.btnAbrirMantedorProveedor.Location = new System.Drawing.Point(380, 67);
-            this.btnAbrirMantedorProveedor.Name = "btnAbrirMantedorProveedor";
-            this.btnAbrirMantedorProveedor.Size = new System.Drawing.Size(123, 23);
-            this.btnAbrirMantedorProveedor.TabIndex = 29;
-            this.btnAbrirMantedorProveedor.Text = "M. Proveedor";
-            this.btnAbrirMantedorProveedor.UseVisualStyleBackColor = true;
             // 
             // MantenedorRepresentanteProveedor
             // 

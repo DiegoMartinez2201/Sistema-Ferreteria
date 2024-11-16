@@ -13,5 +13,6 @@ namespace CapaEntidad
 
         public DateTime FechaCreacion { get; set; }
         public Boolean Estado {  get; set; }
+        public int IdEmpleado { get; set; } 
     }
 }
