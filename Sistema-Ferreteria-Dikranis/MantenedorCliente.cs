@@ -50,7 +50,6 @@ namespace Sistema_Ferreteria_Dikranis
             grupBoxDatosCliente.Enabled = true;
             btnAgregar.Visible = true;
             LimpiarVariables();
-            btnModificar.Visible = true;
             
         }
         public void LimpiarVariables()
@@ -65,7 +64,6 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            cbkEstado.Enabled = true;
             //insertar
             try
             {
@@ -77,7 +75,7 @@ namespace Sistema_Ferreteria_Dikranis
                 c.IdTipoCliente = (int)cbxIdTipoCliente.SelectedValue;
                 c.FechaCreacion = dtPickerFechaCreacion.Value;
                 c.Estado = true;
-                c.IdEmpelado = IdEmpleado;
+                c.IdEmpleado = IdEmpleado;
                 c.DNI = txtNumeroDocumento.Text.Trim();
                 c.Nombres = txtNombres.Text.Trim();
                 c.Apellidos= txtApellidos.Text.Trim();
@@ -92,6 +90,7 @@ namespace Sistema_Ferreteria_Dikranis
             LimpiarVariables();
             grupBoxDatosCliente.Enabled = false;
             listarCliente();
+            btnAgregar.Visible = false;
         }
 
         private void cbxTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
@@ -118,7 +117,6 @@ namespace Sistema_Ferreteria_Dikranis
         {
             grupBoxDatosCliente.Enabled = true;
             btnModificar.Visible = true;
-            btnAgregar.Visible = true;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -133,7 +131,7 @@ namespace Sistema_Ferreteria_Dikranis
                 c.Correo = txtCorreo.Text.Trim();
                 c.TipoDocumento = cbxTipoDocumento.Text.Trim();
                 c.IdTipoCliente = (int)cbxIdTipoCliente.SelectedValue;
-                c.IdEmpelado = IdEmpleado;
+                c.IdEmpleado = IdEmpleado;
                 //Parametros para persona natural
                 c.DNI = txtNumeroDocumento.Text.Trim();
                 c.Nombres = txtNombres.Text.Trim();
@@ -150,6 +148,7 @@ namespace Sistema_Ferreteria_Dikranis
             LimpiarVariables();
             grupBoxDatosCliente.Enabled=false;
             listarCliente();
+            btnModificar.Visible=false;
         }
 
         private void dgvCliente_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -192,6 +191,30 @@ namespace Sistema_Ferreteria_Dikranis
             LimpiarVariables();
             grupBoxDatosCliente.Enabled = false;
             listarCliente();
+        }
+
+        private void btnAbrirMTipoCliente_Click(object sender, EventArgs e)
+        {
+            MantenedorTipoCliente mantenedorTipoCliente = new MantenedorTipoCliente();
+            mantenedorTipoCliente.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
+            grupBoxDatosCliente.Enabled=false;
+            btnAgregar.Visible=false;
+            btnModificar.Visible =false;    
+        }
+
+        private void cbxIdTipoCliente_Click(object sender, EventArgs e)
+        {
+            LlenarComboBoxTipoCliente();
         }
     }
 }

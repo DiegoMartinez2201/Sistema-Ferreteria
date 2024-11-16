@@ -114,7 +114,7 @@
             // 
             // txtCodigoProducto
             // 
-            this.txtCodigoProducto.Location = new System.Drawing.Point(139, 21);
+            this.txtCodigoProducto.Location = new System.Drawing.Point(154, 23);
             this.txtCodigoProducto.Name = "txtCodigoProducto";
             this.txtCodigoProducto.Size = new System.Drawing.Size(152, 21);
             this.txtCodigoProducto.TabIndex = 13;
@@ -407,7 +407,7 @@
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(836, 608);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(98, 20);
             this.txtTotal.TabIndex = 23;

@@ -14,7 +14,7 @@ namespace CapaEntidad
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public int IdTipoCliente { get; set; }
-        public int IdEmpelado { get; set; }
+        public int IdEmpleado { get; set; }
         public DateTime FechaCreacion { get; set; }
         public Boolean Estado { get; set; }
         public string DNI { get; set; }

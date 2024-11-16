@@ -142,3 +142,44 @@ D:\Proyecto Ferreteria\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\
 D:\Proyecto Ferreteria\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPres.61CA7C38.Up2Date
 D:\Proyecto Ferreteria\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
 D:\Proyecto Ferreteria\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Administrador.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaClientes.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaEmpleado.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultaProveedores.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultarProducto.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.JefeCompras.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.JefeVentas.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Login.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorCategoria.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorCliente.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorEmpleado.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorMetodoPago.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorProducto.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorProveedor.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorRepresentanteProveedor.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorTipoCliente.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.MantenedorUnidadMedida.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.formJefeAlmacen.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaEntrada.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaProductosFaltantes.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.NotaSalida.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenCompra.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.OrdenRequerimiento.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.Properties.Resources.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.RealizarVenta.resources
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.exe.config
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.exe
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\Sistema-Ferreteria-Dikranis.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaEntidad.dll
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaLogica.dll
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaAccesoDatos.dll
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaEntidad.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaLogica.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\bin\Debug\CapaAccesoDatos.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPresentacion.csproj.CopyComplete

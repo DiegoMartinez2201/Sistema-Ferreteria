@@ -22,3 +22,9 @@ D:\Proyecto Ferreteria\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.cspr
 D:\Proyecto Ferreteria\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 D:\Proyecto Ferreteria\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 D:\Proyecto Ferreteria\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -41,11 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="logCategoria.cs" />
     <Compile Include="logCliente.cs" />
+    <Compile Include="logConsultaProveedor.cs" />
     <Compile Include="logEmpleado.cs" />
+    <Compile Include="logProveedor.cs" />
     <Compile Include="logTipoCliente.cs" />
     <Compile Include="logUnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="logRepresentanteProveedor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaAccesoDatos\CapaAccesoDatos.csproj">

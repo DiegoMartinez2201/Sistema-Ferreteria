@@ -59,6 +59,7 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.lblIdEmpleado = new System.Windows.Forms.Label();
+            this.btnAbrirMTipoCliente = new System.Windows.Forms.Button();
             this.grupBoxDatosCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +74,7 @@
             this.btnSalir.TabIndex = 11;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnDeshabilitar
             // 
@@ -188,6 +190,7 @@
             this.cbxIdTipoCliente.Name = "cbxIdTipoCliente";
             this.cbxIdTipoCliente.Size = new System.Drawing.Size(121, 24);
             this.cbxIdTipoCliente.TabIndex = 15;
+            this.cbxIdTipoCliente.Click += new System.EventHandler(this.cbxIdTipoCliente_Click);
             // 
             // label8
             // 
@@ -285,6 +288,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnModificar
             // 
@@ -312,6 +316,7 @@
             // 
             // grupBoxDatosCliente
             // 
+            this.grupBoxDatosCliente.Controls.Add(this.btnAbrirMTipoCliente);
             this.grupBoxDatosCliente.Controls.Add(this.txtTelefono);
             this.grupBoxDatosCliente.Controls.Add(this.txtCorreo);
             this.grupBoxDatosCliente.Controls.Add(this.txtApellidos);
@@ -375,6 +380,16 @@
             this.lblIdEmpleado.TabIndex = 12;
             this.lblIdEmpleado.Text = "NombreEmpleado";
             // 
+            // btnAbrirMTipoCliente
+            // 
+            this.btnAbrirMTipoCliente.Location = new System.Drawing.Point(920, 35);
+            this.btnAbrirMTipoCliente.Name = "btnAbrirMTipoCliente";
+            this.btnAbrirMTipoCliente.Size = new System.Drawing.Size(96, 23);
+            this.btnAbrirMTipoCliente.TabIndex = 26;
+            this.btnAbrirMTipoCliente.Text = "M. Tipo Cliente";
+            this.btnAbrirMTipoCliente.UseVisualStyleBackColor = true;
+            this.btnAbrirMTipoCliente.Click += new System.EventHandler(this.btnAbrirMTipoCliente_Click);
+            // 
             // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,5 +448,6 @@
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvCliente;
         private System.Windows.Forms.Label lblIdEmpleado;
+        private System.Windows.Forms.Button btnAbrirMTipoCliente;
     }
 }

@@ -38,13 +38,13 @@ namespace Sistema_Ferreteria_Dikranis
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProveedor(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProveedor(IdEmpleado), IdEmpleado);
         }
 
         private void btnRepresentanteProveedor_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorRepresentanteProveedor(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorRepresentanteProveedor(IdEmpleado), IdEmpleado);
         }
 
         private void btnOrdenRequerimiento_Click(object sender, EventArgs e)

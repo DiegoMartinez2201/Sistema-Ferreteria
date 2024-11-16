@@ -52,7 +52,7 @@ namespace CapaAccesoDatos
                     Cli.FechaCreacion = Convert.ToDateTime(dr["FechaCreacion"]);
                     Cli.Estado = Convert.ToBoolean(dr["Estado"]);
                     Cli.IdTipoCliente = Convert.ToInt32(dr["IdTipoCliente"]);
-                    Cli.IdEmpelado = Convert.ToInt32(dr ["IdEmpleado"]);
+                    Cli.IdEmpleado = Convert.ToInt32(dr ["IdEmpleado"]);
                     Cli.DNI = dr["DNI"].ToString();
                     Cli.Nombres = dr["Nombres"].ToString();
                     Cli.Apellidos = dr["Apellidos"].ToString();
@@ -90,7 +90,7 @@ namespace CapaAccesoDatos
                 cmd.Parameters.AddWithValue("@IdTipoCliente", Cli.IdTipoCliente);
                 cmd.Parameters.AddWithValue("@FechaCreacion", Cli.FechaCreacion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
-                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpelado);
+                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpleado);
                 //Parametros si es persona natural
                 cmd.Parameters.AddWithValue("@Dni",Cli.DNI);
                 cmd.Parameters.AddWithValue("@Nombres", Cli.Nombres);
@@ -130,7 +130,7 @@ namespace CapaAccesoDatos
                 cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
                 cmd.Parameters.AddWithValue("@TipoDocumento", Cli.TipoDocumento);
                 cmd.Parameters.AddWithValue("@IdTipoCliente", Cli.IdTipoCliente);
-                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpelado);
+                cmd.Parameters.AddWithValue("@IdEmpleado", Cli.IdEmpleado);
                 //Parametros para Persona Natural
                 cmd.Parameters.AddWithValue("@Dni", Cli.DNI);
                 cmd.Parameters.AddWithValue("@Nombres",Cli.Nombres);

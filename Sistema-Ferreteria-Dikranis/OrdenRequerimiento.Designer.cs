@@ -88,7 +88,7 @@
             // cbxCodigoProducto
             // 
             this.cbxCodigoProducto.FormattingEnabled = true;
-            this.cbxCodigoProducto.Location = new System.Drawing.Point(138, 27);
+            this.cbxCodigoProducto.Location = new System.Drawing.Point(153, 24);
             this.cbxCodigoProducto.Name = "cbxCodigoProducto";
             this.cbxCodigoProducto.Size = new System.Drawing.Size(164, 23);
             this.cbxCodigoProducto.TabIndex = 9;
