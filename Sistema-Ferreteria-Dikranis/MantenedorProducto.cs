@@ -184,5 +184,25 @@ namespace Sistema_Ferreteria_Dikranis
             txtPrecioCosto.Text = filaActual.Cells[9].Value.ToString();
             txtPrecioVenta.Text = filaActual.Cells[10].Value.ToString();
         }
+
+        private void btnMantenedorCategoria_Click(object sender, EventArgs e)
+        {
+            MantenedorCategoria mantenedorCategoria = new MantenedorCategoria(IdEmpleado);
+            mantenedorCategoria.ShowDialog();
+            LlenarComboBoxCategoria();
+        }
+
+        private void btnMantenedorUnidadMedida_Click(object sender, EventArgs e)
+        {
+            MantenedorUnidadMedida mantenedorUnidadMedida = new MantenedorUnidadMedida(IdEmpleado);
+            mantenedorUnidadMedida.ShowDialog();
+            LlenarComboBoxUnidadMedida();
+        }
+
+        private void btnMantedorProveedor_Click(object sender, EventArgs e)
+        {
+            MantenedorProveedor mantenedorProveedor = new MantenedorProveedor(IdEmpleado);
+            mantenedorProveedor.ShowDialog();
+        }
     }
 }

@@ -147,6 +147,7 @@
             this.btnMantenedorUnidadMedida.TabIndex = 19;
             this.btnMantenedorUnidadMedida.Text = "M. Unidad Medida";
             this.btnMantenedorUnidadMedida.UseVisualStyleBackColor = true;
+            this.btnMantenedorUnidadMedida.Click += new System.EventHandler(this.btnMantenedorUnidadMedida_Click);
             // 
             // btnMantenedorCategoria
             // 
@@ -156,6 +157,7 @@
             this.btnMantenedorCategoria.TabIndex = 18;
             this.btnMantenedorCategoria.Text = "M. Categoria";
             this.btnMantenedorCategoria.UseVisualStyleBackColor = true;
+            this.btnMantenedorCategoria.Click += new System.EventHandler(this.btnMantenedorCategoria_Click);
             // 
             // btnMantedorProveedor
             // 
@@ -165,6 +167,7 @@
             this.btnMantedorProveedor.TabIndex = 17;
             this.btnMantedorProveedor.Text = "M. Proveedor";
             this.btnMantedorProveedor.UseVisualStyleBackColor = true;
+            this.btnMantedorProveedor.Click += new System.EventHandler(this.btnMantedorProveedor_Click);
             // 
             // dtPickerFechaIngreso
             // 
