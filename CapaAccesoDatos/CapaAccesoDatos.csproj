@@ -46,6 +46,8 @@
     <Compile Include="datCategoria.cs" />
     <Compile Include="datCliente.cs" />
     <Compile Include="datEmpleado.cs" />
+    <Compile Include="datMetodoPago.cs" />
+    <Compile Include="datProducto.cs" />
     <Compile Include="datProveedor.cs" />
     <Compile Include="datRepresentanteProveedor.cs" />
     <Compile Include="datTipoCliente.cs" />

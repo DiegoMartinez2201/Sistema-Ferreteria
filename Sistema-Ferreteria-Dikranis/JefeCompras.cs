@@ -26,7 +26,7 @@ namespace Sistema_Ferreteria_Dikranis
         private void btnProductos_Click(object sender, EventArgs e)
         {
             lblBienvenida.Visible = false;
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto(IdEmpleado), IdEmpleado);
         }
 
         private void btnOrdenCompra_Click(object sender, EventArgs e)

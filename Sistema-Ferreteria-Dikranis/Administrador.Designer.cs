@@ -93,6 +93,7 @@
             this.btnMetodoPago.Text = "Metodo de Pago";
             this.btnMetodoPago.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnMetodoPago.UseVisualStyleBackColor = true;
+            this.btnMetodoPago.Click += new System.EventHandler(this.btnMetodoPago_Click);
             // 
             // btnRegresar
             // 

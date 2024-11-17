@@ -10,8 +10,10 @@ namespace CapaEntidad
     {
         public int IdMetodoPago { get; set; }
         public string Nombre { get; set; }
-        public int Descripcion { get; set; }
+        public string Descripcion { get; set; }
         public bool Estado { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public int IdEmpleado { get; set; }
 
     }
 }

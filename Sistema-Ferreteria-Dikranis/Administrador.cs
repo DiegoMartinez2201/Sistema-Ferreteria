@@ -89,5 +89,10 @@ namespace Sistema_Ferreteria_Dikranis
         {
             FormularioHelper.AbrirFormulario(panelForms, new MantenedorCargoEmpleado(IdEmpleado), IdEmpleado);
         }
+
+        private void btnMetodoPago_Click(object sender, EventArgs e)
+        {
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorMetodoPago(IdEmpleado), IdEmpleado);
+        }
     }
 }

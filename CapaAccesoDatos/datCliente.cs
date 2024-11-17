@@ -97,7 +97,7 @@ namespace CapaAccesoDatos
                 cmd.Parameters.AddWithValue("@Apellidos", Cli.Apellidos);
                 //Parametros si es empresa
                 cmd.Parameters.AddWithValue("@Ruc",Cli.Ruc);
-                cmd.Parameters.AddWithValue("RazonSocial", Cli.RazonSocial);
+                cmd.Parameters.AddWithValue("@RazonSocial", Cli.RazonSocial);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0) 

@@ -28,7 +28,7 @@ namespace Sistema_Ferreteria_Dikranis
         {
             lblBienvenida.Visible = false;
             lblTitle.Text ="Mantenedor Productos";
-            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new MantenedorProducto(IdEmpleado), IdEmpleado);
         }
 
         private void btnCategoria_Click(object sender, EventArgs e)
