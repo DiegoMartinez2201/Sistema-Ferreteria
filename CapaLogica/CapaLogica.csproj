@@ -49,6 +49,7 @@
     <Compile Include="logMetodoPago.cs" />
     <Compile Include="logProducto.cs" />
     <Compile Include="logProveedor.cs" />
+    <Compile Include="logTicketVenta.cs" />
     <Compile Include="logTipoCliente.cs" />
     <Compile Include="logUnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

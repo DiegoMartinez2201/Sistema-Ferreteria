@@ -50,6 +50,8 @@
     <Compile Include="datProducto.cs" />
     <Compile Include="datProveedor.cs" />
     <Compile Include="datRepresentanteProveedor.cs" />
+    <Compile Include="datTicketVenta.cs" />
+    <Compile Include="datTicketVentaDetalle.cs" />
     <Compile Include="datTipoCliente.cs" />
     <Compile Include="datUnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -54,7 +54,7 @@
             // 
             this.dgvProducto.BackgroundColor = System.Drawing.SystemColors.HighlightText;
             this.dgvProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducto.Location = new System.Drawing.Point(13, 240);
+            this.dgvProducto.Location = new System.Drawing.Point(13, 251);
             this.dgvProducto.Name = "dgvProducto";
             this.dgvProducto.RowHeadersWidth = 51;
             this.dgvProducto.Size = new System.Drawing.Size(770, 219);
@@ -63,7 +63,7 @@
             // dtPickerFechaRegistro
             // 
             this.dtPickerFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(13, 513);
+            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(12, 498);
             this.dtPickerFechaRegistro.Name = "dtPickerFechaRegistro";
             this.dtPickerFechaRegistro.Size = new System.Drawing.Size(200, 19);
             this.dtPickerFechaRegistro.TabIndex = 1;
@@ -171,7 +171,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(10, 73);
+            this.label3.Location = new System.Drawing.Point(10, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 15);
             this.label3.TabIndex = 5;
@@ -179,9 +179,9 @@
             // 
             // txtCodigoNotaEntrada
             // 
-            this.txtCodigoNotaEntrada.Location = new System.Drawing.Point(200, 68);
+            this.txtCodigoNotaEntrada.Location = new System.Drawing.Point(200, 63);
             this.txtCodigoNotaEntrada.Name = "txtCodigoNotaEntrada";
-            this.txtCodigoNotaEntrada.Size = new System.Drawing.Size(168, 20);
+            this.txtCodigoNotaEntrada.Size = new System.Drawing.Size(97, 20);
             this.txtCodigoNotaEntrada.TabIndex = 6;
             // 
             // btnAnular
@@ -216,7 +216,7 @@
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Black;
-            this.lblHora.Location = new System.Drawing.Point(136, 133);
+            this.lblHora.Location = new System.Drawing.Point(49, 109);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(77, 31);
             this.lblHora.TabIndex = 13;
@@ -228,7 +228,7 @@
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.Black;
-            this.lblFecha.Location = new System.Drawing.Point(127, 173);
+            this.lblFecha.Location = new System.Drawing.Point(49, 151);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(95, 31);
             this.lblFecha.TabIndex = 14;
@@ -251,7 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(837, 544);
+            this.ClientSize = new System.Drawing.Size(837, 547);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);

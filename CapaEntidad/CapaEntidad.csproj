@@ -51,6 +51,8 @@
     <Compile Include="entProducto.cs" />
     <Compile Include="entProveedor.cs" />
     <Compile Include="entRepresentanteProveedor.cs" />
+    <Compile Include="entTicketVenta.cs" />
+    <Compile Include="entTicketVentaDetalle.cs" />
     <Compile Include="entTipoCliente.cs" />
     <Compile Include="entUnidadMedida.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
