@@ -24,5 +24,10 @@ namespace Sistema_Ferreteria_Dikranis
             lblHora.Text = DateTime.Now.ToLongTimeString();
             lblFecha.Text = DateTime.Now.ToShortDateString();
         }
+
+        private void NotaProductosFaltantes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

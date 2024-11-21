@@ -43,3 +43,12 @@ D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sist
 D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.CopyComplete
 D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
 D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaAccesoDatos.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaEntidad.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\bin\Debug\CapaEntidad.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.AssemblyReference.cache
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.csproj.CoreCompileInputs.cache
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAcce.1AD5E18C.Up2Date
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaAccesoDatos\obj\Debug\CapaAccesoDatos.pdb

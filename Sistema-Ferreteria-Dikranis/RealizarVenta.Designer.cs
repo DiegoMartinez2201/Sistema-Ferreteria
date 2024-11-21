@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBoxProducto = new System.Windows.Forms.GroupBox();
+            this.cbxidproducto = new System.Windows.Forms.ComboBox();
             this.txtPrecioUnitario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtNombreProducto = new System.Windows.Forms.TextBox();
-            this.txtCodigoProducto = new System.Windows.Forms.TextBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -42,7 +42,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbxTipoDocumento = new System.Windows.Forms.ComboBox();
             this.dgvVenta = new System.Windows.Forms.DataGridView();
             this.lblNombres = new System.Windows.Forms.Label();
             this.lblApellidos = new System.Windows.Forms.Label();
@@ -69,19 +68,21 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtNumeroDocumento = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtIdCliente = new System.Windows.Forms.TextBox();
+            this.cbxcodigocliente = new System.Windows.Forms.ComboBox();
+            this.txtidtipodocumento = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxProducto
             // 
+            this.groupBoxProducto.Controls.Add(this.cbxidproducto);
             this.groupBoxProducto.Controls.Add(this.txtPrecioUnitario);
             this.groupBoxProducto.Controls.Add(this.label3);
             this.groupBoxProducto.Controls.Add(this.txtCantidad);
             this.groupBoxProducto.Controls.Add(this.label9);
             this.groupBoxProducto.Controls.Add(this.txtNombreProducto);
-            this.groupBoxProducto.Controls.Add(this.txtCodigoProducto);
             this.groupBoxProducto.Controls.Add(this.btnEliminar);
             this.groupBoxProducto.Controls.Add(this.btnEditar);
             this.groupBoxProducto.Controls.Add(this.btnAgregar);
@@ -95,6 +96,15 @@
             this.groupBoxProducto.TabIndex = 0;
             this.groupBoxProducto.TabStop = false;
             this.groupBoxProducto.Text = "Producto";
+            // 
+            // cbxidproducto
+            // 
+            this.cbxidproducto.FormattingEnabled = true;
+            this.cbxidproducto.Location = new System.Drawing.Point(165, 22);
+            this.cbxidproducto.Name = "cbxidproducto";
+            this.cbxidproducto.Size = new System.Drawing.Size(152, 23);
+            this.cbxidproducto.TabIndex = 23;
+            this.cbxidproducto.SelectedIndexChanged += new System.EventHandler(this.cbxidproducto_SelectedIndexChanged);
             // 
             // txtPrecioUnitario
             // 
@@ -140,19 +150,12 @@
             this.txtNombreProducto.TabIndex = 18;
             this.txtNombreProducto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNombreProducto_KeyDown);
             // 
-            // txtCodigoProducto
-            // 
-            this.txtCodigoProducto.Location = new System.Drawing.Point(165, 23);
-            this.txtCodigoProducto.Name = "txtCodigoProducto";
-            this.txtCodigoProducto.Size = new System.Drawing.Size(152, 21);
-            this.txtCodigoProducto.TabIndex = 13;
-            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Beige;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminar.Location = new System.Drawing.Point(362, 98);
+            this.btnEliminar.Location = new System.Drawing.Point(362, 89);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(88, 34);
             this.btnEliminar.TabIndex = 17;
@@ -164,7 +167,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.Beige;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.ForeColor = System.Drawing.Color.Black;
-            this.btnEditar.Location = new System.Drawing.Point(362, 58);
+            this.btnEditar.Location = new System.Drawing.Point(362, 51);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(88, 34);
             this.btnEditar.TabIndex = 16;
@@ -176,7 +179,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Beige;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(362, 20);
+            this.btnAgregar.Location = new System.Drawing.Point(361, 12);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(88, 33);
             this.btnAgregar.TabIndex = 15;
@@ -228,18 +231,6 @@
             this.label2.Size = new System.Drawing.Size(136, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tipo de Documento:";
-            // 
-            // cbxTipoDocumento
-            // 
-            this.cbxTipoDocumento.FormattingEnabled = true;
-            this.cbxTipoDocumento.Items.AddRange(new object[] {
-            "Dni",
-            "Ruc"});
-            this.cbxTipoDocumento.Location = new System.Drawing.Point(161, 60);
-            this.cbxTipoDocumento.Name = "cbxTipoDocumento";
-            this.cbxTipoDocumento.Size = new System.Drawing.Size(113, 21);
-            this.cbxTipoDocumento.TabIndex = 3;
-            this.cbxTipoDocumento.SelectedIndexChanged += new System.EventHandler(this.cbxTipoDocumento_SelectedIndexChanged);
             // 
             // dgvVenta
             // 
@@ -353,7 +344,7 @@
             // 
             this.dtPickerFechaRegistro.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtPickerFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(10, 590);
+            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(381, 142);
             this.dtPickerFechaRegistro.Name = "dtPickerFechaRegistro";
             this.dtPickerFechaRegistro.Size = new System.Drawing.Size(200, 19);
             this.dtPickerFechaRegistro.TabIndex = 15;
@@ -390,7 +381,7 @@
             this.label13.BackColor = System.Drawing.Color.SeaShell;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(765, 608);
+            this.label13.Location = new System.Drawing.Point(682, 608);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 18);
             this.label13.TabIndex = 18;
@@ -443,10 +434,10 @@
             // txtTotal
             // 
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotal.Location = new System.Drawing.Point(836, 608);
+            this.txtTotal.Location = new System.Drawing.Point(738, 608);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(98, 20);
+            this.txtTotal.Size = new System.Drawing.Size(219, 20);
             this.txtTotal.TabIndex = 23;
             // 
             // lblFecha
@@ -514,12 +505,31 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Código Cliente:";
             // 
-            // txtIdCliente
+            // cbxcodigocliente
             // 
-            this.txtIdCliente.Location = new System.Drawing.Point(161, 32);
-            this.txtIdCliente.Name = "txtIdCliente";
-            this.txtIdCliente.Size = new System.Drawing.Size(113, 20);
-            this.txtIdCliente.TabIndex = 30;
+            this.cbxcodigocliente.FormattingEnabled = true;
+            this.cbxcodigocliente.Location = new System.Drawing.Point(161, 35);
+            this.cbxcodigocliente.Name = "cbxcodigocliente";
+            this.cbxcodigocliente.Size = new System.Drawing.Size(121, 21);
+            this.cbxcodigocliente.TabIndex = 31;
+            this.cbxcodigocliente.SelectedIndexChanged += new System.EventHandler(this.cbxcodigocliente_SelectedIndexChanged);
+            // 
+            // txtidtipodocumento
+            // 
+            this.txtidtipodocumento.Location = new System.Drawing.Point(161, 62);
+            this.txtidtipodocumento.Name = "txtidtipodocumento";
+            this.txtidtipodocumento.Size = new System.Drawing.Size(174, 20);
+            this.txtidtipodocumento.TabIndex = 32;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(307, 284);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 31);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "AceptarVenta";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // RealizarVenta
             // 
@@ -527,7 +537,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(986, 661);
-            this.Controls.Add(this.txtIdCliente);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtidtipodocumento);
+            this.Controls.Add(this.cbxcodigocliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNumeroDocumento);
             this.Controls.Add(this.label15);
@@ -554,13 +566,13 @@
             this.Controls.Add(this.lblApellidos);
             this.Controls.Add(this.lblNombres);
             this.Controls.Add(this.dgvVenta);
-            this.Controls.Add(this.cbxTipoDocumento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBoxProducto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RealizarVenta";
             this.Text = "RealizarVenta";
+            this.Load += new System.EventHandler(this.RealizarVenta_Load);
             this.groupBoxProducto.ResumeLayout(false);
             this.groupBoxProducto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
@@ -574,7 +586,6 @@
         private System.Windows.Forms.GroupBox groupBoxProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbxTipoDocumento;
         private System.Windows.Forms.DataGridView dgvVenta;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -589,7 +600,6 @@
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNombreProducto;
-        private System.Windows.Forms.TextBox txtCodigoProducto;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAgregar;
@@ -612,6 +622,9 @@
         private System.Windows.Forms.TextBox txtPrecioUnitario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtIdCliente;
+        private System.Windows.Forms.ComboBox cbxidproducto;
+        private System.Windows.Forms.ComboBox cbxcodigocliente;
+        private System.Windows.Forms.TextBox txtidtipodocumento;
+        private System.Windows.Forms.Button button1;
     }
 }

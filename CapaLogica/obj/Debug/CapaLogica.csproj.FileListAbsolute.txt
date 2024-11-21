@@ -53,3 +53,14 @@ D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sist
 D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaAccesoDatos.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaAccesoDatos.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
