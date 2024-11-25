@@ -2,19 +2,13 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaLogica
 {
     public class logTicketVenta
     {
         #region sigleton
-        //Patron Singleton
-        // Variable estática para la instancia
         private static readonly logTicketVenta _instancia = new logTicketVenta();
-        //privado para evitar la instanciación directa
         public static logTicketVenta Instancia
         {
             get
@@ -23,25 +17,63 @@ namespace CapaLogica
             }
         }
         #endregion singleton
+
         #region metodos
-        public void RegistrarTicket(entTicketVenta ticket)
+        public bool InsertarVenta(entTicketVenta ticket, List<entTicketVentaDetalle> detalles)
+        {
+            try
+            {
+                // Asignar los detalles al ticket
+                ticket.Detalle = detalles;
+
+                // Registrar el ticket
+                int idTicketVenta = datTicketVenta.Instancia.InsertarTicketVenta(ticket);
+
+                if (idTicketVenta <= 0)
+                    return false;
+
+                // Registrar cada detalle
+                foreach (var detalle in detalles)
+                {
+                    detalle.IdTicketVenta = idTicketVenta;
+                    bool resultado = datTicketVentaDetalle.Instancia.InsertarTicketVentaDetalle(detalle);
+                    if (!resultado)
+                    {
+                        // Si falla la inserción de un detalle, consideramos que toda la operación falló
+                        return false;
+                    }
+                }
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool RegistrarTicket(entTicketVenta ticket)
         {
             try
             {
                 int idTicketVenta = datTicketVenta.Instancia.InsertarTicketVenta(ticket);
+                if (idTicketVenta <= 0)
+                    return false;
 
                 foreach (var detalle in ticket.Detalle)
                 {
                     detalle.IdTicketVenta = idTicketVenta;
-                    datTicketVentaDetalle.Instancia.InsertarTicketVentaDetalle(detalle);
+                    if (!datTicketVentaDetalle.Instancia.InsertarTicketVentaDetalle(detalle))
+                        return false;
                 }
+
+                return true;
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                throw e;
+                return false;
             }
         }
         #endregion metodos
-
     }
 }
