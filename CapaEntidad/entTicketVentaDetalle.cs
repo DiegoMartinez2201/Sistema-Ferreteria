@@ -20,5 +20,8 @@ namespace CapaEntidad
                 return Cantidad * PrecioUnitario;
             }
         }
+        public string Nombre { get; set; }
+        public DateTime FechaRegistro { get; set; }
+        
     }
 }

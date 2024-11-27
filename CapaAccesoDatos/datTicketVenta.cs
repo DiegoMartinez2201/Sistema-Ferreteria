@@ -25,7 +25,7 @@ namespace CapaAccesoDatos
         }
 
         #endregion sigleton
-        #region Métodos
+        #region Metodos
 
         // Insertar TicketVenta
         public int InsertarTicketVenta(entTicketVenta ticket)
@@ -67,7 +67,38 @@ namespace CapaAccesoDatos
 
             return idTicketVenta;
         }
+        public List<entTicketVenta> ListarTickeVenta(DateTime FechaInicio, DateTime FechaFin)
+        {
+            SqlCommand cmd = null;
+            List<entTicketVenta> lista = new List<entTicketVenta>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListarTicketVenta", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@FechaInicio", FechaInicio);
+                cmd.Parameters.AddWithValue("@FechaFin", FechaFin);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entTicketVenta ticketVenta = new entTicketVenta();
+                    ticketVenta.IdTicketVenta = Convert.ToInt32(dr["IdTicketVenta"]);
+                    ticketVenta.FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"]);
+                    lista.Add(ticketVenta);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+        }
 
-        #endregion
+        #endregion Metodos
     }
 }

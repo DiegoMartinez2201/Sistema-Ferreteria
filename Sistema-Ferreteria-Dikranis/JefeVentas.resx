@@ -120,16 +120,13 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnTipoCliente.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAdtJREFUSEvtljtLXEEYhlcLLWIExQSRqEVsBAsvJFZpFBtNoUFSiI2NpY1NioCX
-        MhEbQSL+gNgLglrkDwQrMY2onSmUEAsveH3eOTMye3Zc9qyXYt0HHvi+OWfm5RznjJsq8uyoxkn8ZZ3A
-        KkzKAP6+w2ZMoxH3cBMVKFXvYj0mQYuPeo7jCV5jB6axai3H1/jG1mu4gvlShuu4gRnBCrrCVnyFetJv
-        KNrxEmtMl4xSXMJtrMWM4BbU4EvTRaEuuBJ1Tfdk4x1OReUtc/gX35ouEKzAM+w2XXpwD55ihenCKPQf
-        ao3vGoCv+B/bTBeRESwWcQsbTBeh+g/+MF0YF6rA97bW31SbqQt9grv6BWrCES5bVWvD6VoIP9ShsUMc
-        NF2OlGAfzlh77Vgd9qOPC9V9cXQeiAVrXjThDl7gsAYgW6hPPDj4qkPo89rHnziC2jzTmEuoiAcHN1ec
-        TjzAedT3KD7jOc6aLkJPodNJaFEt7kgc/BGPUU8XJz7xwYKHUK9U52suPEjwGCrUbSKHP0Gb41NUGu4d
-        rONOr1evOY4/QSEKc9w7+At+iMoMHjXYJ9uEwgjWPwP/hicLTjKhMIL1s8ZNFtrd/g7XNffTJ/4dq3YH
-        f5J1ijwFqdQNWymwVDxnerYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAEGSURBVEhL7dZBTsJQFIXhhoEMYahhLFuAlRgXgSxDJ0bi
+        gmAoOIKwAJ0YcaQxGh3qf5KSMDi2tL0oiT3JlzT09V1u+/rSpM6+pokhZnhP6fgMOreTdLDA1w/m0JjQ
+        qJusomsqHtq5bq8r5AwQllu4Is4UYXmDK+JobFhcgSxhKdLxK8LyZ89YG4Qr4oSuar2bekddoU0ac4DQ
+        aFfKKr6TnWsddaNbqeeoBSc36W/hndb51TTQxwUmWOEz9YgxztGDxlbOEa7wBLeSHf2pSxyicNq4xgfc
+        5NvQtSO0sFW6uIebrIw7HCM3S7gJqtDXS260WNzFVTwgN6d4gZugjGecoM6/SpJ8A8mT9ImDbmNnAAAA
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="btnReporteVentas.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -658,7 +655,7 @@
   <data name="btnMaximizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAL1JREFUSEtjGAWDD/z/z8D8/6Vo7v9XYtVAupwoDFGbA9ILNQY3ACrM/f9cXBvK
+        DgAACw4BQL7hQQAAAL1JREFUSEtjGAWDD/z/z8D8/6Vo7v9XYtVAupwoDFGbA9ILNQY3ACrM/f9cXBvK
         JRoA9egA9WZDubgByDVg+rWYH1CD1f/XwhpArA7EUv9fiLlgxa/FopH14gVwC16J2IIFiAAwtaMW4ASj
         FhAEtLfgvxYbmKaVBTBAOx+8ElGD0KRYAMz+WIsFbJikogJUKgILLiiXaAC0SBeoNwvKxQ2gxXUO0DVV
         QBp78YyOgS4H0llAvUxQY0bBoAEMDABWVfqFUAYQ0gAAAABJRU5ErkJggg==

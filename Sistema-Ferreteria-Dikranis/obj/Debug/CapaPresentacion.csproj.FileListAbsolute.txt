@@ -225,3 +225,4 @@ D:\Ciclo 4\MOANSO\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaP
 D:\Ciclo 4\MOANSO\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\CapaPres.61CA7C38.Up2Date
 D:\Ciclo 4\MOANSO\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.exe
 D:\Ciclo 4\MOANSO\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema-Ferreteria-Dikranis.pdb
+D:\UPN\CICLO 6\MODELAMIENTO Y ANALISIS DE SOFTWARE\PROYECTO MOANSO DIKRANIS\Sistema\Sistema-Ferreteria\Sistema-Ferreteria-Dikranis\obj\Debug\Sistema_Ferreteria_Dikranis.ConsultarTicketVenta.resources

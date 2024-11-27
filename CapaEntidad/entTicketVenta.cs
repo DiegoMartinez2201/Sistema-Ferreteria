@@ -15,6 +15,7 @@ namespace CapaEntidad
         public int IdEmpleado { get; set; }
 
         public List<entTicketVentaDetalle> Detalle { get; set; } = new List<entTicketVentaDetalle>();
+       
 
 
     }

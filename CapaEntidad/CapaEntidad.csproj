@@ -47,6 +47,8 @@
     <Compile Include="entEmpleado.cs" />
     <Compile Include="entEmpresa.cs" />
     <Compile Include="entMetodoPago.cs" />
+    <Compile Include="entNotaSalida.cs" />
+    <Compile Include="entNotaSalidaDetalle.cs" />
     <Compile Include="entPersonaNatural.cs" />
     <Compile Include="entProducto.cs" />
     <Compile Include="entProveedor.cs" />

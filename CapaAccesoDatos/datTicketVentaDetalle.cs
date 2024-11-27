@@ -2,6 +2,7 @@
 using System;
 using System.Data.SqlClient;
 using System.Data;
+using System.Collections.Generic;
 
 namespace CapaAccesoDatos
 {
@@ -47,6 +48,44 @@ namespace CapaAccesoDatos
                 if (cmd != null && cmd.Connection.State == ConnectionState.Open)
                     cmd.Connection.Close();
             }
+        }
+        public List<entTicketVentaDetalle> ListarTickeVentaDetalle(int IdTicketVenta)
+        {
+            SqlCommand cmd = null;
+            List<entTicketVentaDetalle> lista = new List<entTicketVentaDetalle>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListarTicketVentaDetalle", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Parámetro de entrada
+                cmd.Parameters.AddWithValue("@IdTicketVenta", IdTicketVenta);
+
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    entTicketVentaDetalle detalle = new entTicketVentaDetalle
+                    {
+                        IdProducto = Convert.ToInt32(dr["IdProducto"]),
+                        Nombre = dr["Nombre"].ToString(),
+                        Cantidad = Convert.ToInt32(dr["Cantidad"]),
+                        FechaRegistro = Convert.ToDateTime(dr["FechaRegistro"])
+                    };
+                    lista.Add(detalle);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
         }
         #endregion
     }

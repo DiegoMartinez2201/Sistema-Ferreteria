@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCargoEmpleado = new System.Windows.Forms.Button();
             this.btnMetodoPago = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelForms = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnCargoEmpleado = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,6 +78,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 633);
             this.panel1.TabIndex = 1;
+            // 
+            // btnCargoEmpleado
+            // 
+            this.btnCargoEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCargoEmpleado.FlatAppearance.BorderSize = 0;
+            this.btnCargoEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargoEmpleado.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargoEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnCargoEmpleado.Image")));
+            this.btnCargoEmpleado.Location = new System.Drawing.Point(0, 480);
+            this.btnCargoEmpleado.Name = "btnCargoEmpleado";
+            this.btnCargoEmpleado.Size = new System.Drawing.Size(186, 42);
+            this.btnCargoEmpleado.TabIndex = 10;
+            this.btnCargoEmpleado.Text = "Cargo Empleado";
+            this.btnCargoEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnCargoEmpleado.UseVisualStyleBackColor = true;
+            this.btnCargoEmpleado.Click += new System.EventHandler(this.btnCargoEmpleado_Click);
             // 
             // btnMetodoPago
             // 
@@ -317,22 +333,6 @@
             this.label2.Size = new System.Drawing.Size(481, 50);
             this.label2.TabIndex = 0;
             this.label2.Text = "Bienvenido Administrador";
-            // 
-            // btnCargoEmpleado
-            // 
-            this.btnCargoEmpleado.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCargoEmpleado.FlatAppearance.BorderSize = 0;
-            this.btnCargoEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargoEmpleado.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCargoEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("btnCargoEmpleado.Image")));
-            this.btnCargoEmpleado.Location = new System.Drawing.Point(0, 480);
-            this.btnCargoEmpleado.Name = "btnCargoEmpleado";
-            this.btnCargoEmpleado.Size = new System.Drawing.Size(186, 42);
-            this.btnCargoEmpleado.TabIndex = 10;
-            this.btnCargoEmpleado.Text = "Cargo Empleado";
-            this.btnCargoEmpleado.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnCargoEmpleado.UseVisualStyleBackColor = true;
-            this.btnCargoEmpleado.Click += new System.EventHandler(this.btnCargoEmpleado_Click);
             // 
             // Administrador
             // 

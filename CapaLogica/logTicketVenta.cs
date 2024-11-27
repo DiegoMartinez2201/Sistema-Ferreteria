@@ -51,29 +51,11 @@ namespace CapaLogica
                 return false;
             }
         }
-
-        public bool RegistrarTicket(entTicketVenta ticket)
+        public List<entTicketVenta> ListarTicketVenta(DateTime FechaInicio, DateTime FechaFin)
         {
-            try
-            {
-                int idTicketVenta = datTicketVenta.Instancia.InsertarTicketVenta(ticket);
-                if (idTicketVenta <= 0)
-                    return false;
-
-                foreach (var detalle in ticket.Detalle)
-                {
-                    detalle.IdTicketVenta = idTicketVenta;
-                    if (!datTicketVentaDetalle.Instancia.InsertarTicketVentaDetalle(detalle))
-                        return false;
-                }
-
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+            return datTicketVenta.Instancia.ListarTickeVenta(FechaInicio, FechaFin);
         }
+
         #endregion metodos
     }
 }

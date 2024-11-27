@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JefeVentas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTipoCliente = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnReporteVentas = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.panelForms = new System.Windows.Forms.Panel();
-            this.btnTipoCliente = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -68,6 +68,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 674);
             this.panel1.TabIndex = 1;
+            // 
+            // btnTipoCliente
+            // 
+            this.btnTipoCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTipoCliente.FlatAppearance.BorderSize = 0;
+            this.btnTipoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTipoCliente.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTipoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnTipoCliente.Image")));
+            this.btnTipoCliente.Location = new System.Drawing.Point(0, 312);
+            this.btnTipoCliente.Name = "btnTipoCliente";
+            this.btnTipoCliente.Size = new System.Drawing.Size(186, 42);
+            this.btnTipoCliente.TabIndex = 10;
+            this.btnTipoCliente.Text = "Tipo de Cliente";
+            this.btnTipoCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnTipoCliente.UseVisualStyleBackColor = true;
+            this.btnTipoCliente.Click += new System.EventHandler(this.btnTipoCliente_Click);
             // 
             // btnRegresar
             // 
@@ -230,22 +246,6 @@
             this.panelForms.Name = "panelForms";
             this.panelForms.Size = new System.Drawing.Size(952, 597);
             this.panelForms.TabIndex = 3;
-            // 
-            // btnTipoCliente
-            // 
-            this.btnTipoCliente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTipoCliente.FlatAppearance.BorderSize = 0;
-            this.btnTipoCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTipoCliente.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTipoCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnTipoCliente.Image")));
-            this.btnTipoCliente.Location = new System.Drawing.Point(0, 312);
-            this.btnTipoCliente.Name = "btnTipoCliente";
-            this.btnTipoCliente.Size = new System.Drawing.Size(186, 42);
-            this.btnTipoCliente.TabIndex = 10;
-            this.btnTipoCliente.Text = "Tipo de Cliente";
-            this.btnTipoCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnTipoCliente.UseVisualStyleBackColor = true;
-            this.btnTipoCliente.Click += new System.EventHandler(this.btnTipoCliente_Click);
             // 
             // JefeVentas
             // 

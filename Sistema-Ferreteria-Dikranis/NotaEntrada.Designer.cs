@@ -46,6 +46,8 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.lblIdEmpleado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.groupDatosProductos.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +65,7 @@
             // dtPickerFechaRegistro
             // 
             this.dtPickerFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(12, 498);
+            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(15, 498);
             this.dtPickerFechaRegistro.Name = "dtPickerFechaRegistro";
             this.dtPickerFechaRegistro.Size = new System.Drawing.Size(200, 19);
             this.dtPickerFechaRegistro.TabIndex = 1;
@@ -82,6 +84,7 @@
             // 
             // groupDatosProductos
             // 
+            this.groupDatosProductos.Controls.Add(this.btnEditar);
             this.groupDatosProductos.Controls.Add(this.txtCantidad);
             this.groupDatosProductos.Controls.Add(this.label5);
             this.groupDatosProductos.Controls.Add(this.btnEliminar);
@@ -109,7 +112,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(10, 93);
+            this.label5.Location = new System.Drawing.Point(83, 94);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 15);
@@ -133,7 +136,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Beige;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.ForeColor = System.Drawing.Color.Black;
-            this.btnAgregar.Location = new System.Drawing.Point(158, 143);
+            this.btnAgregar.Location = new System.Drawing.Point(61, 143);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(92, 30);
             this.btnAgregar.TabIndex = 10;
@@ -246,12 +249,34 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Nota de Entrada";
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Beige;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Location = new System.Drawing.Point(162, 143);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(92, 30);
+            this.btnEditar.TabIndex = 14;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // lblIdEmpleado
+            // 
+            this.lblIdEmpleado.AutoSize = true;
+            this.lblIdEmpleado.Location = new System.Drawing.Point(12, 552);
+            this.lblIdEmpleado.Name = "lblIdEmpleado";
+            this.lblIdEmpleado.Size = new System.Drawing.Size(66, 13);
+            this.lblIdEmpleado.TabIndex = 16;
+            this.lblIdEmpleado.Text = "Id Empleado";
+            // 
             // NotaEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(837, 547);
+            this.ClientSize = new System.Drawing.Size(837, 574);
+            this.Controls.Add(this.lblIdEmpleado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);
@@ -293,5 +318,7 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label lblIdEmpleado;
     }
 }

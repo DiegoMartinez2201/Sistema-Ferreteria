@@ -63,7 +63,7 @@ namespace Sistema_Ferreteria_Dikranis
         {
             lblBienvenida.Visible = false;
             lblTitle.Text = "Realizar Nota de Salida";
-            FormularioHelper.AbrirFormulario(panelForms, new NotaSalida(), IdEmpleado);
+            FormularioHelper.AbrirFormulario(panelForms, new NotaSalida(IdEmpleado), IdEmpleado);
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
