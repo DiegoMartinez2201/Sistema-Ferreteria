@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RealizarVenta));
             this.groupBoxProducto = new System.Windows.Forms.GroupBox();
+            this.btnBuscarProducto = new System.Windows.Forms.Button();
             this.cbxidproducto = new System.Windows.Forms.ComboBox();
             this.txtPrecioUnitario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -70,13 +72,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbxcodigocliente = new System.Windows.Forms.ComboBox();
             this.txtidtipodocumento = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
+            this.lblMantenedorCliente = new System.Windows.Forms.LinkLabel();
             this.groupBoxProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxProducto
             // 
+            this.groupBoxProducto.Controls.Add(this.btnBuscarProducto);
             this.groupBoxProducto.Controls.Add(this.cbxidproducto);
             this.groupBoxProducto.Controls.Add(this.txtPrecioUnitario);
             this.groupBoxProducto.Controls.Add(this.label3);
@@ -96,6 +100,16 @@
             this.groupBoxProducto.TabIndex = 0;
             this.groupBoxProducto.TabStop = false;
             this.groupBoxProducto.Text = "Producto";
+            // 
+            // btnBuscarProducto
+            // 
+            this.btnBuscarProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarProducto.Image")));
+            this.btnBuscarProducto.Location = new System.Drawing.Point(323, 22);
+            this.btnBuscarProducto.Name = "btnBuscarProducto";
+            this.btnBuscarProducto.Size = new System.Drawing.Size(22, 23);
+            this.btnBuscarProducto.TabIndex = 34;
+            this.btnBuscarProducto.UseVisualStyleBackColor = true;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
             // 
             // cbxidproducto
             // 
@@ -161,6 +175,7 @@
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -173,6 +188,7 @@
             this.btnEditar.TabIndex = 16;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnAgregar
             // 
@@ -243,6 +259,7 @@
             this.dgvVenta.RowHeadersWidth = 51;
             this.dgvVenta.Size = new System.Drawing.Size(947, 249);
             this.dgvVenta.TabIndex = 4;
+            this.dgvVenta.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVenta_CellClick);
             // 
             // lblNombres
             // 
@@ -344,7 +361,7 @@
             // 
             this.dtPickerFechaRegistro.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtPickerFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(381, 142);
+            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(10, 606);
             this.dtPickerFechaRegistro.Name = "dtPickerFechaRegistro";
             this.dtPickerFechaRegistro.Size = new System.Drawing.Size(200, 19);
             this.dtPickerFechaRegistro.TabIndex = 15;
@@ -520,16 +537,28 @@
             this.txtidtipodocumento.Name = "txtidtipodocumento";
             this.txtidtipodocumento.Size = new System.Drawing.Size(174, 20);
             this.txtidtipodocumento.TabIndex = 32;
+            this.txtidtipodocumento.TextChanged += new System.EventHandler(this.txtidtipodocumento_TextChanged);
             // 
-            // button1
+            // btnBuscarCliente
             // 
-            this.button1.Location = new System.Drawing.Point(307, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 31);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "AceptarVenta";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBuscarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCliente.Image")));
+            this.btnBuscarCliente.Location = new System.Drawing.Point(288, 34);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(22, 23);
+            this.btnBuscarCliente.TabIndex = 33;
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
+            // 
+            // lblMantenedorCliente
+            // 
+            this.lblMantenedorCliente.AutoSize = true;
+            this.lblMantenedorCliente.Location = new System.Drawing.Point(316, 40);
+            this.lblMantenedorCliente.Name = "lblMantenedorCliente";
+            this.lblMantenedorCliente.Size = new System.Drawing.Size(39, 13);
+            this.lblMantenedorCliente.TabIndex = 34;
+            this.lblMantenedorCliente.TabStop = true;
+            this.lblMantenedorCliente.Text = "Nuevo";
+            this.lblMantenedorCliente.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblMantenedorCliente_LinkClicked);
             // 
             // RealizarVenta
             // 
@@ -537,7 +566,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(986, 661);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblMantenedorCliente);
+            this.Controls.Add(this.btnBuscarCliente);
             this.Controls.Add(this.txtidtipodocumento);
             this.Controls.Add(this.cbxcodigocliente);
             this.Controls.Add(this.label4);
@@ -625,6 +655,8 @@
         private System.Windows.Forms.ComboBox cbxidproducto;
         private System.Windows.Forms.ComboBox cbxcodigocliente;
         private System.Windows.Forms.TextBox txtidtipodocumento;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.Button btnBuscarProducto;
+        private System.Windows.Forms.LinkLabel lblMantenedorCliente;
     }
 }

@@ -16,10 +16,12 @@ namespace Sistema_Ferreteria_Dikranis
     {
         // Evento para pasar datos al formulario llamador
         public event Action<string, string> ProveedorSeleccionado;
+
         public ConsultaProveedores()
         {
             InitializeComponent();
             CargarProveedores();
+            txtIdProveedor.Enabled = false;
 
         }
         public void CargarProveedores()
@@ -67,5 +69,6 @@ namespace Sistema_Ferreteria_Dikranis
         {
             Close();
         }
+      
     }
 }

@@ -39,6 +39,7 @@ namespace CapaAccesoDatos
             catch (Exception e)
             {
                 // Registrar el error si tienes un sistema de logging
+                
                 return false;
             }
             finally

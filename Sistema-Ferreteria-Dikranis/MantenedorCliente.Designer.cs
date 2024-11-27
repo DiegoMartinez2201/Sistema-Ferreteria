@@ -56,10 +56,10 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.grupBoxDatosCliente = new System.Windows.Forms.GroupBox();
+            this.btnAbrirMTipoCliente = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.lblIdEmpleado = new System.Windows.Forms.Label();
-            this.btnAbrirMTipoCliente = new System.Windows.Forms.Button();
             this.grupBoxDatosCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
@@ -349,6 +349,16 @@
             this.grupBoxDatosCliente.TabStop = false;
             this.grupBoxDatosCliente.Text = "Datos del Cliente";
             // 
+            // btnAbrirMTipoCliente
+            // 
+            this.btnAbrirMTipoCliente.Location = new System.Drawing.Point(920, 35);
+            this.btnAbrirMTipoCliente.Name = "btnAbrirMTipoCliente";
+            this.btnAbrirMTipoCliente.Size = new System.Drawing.Size(96, 23);
+            this.btnAbrirMTipoCliente.TabIndex = 26;
+            this.btnAbrirMTipoCliente.Text = "M. Tipo Cliente";
+            this.btnAbrirMTipoCliente.UseVisualStyleBackColor = true;
+            this.btnAbrirMTipoCliente.Click += new System.EventHandler(this.btnAbrirMTipoCliente_Click);
+            // 
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.Beige;
@@ -380,16 +390,6 @@
             this.lblIdEmpleado.TabIndex = 12;
             this.lblIdEmpleado.Text = "NombreEmpleado";
             // 
-            // btnAbrirMTipoCliente
-            // 
-            this.btnAbrirMTipoCliente.Location = new System.Drawing.Point(920, 35);
-            this.btnAbrirMTipoCliente.Name = "btnAbrirMTipoCliente";
-            this.btnAbrirMTipoCliente.Size = new System.Drawing.Size(96, 23);
-            this.btnAbrirMTipoCliente.TabIndex = 26;
-            this.btnAbrirMTipoCliente.Text = "M. Tipo Cliente";
-            this.btnAbrirMTipoCliente.UseVisualStyleBackColor = true;
-            this.btnAbrirMTipoCliente.Click += new System.EventHandler(this.btnAbrirMTipoCliente_Click);
-            // 
             // MantenedorCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,6 +405,7 @@
             this.Controls.Add(this.dgvCliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MantenedorCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MantenedorCliente";
             this.Load += new System.EventHandler(this.MantenedorCliente_Load);
             this.grupBoxDatosCliente.ResumeLayout(false);

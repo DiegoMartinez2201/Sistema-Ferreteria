@@ -19,6 +19,7 @@ namespace Sistema_Ferreteria_Dikranis
         private int IdEmpleado;
         private decimal TotalVenta = 0;
         private List<entTicketVentaDetalle> detallesVenta = new List<entTicketVentaDetalle>();
+        List<entProducto> listaProductos = logProducto.Instancia.Listarproductos();
 
 
 
@@ -27,9 +28,12 @@ namespace Sistema_Ferreteria_Dikranis
             InitializeComponent();
             FormularioHelper.TimerTick += horaFecha_Tick;
             this.IdEmpleado = IdEmpleado;
+            lblIdEmpleado.Text = $"ID Empleado: {IdEmpleado}";
             LlenarComboboxClientes();
             LlenarComboboxMetodoPago();
             LlenarComboboxProductos();
+            LimpiarFormulario();
+            txtCodigoTicket.Enabled = false;
 
             // Deshabilitamos los campos al inicio
             txtNombreCompleto.Enabled = false;
@@ -69,7 +73,7 @@ namespace Sistema_Ferreteria_Dikranis
         }
 
 
-        private void cbxTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void cbxTipoDocumento_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (txtidtipodocumento.Text == "Dni")
             {
@@ -83,13 +87,14 @@ namespace Sistema_Ferreteria_Dikranis
                 lblApellidos.Visible = false;
                 txtApellidos.Visible = false;
             }
-        }
+        }*/
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
+               
                 // Validaciones básicas
-                if (cbxidproducto.SelectedItem == null)
+                if (cbxidproducto.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccione un producto.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -101,7 +106,25 @@ namespace Sistema_Ferreteria_Dikranis
                     return;
                 }
 
-                entProducto productoSeleccionado = (entProducto)cbxidproducto.SelectedItem;
+                // Recuperar datos del producto seleccionado
+                int idProducto = (int)cbxidproducto.SelectedValue; // Obtiene el ID del producto seleccionado
+                var productoSeleccionado = listaProductos.FirstOrDefault(p => p.IdProducto == idProducto);
+                if (productoSeleccionado == null)
+                {
+                    MessageBox.Show("Producto no encontrado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Verificar duplicados
+                foreach (DataGridViewRow row in dgvVenta.Rows)
+                {
+                    if (!row.IsNewRow && (int)row.Cells["IdProducto"].Value == idProducto)
+                    {
+                        MessageBox.Show("Este producto ya está agregado. Modifique la cantidad si es necesario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+
                 decimal precioUnitario = productoSeleccionado.PrecioVenta;
                 decimal totalProducto = cantidad * precioUnitario;
 
@@ -114,7 +137,7 @@ namespace Sistema_Ferreteria_Dikranis
                     cantidad,
                     precioUnitario,
                     totalProducto,
-                    productoSeleccionado.IdProducto  // Columna oculta para guardar el ID
+                    idProducto  // Columna oculta para guardar el ID
                 );
 
                 // Actualizar el total
@@ -160,7 +183,7 @@ namespace Sistema_Ferreteria_Dikranis
                     IdCliente = Convert.ToInt32(cbxcodigocliente.SelectedValue),
                     FechaRegistro = DateTime.Now,
                     IdMetodoPago = Convert.ToInt32(cbxMetodoPago.SelectedValue),
-                    IdEmpleado = this.IdEmpleado
+                    IdEmpleado = IdEmpleado
                 };
 
                 // Lista para almacenar los detalles
@@ -256,13 +279,21 @@ namespace Sistema_Ferreteria_Dikranis
             if (cbxcodigocliente.SelectedItem != null)
             {
                 entCliente cliente = (entCliente)cbxcodigocliente.SelectedItem;
-
+                txtidtipodocumento.Text = cliente.TipoDocumento;
+                if (txtidtipodocumento.Text == "Dni")
+                {
+                    txtNumeroDocumento.Text = cliente.DNI;
+                    txtNombreCompleto.Text = cliente.Nombres;
+                    txtApellidos.Text = cliente.Apellidos;
+                }
+                else if (txtidtipodocumento.Text == "Ruc")
+                {
+                    txtNumeroDocumento.Text = cliente.Ruc;
+                    txtNombreCompleto.Text = cliente.RazonSocial;
+                }
                 // Autocompletar los campos con la información del cliente
-                txtNombreCompleto.Text = cliente.Nombres;
-                txtApellidos.Text = cliente.Apellidos;
                 txtTelefono.Text = cliente.Telefono;
                 txtDireccion.Text = cliente.Direccion;
-                txtidtipodocumento.Text = cliente.TipoDocumento;
             }
         }
 
@@ -279,9 +310,143 @@ namespace Sistema_Ferreteria_Dikranis
             dgvVenta.Columns["IdProducto"].Visible = false;  // Ocultar la columna de ID
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+       
 
+        private void btnBuscarCliente_Click(object sender, EventArgs e)
+        {
+            ConsultaClientes consultarCliente = new ConsultaClientes();
+            consultarCliente.ClienteSeleccionado += (IdCliente, Dni, TipoDocumento, Nombres, Apellidos, Direccion, telefono) =>
+            {
+                txtNumeroDocumento.Text = Dni;
+                cbxcodigocliente.Text = IdCliente;
+                txtidtipodocumento.Text = TipoDocumento;
+                txtNombreCompleto.Text = Nombres;
+                txtApellidos.Text = Apellidos;
+                txtDireccion.Text = Direccion;
+                txtTelefono.Text = telefono;
+
+            };
+            consultarCliente.ShowDialog();
+        }
+
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
+        {
+            ConsultarProducto consultarProducto = new ConsultarProducto();
+            consultarProducto.ProductoSeleccionado += (IdProducto, Nombre, PrecioUnitario) =>
+            {
+                cbxidproducto.SelectedValue = IdProducto;
+                txtNombreProducto.Text = Nombre;
+                txtPrecioUnitario.Text = PrecioUnitario.ToString("F2");
+            };
+            consultarProducto.ShowDialog();
+        }
+
+        private void txtidtipodocumento_TextChanged(object sender, EventArgs e)
+        {
+            if (txtidtipodocumento.Text == "Dni")
+            {
+                lblNombres.Text = "Nombres";
+                lblApellidos.Visible = true;
+                txtApellidos.Visible = true;
+            }
+            else if (txtidtipodocumento.Text == "Ruc")
+            {
+                lblNombres.Text = "Razon Social";
+                lblApellidos.Visible = false;
+                txtApellidos.Visible = false;
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Verificar si hay una fila seleccionada
+                if (dgvVenta.SelectedRows.Count > 0)
+                {
+                    // Obtener la fila seleccionada
+                    DataGridViewRow filaSeleccionada = dgvVenta.SelectedRows[0];
+
+                    // Obtener el total del producto a eliminar
+                    decimal totalProducto = Convert.ToDecimal(filaSeleccionada.Cells["Total"].Value);
+
+                    // Restar el total del producto del TotalVenta
+                    TotalVenta -= totalProducto;
+
+                    // Actualizar el campo Total
+                    txtTotal.Text = $"Total Venta: {TotalVenta:C}";
+
+                    // Eliminar la fila seleccionada
+                    dgvVenta.Rows.Remove(filaSeleccionada);
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un producto para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ocurrió un error al intentar eliminar el producto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgvVenta_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvVenta.Rows[e.RowIndex]; 
+            cbxidproducto.Text = filaActual.Cells[3].Value.ToString();
+            txtNombreProducto.Text = filaActual.Cells[3].Value.ToString();
+            txtCantidad.Text = filaActual.Cells[4].Value.ToString();
+            txtPrecioUnitario.Text = filaActual.Cells[5].Value.ToString();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvVenta.SelectedRows.Count > 0) // Verifica si hay una fila seleccionada
+            {
+                DataGridViewRow row = dgvVenta.SelectedRows[0]; // Obtén la fila seleccionada
+
+                // Validar los datos ingresados
+                if (string.IsNullOrWhiteSpace(txtCantidad.Text) || !int.TryParse(txtCantidad.Text, out int nuevaCantidad) || nuevaCantidad <= 0)
+                {
+                    MessageBox.Show("Ingrese una cantidad válida.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Actualizar los valores en la fila seleccionada
+                decimal nuevoPrecioUnitario = Convert.ToDecimal(txtPrecioUnitario.Text);
+                decimal nuevoTotal = nuevaCantidad * nuevoPrecioUnitario;
+
+                row.Cells["Cantidad"].Value = nuevaCantidad;
+                row.Cells["PrecioUnitario"].Value = nuevoPrecioUnitario;
+                row.Cells["Total"].Value = nuevoTotal;
+
+                // Actualizar el total de la venta
+                RecalcularTotalVenta();
+
+                MessageBox.Show("Producto actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un producto para editar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private void RecalcularTotalVenta()
+        {
+            TotalVenta = 0;
+            foreach (DataGridViewRow row in dgvVenta.Rows)
+            {
+                if (!row.IsNewRow)
+                {
+                    TotalVenta += Convert.ToDecimal(row.Cells["Total"].Value);
+                }
+            }
+            txtTotal.Text = $"Total Venta: {TotalVenta:C}";
+        }
+
+        private void lblMantenedorCliente_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MantenedorCliente mantenedorCliente = new MantenedorCliente(IdEmpleado);
+            mantenedorCliente.ShowDialog();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using CapaLogica;
+﻿using CapaEntidad;
+using CapaLogica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace Sistema_Ferreteria_Dikranis
             InitializeComponent();
             CargarProductos();
             txtIdProducto.Enabled = false;
+            txtPrecio.Enabled = false;
         }
         public void CargarProductos()
         {
@@ -41,6 +43,17 @@ namespace Sistema_Ferreteria_Dikranis
             txtIdProducto.Text = filaActual.Cells[0].Value.ToString();
             txtNombre.Text = filaActual.Cells[1].Value.ToString();
             txtPrecio.Text = filaActual.Cells[10].Value.ToString();
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
