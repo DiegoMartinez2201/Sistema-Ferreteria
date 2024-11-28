@@ -47,6 +47,8 @@
     <Compile Include="datCliente.cs" />
     <Compile Include="datEmpleado.cs" />
     <Compile Include="datMetodoPago.cs" />
+    <Compile Include="datNotaEntrada.cs" />
+    <Compile Include="datNotaEntradaDetalle.cs" />
     <Compile Include="datNotaSalida.cs" />
     <Compile Include="datNotaSalidaDetalle.cs" />
     <Compile Include="datProducto.cs" />

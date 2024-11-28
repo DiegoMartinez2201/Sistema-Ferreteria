@@ -15,6 +15,7 @@ namespace Sistema_Ferreteria_Dikranis
     {
         public event Action<int> TicketSeleccionado;
 
+
         public ConsultarTicketVenta()
         {
             InitializeComponent();
@@ -172,5 +173,6 @@ namespace Sistema_Ferreteria_Dikranis
             TicketSeleccionado?.Invoke(IdTicketVenta);
             this.Close();
         }
+       
     }
 }

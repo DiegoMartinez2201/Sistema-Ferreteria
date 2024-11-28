@@ -22,7 +22,6 @@ namespace Sistema_Ferreteria_Dikranis
         List<entProducto> listaProductos = logProducto.Instancia.Listarproductos();
 
 
-
         public RealizarVenta(int IdEmpleado)
         {
             InitializeComponent();
@@ -331,7 +330,10 @@ namespace Sistema_Ferreteria_Dikranis
 
         private void btnBuscarProducto_Click(object sender, EventArgs e)
         {
+            
             ConsultarProducto consultarProducto = new ConsultarProducto();
+            consultarProducto.DesactivarBotonNE();
+            consultarProducto.ActivarBotonTv();
             consultarProducto.ProductoSeleccionado += (IdProducto, Nombre, PrecioUnitario) =>
             {
                 cbxidproducto.SelectedValue = IdProducto;

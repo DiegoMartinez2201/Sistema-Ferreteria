@@ -37,7 +37,7 @@ namespace CapaAccesoDatos
                 int filasAfectadas = cmd.ExecuteNonQuery();
                 return filasAfectadas > 0;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 // Registrar el error si tienes un sistema de logging
                 

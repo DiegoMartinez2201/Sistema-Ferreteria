@@ -15,6 +15,8 @@ namespace Sistema_Ferreteria_Dikranis
     public partial class ConsultarProducto : Form
     {
         public event Action<int, string, decimal> ProductoSeleccionado;
+        public event Action<int, string, int> ProductoSeleccionado2;
+
 
         public ConsultarProducto()
         {
@@ -43,6 +45,7 @@ namespace Sistema_Ferreteria_Dikranis
             txtIdProducto.Text = filaActual.Cells[0].Value.ToString();
             txtNombre.Text = filaActual.Cells[1].Value.ToString();
             txtPrecio.Text = filaActual.Cells[10].Value.ToString();
+            txtIdProveedor.Text = filaActual.Cells[5].Value.ToString();
 
         }
 
@@ -54,6 +57,36 @@ namespace Sistema_Ferreteria_Dikranis
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        public void DesactivarBotonTV()
+        {
+            btnAceptar.Visible = false;
+            
+        }
+        public void ActivarBotonTv()
+        {
+            btnAceptar.Visible = true;
+            txtIdProveedor.Visible = false;
+            lblCodigoProveedor.Visible = false;
+        }
+        public void DesactivarBotonNE()
+        {
+            btnAceptar2.Visible = false;
+        }
+        public void ActivarBotonNE()
+        {
+            btnAceptar2.Visible = true;
+            txtIdProveedor.Visible = true;
+            lblCodigoProveedor.Visible = true;
+        }
+
+        private void btnAceptar2_Click(object sender, EventArgs e)
+        {
+            int IdProducto = Convert.ToInt32(txtIdProducto.Text.Trim());
+            string Nombre = txtNombre.Text.Trim();
+            int IdProveedor = Convert.ToInt32(txtIdProveedor.Text.Trim());
+            ProductoSeleccionado2?.Invoke(IdProducto, Nombre,IdProveedor);
+            this.Close();
         }
     }
 }

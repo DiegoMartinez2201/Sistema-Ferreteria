@@ -38,6 +38,9 @@
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAceptar2 = new System.Windows.Forms.Button();
+            this.lblCodigoProveedor = new System.Windows.Forms.Label();
+            this.txtIdProveedor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,7 +127,7 @@
             // btnAceptar
             // 
             this.btnAceptar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAceptar.Location = new System.Drawing.Point(611, 477);
+            this.btnAceptar.Location = new System.Drawing.Point(632, 476);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 7;
@@ -143,12 +146,45 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // btnAceptar2
+            // 
+            this.btnAceptar2.Location = new System.Drawing.Point(551, 477);
+            this.btnAceptar2.Name = "btnAceptar2";
+            this.btnAceptar2.Size = new System.Drawing.Size(75, 23);
+            this.btnAceptar2.TabIndex = 9;
+            this.btnAceptar2.Text = "Aceptar";
+            this.btnAceptar2.UseVisualStyleBackColor = true;
+            this.btnAceptar2.Click += new System.EventHandler(this.btnAceptar2_Click);
+            // 
+            // lblCodigoProveedor
+            // 
+            this.lblCodigoProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCodigoProveedor.AutoSize = true;
+            this.lblCodigoProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoProveedor.ForeColor = System.Drawing.Color.Black;
+            this.lblCodigoProveedor.Location = new System.Drawing.Point(452, 22);
+            this.lblCodigoProveedor.Name = "lblCodigoProveedor";
+            this.lblCodigoProveedor.Size = new System.Drawing.Size(143, 17);
+            this.lblCodigoProveedor.TabIndex = 10;
+            this.lblCodigoProveedor.Text = "Código Proveedor:";
+            // 
+            // txtIdProveedor
+            // 
+            this.txtIdProveedor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtIdProveedor.Location = new System.Drawing.Point(601, 19);
+            this.txtIdProveedor.Name = "txtIdProveedor";
+            this.txtIdProveedor.Size = new System.Drawing.Size(116, 20);
+            this.txtIdProveedor.TabIndex = 11;
+            // 
             // ConsultarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(800, 523);
+            this.Controls.Add(this.txtIdProveedor);
+            this.Controls.Add(this.lblCodigoProveedor);
+            this.Controls.Add(this.btnAceptar2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.txtPrecio);
@@ -180,5 +216,8 @@
         private System.Windows.Forms.TextBox txtPrecio;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnAceptar2;
+        private System.Windows.Forms.Label lblCodigoProveedor;
+        private System.Windows.Forms.TextBox txtIdProveedor;
     }
 }
