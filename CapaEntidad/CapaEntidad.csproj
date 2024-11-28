@@ -51,6 +51,7 @@
     <Compile Include="entNotaEntradaDetalle.cs" />
     <Compile Include="entNotaSalida.cs" />
     <Compile Include="entNotaSalidaDetalle.cs" />
+    <Compile Include="entOrdenRequerimientoDetalle.cs" />
     <Compile Include="entPersonaNatural.cs" />
     <Compile Include="entProducto.cs" />
     <Compile Include="entProveedor.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="entTicketVentaDetalle.cs" />
     <Compile Include="entTipoCliente.cs" />
     <Compile Include="entUnidadMedida.cs" />
+    <Compile Include="entOrdenRequerimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

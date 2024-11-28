@@ -51,6 +51,8 @@
     <Compile Include="datNotaEntradaDetalle.cs" />
     <Compile Include="datNotaSalida.cs" />
     <Compile Include="datNotaSalidaDetalle.cs" />
+    <Compile Include="datOrdenRequerimiento.cs" />
+    <Compile Include="datOrdenRequerimientoDetalle.cs" />
     <Compile Include="datProducto.cs" />
     <Compile Include="datProveedor.cs" />
     <Compile Include="datRepresentanteProveedor.cs" />

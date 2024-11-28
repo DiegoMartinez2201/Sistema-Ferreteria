@@ -48,9 +48,12 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtrazonsocial = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblpreciototal = new System.Windows.Forms.Label();
+            this.lblempleado = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatosProducto)).BeginInit();
             this.SuspendLayout();
@@ -66,9 +69,9 @@
             this.groupBox1.Controls.Add(this.txtNombreProducto);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(515, 17);
+            this.groupBox1.Location = new System.Drawing.Point(515, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(308, 214);
+            this.groupBox1.Size = new System.Drawing.Size(308, 202);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Producto";
@@ -100,7 +103,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Beige;
-            this.btnEliminar.Location = new System.Drawing.Point(185, 165);
+            this.btnEliminar.Location = new System.Drawing.Point(185, 150);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(103, 34);
             this.btnEliminar.TabIndex = 8;
@@ -110,12 +113,13 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.Beige;
-            this.btnAgregar.Location = new System.Drawing.Point(21, 165);
+            this.btnAgregar.Location = new System.Drawing.Point(9, 150);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(84, 34);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label2
             // 
@@ -155,7 +159,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 216);
+            this.label3.Location = new System.Drawing.Point(12, 186);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 15);
             this.label3.TabIndex = 12;
@@ -164,7 +168,7 @@
             // dtPickerFechaRegistro
             // 
             this.dtPickerFechaRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(12, 518);
+            this.dtPickerFechaRegistro.Location = new System.Drawing.Point(12, 478);
             this.dtPickerFechaRegistro.Name = "dtPickerFechaRegistro";
             this.dtPickerFechaRegistro.Size = new System.Drawing.Size(200, 21);
             this.dtPickerFechaRegistro.TabIndex = 11;
@@ -190,6 +194,7 @@
             this.btnRegistrar.TabIndex = 15;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // label5
             // 
@@ -212,7 +217,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(753, 482);
+            this.checkBox1.Location = new System.Drawing.Point(700, 470);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(70, 19);
             this.checkBox1.TabIndex = 18;
@@ -253,13 +258,6 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Codigo Proveedor:";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(213, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 20);
-            this.textBox1.TabIndex = 22;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -270,22 +268,62 @@
             this.label7.TabIndex = 23;
             this.label7.Text = "Razon Social:";
             // 
-            // textBox2
+            // txtrazonsocial
             // 
-            this.textBox2.Location = new System.Drawing.Point(213, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(168, 20);
-            this.textBox2.TabIndex = 24;
+            this.txtrazonsocial.Location = new System.Drawing.Point(211, 99);
+            this.txtrazonsocial.Name = "txtrazonsocial";
+            this.txtrazonsocial.Size = new System.Drawing.Size(168, 20);
+            this.txtrazonsocial.TabIndex = 24;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(211, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(170, 21);
+            this.comboBox1.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(511, 223);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(128, 24);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Precio Total:";
+            // 
+            // lblpreciototal
+            // 
+            this.lblpreciototal.AutoSize = true;
+            this.lblpreciototal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpreciototal.Location = new System.Drawing.Point(634, 226);
+            this.lblpreciototal.Name = "lblpreciototal";
+            this.lblpreciototal.Size = new System.Drawing.Size(57, 20);
+            this.lblpreciototal.TabIndex = 27;
+            this.lblpreciototal.Text = "label9";
+            // 
+            // lblempleado
+            // 
+            this.lblempleado.AutoSize = true;
+            this.lblempleado.Location = new System.Drawing.Point(251, 485);
+            this.lblempleado.Name = "lblempleado";
+            this.lblempleado.Size = new System.Drawing.Size(63, 13);
+            this.lblempleado.TabIndex = 28;
+            this.lblempleado.Text = "lblempleado";
             // 
             // OrdenRequerimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(938, 551);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(938, 524);
+            this.Controls.Add(this.lblempleado);
+            this.Controls.Add(this.lblpreciototal);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtrazonsocial);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);
@@ -331,8 +369,11 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtrazonsocial;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblpreciototal;
+        private System.Windows.Forms.Label lblempleado;
     }
 }

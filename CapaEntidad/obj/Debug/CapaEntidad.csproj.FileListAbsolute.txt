@@ -34,3 +34,9 @@ D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.As
 D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 D:\Ciclo 4\MOANSO\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\Ciclo 4\Sistema-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\Ciclo 4\Sistema-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\Ciclo 4\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\Ciclo 4\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\Ciclo 4\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\Ciclo 4\Sistema-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

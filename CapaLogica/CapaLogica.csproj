@@ -49,6 +49,7 @@
     <Compile Include="logMetodoPago.cs" />
     <Compile Include="logNotaEntrada.cs" />
     <Compile Include="logNotaSalida.cs" />
+    <Compile Include="logOrdenRequerimiento.cs" />
     <Compile Include="logProducto.cs" />
     <Compile Include="logProveedor.cs" />
     <Compile Include="logTicketVenta.cs" />

@@ -18,6 +18,7 @@ namespace CapaLogica
         }
         #endregion Singleton
         #region Metodos
+
         public entEmpleado ValidarEmpleado(string usuario, string contrasena)
         {
             return datEmpleado.Instancia.ValidarEmpleado(usuario, contrasena);
